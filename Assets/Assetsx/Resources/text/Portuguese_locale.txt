@@ -1,0 +1,3204 @@
+[PROP_DESCRIPTION]
+Pode ser usado apenas uma vez
+
+[INGAME_UI_COUNTDOWN_STARTING]
+Começando em
+
+[INGAME_UI_HIGHSCORE]
+Pontuação máxima
+
+[UPGRADE_SCREEN_SINGLE_USE]
+Uso Único
+
+[COIN_SCREEN_STORE]
+Loja
+
+[COIN_SCREEN_STORE_DESCRIPTION]
+Obtenha moedas e gemas
+
+[DAILY_CHALLENGE_TODAY_2]
+Hoje
+
+[DAILY_CHALLENGE_DAY]
+Dia {0}
+
+[HOVERBOARD_POPUP]
+Precisa de um skate?
+
+[HOVERBOARD_POPUP_DESCRIPTION_1]
+Proteja-se contra falhas por 30 segundos.Toque duas vezes para ativar durante a execução.
+
+[HOVERBOARD_POPUP_DESCRIPTION_2]
+Toque duas vezes para ativar durante a execução.
+
+[TASK_POPUP_MAIN_TITLE]
+Missões
+
+[TASK_POPUP_TASK_SET_NUMBER]
+Número do SET DE TAREFAS
+
+[TASK_POPUP_SUPER]
+Super
+
+[TASK_POPUP_MYSTERY_BOX]
+Caixa de Mistério
+
+[TASK_POPUP_SCORE]
+Marque
+
+[TASK_POPUP_MULTIPLIER]
+Multiplicador
+
+[TASK_POPUP_REWARD]
+Recompensas
+
+[SAVE_ME_POPUP_BUTTON_LABEL]
+Me salve !
+
+[MYESTERY_POWERUP_PLUS_MULTIPLIER]
+Multiplicador Plus
+
+[MYESTERY_POWERUP_PLUS_MULTIPLIER_DESCRIPTION]
+Multiplicador Plus
+
+[UPGRADES_HOVERBOARD]
+Prancha
+
+[UPGRADES_HOVERBOARD_DESCRIPTION]
+Proteja-se contra falhas por 30 segundos. Ative tocando duas vezes.
+
+[UPGRADES_HOVERBOARD_DESCRIPTION_MYSTERY]
+Toque duas vezes enquanto corre para ativar a proteção contra colisões
+
+[UPGRADES_HEADSTART]
+Avanço Inicial
+
+[UPGRADES_HEADSTART_DESCRIPTION]
+Pule 250 metros em uma corrida.
+
+[UPGRADES_HEADSTART_DESCRIPTION_MYSTERY]
+Ative no início de uma corrida para obter um avanço inicial
+
+[UPGRADES_SCOREBOOSTER]
+Booster de Pontuação
+
+[UPGRADES_SCOREBOOSTER_DESCRIPTION]
+Aumente o seu Multiplicador
+para uma corrida.
+
+[UPGRADES_SCOREBOOSTER_DESCRIPTION_MYSTERY]
+Ative no início de
+uma corrida para aumentar o seu
+Multiplicador
+
+[UPGRADES_MEGAHEADSTART_TWO_LINES]
+Mega
+Avanço Inicial
+
+[UPGRADES_MEGAHEADSTART]
+Mega Avanço Inicial
+
+[UPGRADES_MEGAHEADSTART_DESCRIPTION]
+Use para pular e começar a correr em alta velocidade.
+
+[UPGRADES_MEGAHEADSTART_DESCRIPTION_MYSTERY]
+Ative no início de uma corrida para obter um mega avanço inicial
+
+[UPGRADES_MYSTERY_BOX]
+Caixa de Mistério
+
+[UPGRADES_JETPACK]
+Jetpack
+
+[UPGRADES_JETPACK_DESCRIPTION]
+Aumente a duração do powerup do Jetpack da Lata de Spray.
+
+[UPGRADES_SUPERSNEAKERS]
+escudo
+
+[UPGRADES_SUPERSNEAKERS_DESCRIPTION]
+Aumente a duração do powerup do escudo.
+
+[UPGRADES_COIN_MAGNET]
+Ímã de Moedas
+
+[UPGRADES_COIN_MAGNET_DESCRIPTION]
+Aumente a duração do powerup do Imã de Moeda.
+
+[UPGRADES_DOUBLE_MULTIPLIER]
+2x Multiplicador
+
+[UPGRADES_DOUBLE_MULTIPLIER_DESCRIPTION]
+Aumente a duração do powerup do Multiplicador Duplo.
+
+[UPGRADES_KEY]
+Gemas
+
+[UPGRADES_SKIP_TASK_1]
+Pule Tarefa 1
+
+[UPGRADES_SKIP_TASK_1_DESCRIPTION]
+Pule sua tarefa atual 1.
+
+[UPGRADES_SKIP_TASK_2]
+Pule Tarefa 2
+
+[UPGRADES_SKIP_TASK_2_DESCRIPTION]
+Pule sua tarefa atual 2.
+
+[UPGRADES_SKIP_TASK_3]
+Pule Tarefa 3
+
+[UPGRADES_SKIP_TASK_3_DESCRIPTION]
+Pule sua tarefa atual 3.
+
+[UPGRADES_HELPER_MYSTERY_BOX]
+Abra imediatamente
+
+[UPGRADES_HELPER_YOU_HAVE]
+tenha:
+
+[UPGRADES_TITLE]
+Upgrades
+
+[UPGRADES_DESCRIPTION]
+Aumentar a duração do powerup
+
+[UPGRADES_MYSTERY_POWERUP]
+Powerup do Mistério
+
+[COIN_BUTTON_HELPER_NUMBER_OF_KEYS]
+{0} Gemas
+
+[COIN_BUTTON_HELPER_NUMBER_OF_COINS]
+{0} Moedas
+
+[HOVERBOARDS_HOVERBOARD]
+Quadro de 1º
+
+[HOVERBOARDS_FREESTYLER]
+Quadro de Cor
+ 
+[HOVERBOARDS_STARBOARD]
+Quadro de Navegação
+
+[HOVERBOARDS_MIAMI]
+Prancha de Tubarão
+
+[HOVERBOARDS_MONSTER]
+Quadro de Monstros
+
+[HOVERBOARDS_LIBERTY]
+Quadro de Aeronave
+
+[HOVERBOARDS_ENERGY]
+Quadro de Energia
+
+[CHARACTERS_ELLEN]
+G.Runner
+
+[CHARACTERS_DARCY]
+Rost
+
+[CHARACTERS_FRANK]
+Frank
+
+[CHARACTERS_TAG]
+Organizar corredor
+
+[CHARACTERS_NINJA]
+Ninja
+
+[CHARACTERS_LEE]
+Lee
+
+[CHARACTERS_KELVIN]
+Kelvin
+
+[CHARACTERS_TURTLEFOK]
+Turtlefok
+
+[CHARACTERS_CLOWN]
+B.Runner
+
+[CHARACTERS_STRONG]
+R.Runner
+
+[CHARACTERS_VENICE]
+Veneza
+
+[CHARACTERS_EXPLORER]
+Explorador
+
+[CHARACTERS_PRINCESS]
+Princess
+
+[TASK_EARNCOIN_DESCRIPTION_SINGLE]
+Colete {0} moeda.
+
+[TASK_EARNCOIN_DESCRIPTION]
+Colete {0} moedas.
+
+[TASK_EARNCOIN_ULTRASHORT_DESCRIPTION_SINGLE]
+Colete {0} moeda.
+
+[TASK_EARNCOIN_ULTRASHORT_DESCRIPTION]
+Colete {0} moedas.
+
+[TASK_EARNCOIN_SINGLERUN_DESCRIPTION_SINGLE]
+Colete {0} moeda em uma corrida.
+
+[TASK_EARNCOIN_SINGLERUN_DESCRIPTION]
+Colete {0} moedas em uma corrida.
+
+[TASK_EARNCOIN_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Colete {0} moeda em uma corrida.
+
+[TASK_EARNCOIN_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Colete {0} moedas em uma corrida.
+
+[TASK_SPENDCOIN_DESCRIPTION_SINGLE]
+Gaste {0} moeda.
+
+[TASK_SPENDCOIN_DESCRIPTION]
+Gaste {0} moedas.
+
+[TASK_SPENDCOIN_ULTRASHORT_DESCRIPTION_SINGLE]
+Gaste {0} moeda.
+
+[TASK_SPENDCOIN_ULTRASHORT_DESCRIPTION]
+Gaste {0} moedas.
+
+[TASK_SCORE_DESCRIPTION_SINGLE]
+Acumule {0} ponto.
+
+[TASK_SCORE_DESCRIPTION]
+Acumule {0} pontos.
+
+[TASK_SCORE_ULTRASHORT_DESCRIPTION_SINGLE]
+Acumule {0} ponto.
+
+[TASK_SCORE_ULTRASHORT_DESCRIPTION]
+Acumule {0} pontos.
+
+[TASK_JUMPTRAIN_DESCRIPTION_SINGLE]
+Pule sobre {0} tren
+
+[TASK_JUMPTRAIN_DESCRIPTION]
+Pule sobre {0} trens
+
+[TASK_JUMPTRAIN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule {0} trens
+
+[TASK_JUMPTRAIN_ULTRASHORT_DESCRIPTION]
+Pule {0} trens
+
+[TASK_JUMPCAR_DESCRIPTION_SINGLE]
+Jump over {0} car.
+
+[TASK_JUMPCAR_DESCRIPTION]
+Pule sobre {0} carros 
+
+[TASK_JUMPCAR_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule sobre {0} carros 
+
+[TASK_JUMPCAR_ULTRASHORT_DESCRIPTION]
+Pule sobre {0} carros 
+
+[TASK_JUMPCAR_SINGLERUN_DESCRIPTION_SINGLE]
+Pule sobre {0} carros em uma corrida.
+
+[TASK_JUMPCAR_SINGLERUN_DESCRIPTION]
+Pule sobre {0} carros em uma corrida.
+
+[TASK_JUMPCAR_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule sobre {0} carros em uma corrida.
+
+[TASK_JUMPCAR_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Pule sobre {0} carros em uma corrida.
+
+[TASK_JUMPBUS_DESCRIPTION_SINGLE]
+Pule sobre {0} ônibus
+
+[TASK_JUMPBUS_DESCRIPTION]
+Pule sobre {0} ônibus
+
+[TASK_JUMPBUS_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule sobre {0} ônibus
+
+[TASK_JUMPBUS_ULTRASHORT_DESCRIPTION]
+Pule sobre {0} ônibus
+
+[TASK_JUMPBUS_SINGLERUN_DESCRIPTION_SINGLE]
+Pule sobre {0} ônibus em uma corrida.
+
+[TASK_JUMPBUS_SINGLERUN_DESCRIPTION]
+Pule sobre {0} ônibus em uma corrida.
+
+[TASK_JUMPBUS_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule sobre {0} ônibus em uma corrida.
+
+[TASK_JUMPBUS_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Pule sobre {0} ônibus em uma corrida.
+
+[TASK_JUMPTRAIN_SINGLERUN_DESCRIPTION_SINGLE]
+Pule sobre {0} trens em uma corrida.
+
+[TASK_JUMPTRAIN_SINGLERUN_DESCRIPTION]
+Pule sobre {0} trens em uma corrida.
+
+[TASK_JUMPTRAIN_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule {0} trens.
+
+[TASK_JUMPTRAIN_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Pule {0} trens.
+
+[TASK_JUMP_DESCRIPTION_SINGLE]
+Pule {0} vezes.
+
+[TASK_JUMP_DESCRIPTION]
+Pule {0} vezes.
+
+[TASK_JUMP_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule {0} vezes.
+
+[TASK_JUMP_ULTRASHORT_DESCRIPTION]
+Pule {0} vezes.
+
+[TASK_JUMP_SINGLERUN_DESCRIPTION_SINGLE]
+Pule {0} vezes em uma corrida.
+
+[TASK_JUMP_SINGLERUN_DESCRIPTION]
+Pule {0} vezes em uma corrida.
+
+[TASK_JUMP_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule {0} vezes em uma corrida.
+
+[TASK_JUMP_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Pule {0} vezes em uma corrida.
+
+[TASK_ROLL_DESCRIPTION_SINGLE]
+Role {0} vezes.
+
+[TASK_ROLL_DESCRIPTION]
+Role {0} vezes. 
+
+[TASK_ROLL_ULTRASHORT_DESCRIPTION_SINGLE]
+Role {0} vezes. 
+
+[TASK_ROLL_ULTRASHORT_DESCRIPTION]
+Role {0} vezes. 
+
+[TASK_ROLL_SINGLERUN_DESCRIPTION_SINGLE]
+Role {0} vezes em uma corrida.
+
+[TASK_ROLL_SINGLERUN_DESCRIPTION]
+Role {0} vezes em uma corrida.
+
+[TASK_ROLL_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Role {0} vezes em uma corrida.
+
+[TASK_ROLL_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Role {0} vezes em uma corrida.
+
+[TASK_ROLL_LEFT_DESCRIPTION_SINGLE]
+Role {0} vezes na pista da esquerda.
+
+[TASK_ROLL_LEFT_DESCRIPTION]
+Role {0} vezes na pista da esquerda.
+
+[TASK_ROLL_LEFT_ULTRASHORT_DESCRIPTION_SINGLE]
+Role {0} vezes na pista da esquerda.
+
+[TASK_ROLL_LEFT_ULTRASHORT_DESCRIPTION]
+Role {0} vezes na pista da esquerda.
+
+[TASK_ROLL_CENTER_DESCRIPTION_SINGLE]
+Role {0} vezes na pista central.
+
+[TASK_ROLL_CENTER_DESCRIPTION]
+Role {0} vezes na pista central.
+
+[TASK_ROLL_CENTER_ULTRASHORT_DESCRIPTION_SINGLE]
+Role {0} vezes na pista central.
+
+[TASK_ROLL_CENTER_ULTRASHORT_DESCRIPTION]
+Role {0} vezes na pista central.
+
+[TASK_ROLL_RIGHT_DESCRIPTION_SINGLE]
+Role {0} vezes na pista da direita.
+
+[TASK_ROLL_RIGHT_DESCRIPTION]
+Role {0} vezes na pista da direita.
+
+[TASK_ROLL_RIGHT_ULTRASHORT_DESCRIPTION_SINGLE]
+Role {0} vezes na pista da direita.
+
+[TASK_ROLL_RIGHT_ULTRASHORT_DESCRIPTION]
+Role {0} vezes na pista da direita.
+
+[TASK_ROLL_UNDERBARRIERS_DESCRIPTION_SINGLE]
+Role para baixo de {0} barreiras.
+
+[TASK_ROLL_UNDERBARRIERS_DESCRIPTION]
+Role para baixo de {0} barreiras.
+
+[TASK_ROLL_UNDERBARRIERS_ULTRASHORT_DESCRIPTION_SINGLE]
+Role para baixo de {0} barreiras.
+
+[TASK_ROLL_UNDERBARRIERS_ULTRASHORT_DESCRIPTION]
+Role para baixo de {0} barreiras.
+
+[TASK_JUMP_BARRIERS_DESCRIPTION_SINGLE]
+Pule sobre {0} barreiras.
+
+[TASK_JUMP_BARRIERS_DESCRIPTION]
+Pule sobre {0} barreiras.
+
+[TASK_JUMP_BARRIERS_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule sobre {0} barreiras.
+
+[TASK_JUMP_BARRIERS_ULTRASHORT_DESCRIPTION]
+Pule sobre {0} barreiras.
+
+[TASK_DIETOTRAIN_DESCRIPTION_SINGLE]
+Seja atropelado por {0} trens.
+
+[TASK_DIETOTRAIN_DESCRIPTION]
+Seja atropelado por {0} trens.
+
+[TASK_DIETOTRAIN_ULTRASHORT_DESCRIPTION_SINGLE]
+Seja atropelado {0} vez.
+
+[TASK_DIETOTRAIN_ULTRASHORT_DESCRIPTION]
+Seja atropelado {0} vez.
+
+[TASK_JETPACK_DESCRIPTION_SINGLE]
+Pegue {0} Jetpack.
+
+[TASK_JETPACK_DESCRIPTION]
+Pegue {0} Jetpack.
+
+[TASK_JETPACK_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue {0} Jetpack.
+
+[TASK_JETPACK_ULTRASHORT_DESCRIPTION]
+Pegue {0} Jetpack.
+
+[TASK_JETPACK_SINGLERUN_DESCRIPTION_SINGLE]
+Pegue {0} Jetpack de uma vez.
+
+[TASK_JETPACK_SINGLERUN_DESCRIPTION]
+Pegue {0} Jetpack de uma vez.
+
+[TASK_JETPACK_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue {0} Jetpack de uma vez.
+
+[TASK_JETPACK_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Pegue {0} Jetpack de uma vez.
+
+[TASK_SUPERSNEAKERS_DESCRIPTION_SINGLE]
+Pegue {0} escudo. 
+
+[TASK_SUPERSNEAKERS_DESCRIPTION]
+Pegue {0} escudo. 
+
+[TASK_SUPERSNEAKERS_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue {0} escudo. 
+
+[TASK_SUPERSNEAKERS_ULTRASHORT_DESCRIPTION]
+Pegue {0} escudo. 
+
+[TASK_SUPERSNEAKERS_SINGLERUN_DESCRIPTION_SINGLE]
+Pegue {0} escudo de uma vez.
+
+[TASK_SUPERSNEAKERS_SINGLERUN_DESCRIPTION]
+Pegue {0} escudo de uma vez.
+
+[TASK_SUPERSNEAKERS_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue {0} escudo de uma vez.
+
+[TASK_SUPERSNEAKERS_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Pegue {0} escudo de uma vez.
+
+[TASK_MGANETS_DESCRIPTION_SINGLE]
+Pegue {0} ímãs.
+
+[TASK_MAGNETS_DESCRIPTION]
+Pegue {0} ímãs.
+
+[TASK_MAGNETS_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue {0} ímãs.
+
+[TASK_MAGNETS_ULTRASHORT_DESCRIPTION]
+Pegue {0} ímãs.
+
+[TASK_MGANETS_SINGLERUN_DESCRIPTION_SINGLE]
+Pegue {0} ímãs de uma vez.
+
+[TASK_MAGNETS_SINGLERUN_DESCRIPTION]
+Pegue {0} ímãs de uma vez.
+
+[TASK_MAGNETS_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue {0} ímãs de uma vez.
+
+[TASK_MAGNETS_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Pegue {0} ímãs de uma vez.
+
+[TASK_DAILYQUESTS_DESCRIPTION_SINGLE]
+Conclua {0} recompensas de login diárias.
+
+[TASK_DAILYQUESTS_DESCRIPTION]
+Conclua {0} recompensas de login diárias.
+
+[TASK_DAILYQUESTS_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} Recompensas de login diário.
+
+[TASK_DAILYQUESTS_ULTRASHORT_DESCRIPTION]
+{0} Recompensas de login diário.
+
+[TASK_TOKENS_DESCRIPTION_SINGLE]
+Obtenha {0} símbolos do personagem na Caixa Misteriosa.
+
+[TASK_TOKENS_DESCRIPTION]
+Obtenha {0} símbolos do personagem na Caixa Misteriosa.
+
+[TASK_TOKENS_ULTRASHORT_DESCRIPTION_SINGLE]
+Obtenha {0} símbolos.
+
+[TASK_TOKENS_ULTRASHORT_DESCRIPTION]
+Obtenha {0} símbolos.
+
+[TASK_DODGE_BARRIERS_DESCRIPTION_SINGLE]
+Desvie de {0} barreiras.
+
+[TASK_DODGE_BARRIERS_DESCRIPTION]
+Desvie de {0} barreiras.
+
+[TASK_DODGE_BARRIERS_ULTRASHORT_DESCRIPTION_SINGLE]
+Desvie de {0} barreiras.
+
+[TASK_DODGE_BARRIERS_ULTRASHORT_DESCRIPTION]
+Desvie de {0} barreiras.
+
+[TASK_CRASH_BARRIERS_DESCRIPTION_SINGLE]
+Bata em {0} barreiras.
+
+[TASK_CRASH_BARRIERS_DESCRIPTION]
+Bata em {0} barreiras.
+
+[TASK_CRASH_BARRIERS_ULTRASHORT_DESCRIPTION_SINGLE]
+Bata em {0} barreiras.
+
+[TASK_CRASH_BARRIERS_ULTRASHORT_DESCRIPTION]
+Bata em {0} barreiras.
+
+[TASK_CRASH_BARRIERS_SINGLERUN_DESCRIPTION_SINGLE]
+Bata em {0} barreiras em uma corrida.
+
+[TASK_CRASH_BARRIERS_SINGLERUN_DESCRIPTION]
+Bata em {0} barreiras em uma corrida.
+
+[TASK_CRASH_BARRIERS_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Bata em {0} barreiras em uma corrida.
+
+[TASK_CRASH_BARRIERS_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Bata em {0} barreiras em uma corrida.
+
+[TASK_CRASH_TRAINS_DESCRIPTION_SINGLE]
+Bata em {0} trens.
+
+[TASK_CRASH_TRAINS_DESCRIPTION]
+Bata em {0} trens.
+
+[TASK_CRASH_TRAINS_ULTRASHORT_DESCRIPTION_SINGLE]
+Bata em {0} trens.
+
+[TASK_CRASH_TRAINS_ULTRASHORT_DESCRIPTION]
+Bata em {0} trens.
+
+[TASK_CRASH_FLOWERBEDS_DESCRIPTION_SINGLE]
+Bata em {0} canteiro de flores.
+
+[TASK_CRASH_FLOWERBEDS_DESCRIPTION]
+Bata em {0} canteiro de flores.
+
+[TASK_CRASH_FLOWERBEDS_ULTRASHORT_DESCRIPTION_SINGLE]
+Bata em {0} canteiro de flores.
+
+[TASK_CRASH_FLOWERBEDS_ULTRASHORT_DESCRIPTION]
+Bata em {0} canteiro de flores.
+
+[TASK_CRASH_CARS_DESCRIPTION_SINGLE]
+Bata em {0} carros.
+
+[TASK_CRASH_CARS_DESCRIPTION]
+Bata em {0} carros.
+
+[TASK_CRASH_CARS_ULTRASHORT_DESCRIPTION_SINGLE]
+Bata em {0} carros.
+
+[TASK_CRASH_CARS_ULTRASHORT_DESCRIPTION]
+Bata em {0} carros.
+
+[TASK_CRASH_BUSES_DESCRIPTION_SINGLE]
+Bata em {0} ônibus.
+
+[TASK_CRASH_BUSES_DESCRIPTION]
+Bata em {0} ônibus.
+
+[TASK_CRASH_BUSES_ULTRASHORT_DESCRIPTION_SINGLE]
+Bata em {0} ônibus.
+
+[TASK_CRASH_BUSES_ULTRASHORT_DESCRIPTION]
+Bata em {0} ônibus.
+
+[TASK_CRASH_TRAINS_SINGLERUN_DESCRIPTION_SINGLE]
+Bata em {0} trens em uma corrida.
+
+[TASK_CRASH_TRAINS_SINGLERUN_DESCRIPTION]
+Bata em {0} trens em uma corrida.
+
+[TASK_CRASH_TRAINS_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Bata em {0} trens em uma corrida.
+
+[TASK_CRASH_TRAINS_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Bata em {0} trens em uma corrida.
+
+[TASK_POWERUPS_DESCRIPTION_SINGLE]
+Pegue {0} Powerup.
+
+[TASK_POWERUPS_DESCRIPTION]
+Pegue {0} Powerup.
+
+[TASK_POWERUPS_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue {0} Powerup.
+
+[TASK_POWERUPS_ULTRASHORT_DESCRIPTION]
+Pegue {0} Powerup.
+
+[TASK_HEADSTART_DESCRIPTION_SINGLE]
+Use {0} Mega Avanço Inicial.
+
+[TASK_HEADSTART_DESCRIPTION]
+Use {0} Mega Avanço Inicial.
+
+[TASK_HEADSTART_ULTRASHORT_DESCRIPTION_SINGLE]
+Use {0} Mega Avanço Inicial.
+
+[TASK_HEADSTART_ULTRASHORT_DESCRIPTION]
+Use {0} Mega Avanço Inicial.
+
+[TASK_COINS_WITH_MAGNET_DESCRIPTION_SINGLE]
+Pegue {0} moedas com um ímã.
+
+[TASK_COINS_WITH_MAGNET_DESCRIPTION]
+Pegue {0} moedas com um ímã.
+
+[TASK_COINS_WITH_MAGNET_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} moeda com Imã.
+
+[TASK_COINS_WITH_MAGNET_ULTRASHORT_DESCRIPTION]
+{0} moeda com Imã.
+
+[TASK_BUY_MISTERYBOX_DESCRIPTION_SINGLE]
+Compre {0} caixas Misteriosas.
+
+[TASK_BUY_MISTERYBOX_DESCRIPTION]
+Compre {0} caixas Misteriosas.
+
+[TASK_BUY_MISTERYBOX_ULTRASHORT_DESCRIPTION_SINGLE]
+Compre {0} caixas Misteriosas.
+
+[TASK_BUY_MISTERYBOX_ULTRASHORT_DESCRIPTION]
+Compre {0} caixas Misteriosas.
+
+[TASK_TIMEDEATH_DESCRIPTION_SINGLE]
+Correr com {0} segundos no total.
+
+[TASK_TIMEDEATH_DESCRIPTION]
+Correr com {0} segundos no total.
+
+[TASK_TIMEDEATH_ULTRASHORT_DESCRIPTION_SINGLE]
+Correr {0} seg.
+
+[TASK_TIMEDEATH_ULTRASHORT_DESCRIPTION]
+Correr {0} seg.
+
+[TASK_MYSTERYBOXES_DESCRIPTION_SINGLE]
+Pegue {0} Caixa Misteriosa.
+
+[TASK_MYSTERYBOXES_DESCRIPTION]
+Pegue {0} Caixa Misteriosa.
+
+[TASK_MYSTERYBOXES_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} Caixa Misteriosa.
+
+[TASK_MYSTERYBOXES_ULTRASHORT_DESCRIPTION]
+{0} Caixa Misteriosa.
+
+[TASK_BUMP_BARRIER_DESCRIPTION_SINGLE]
+Tropeçar em {0} barreiras.
+
+[TASK_BUMP_BARRIER_DESCRIPTION]
+Tropeçar em {0} barreiras.
+
+[TASK_BUMP_BARRIER_ULTRASHORT_DESCRIPTION_SINGLE]
+Tropeçar {0} barreiras.
+
+[TASK_BUMP_BARRIER_ULTRASHORT_DESCRIPTION]
+Tropeçar {0} barreiras.
+
+[TASK_BUMP_LIGHTSIGNAL_DESCRIPTION_SINGLE]
+Bata em {0} sinais de luz.
+
+[TASK_BUMP_LIGHTSIGNAL_DESCRIPTION]
+Bata em {0} sinais de luz.
+
+[TASK_BUMP_LIGHTSIGNAL_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} sinal de luz.
+
+[TASK_BUMP_LIGHTSIGNAL_ULTRASHORT_DESCRIPTION]
+{0} sinal de luz.
+
+[TASK_BUMP_BUSH_DESCRIPTION_SINGLE]
+Bata em {0} arbustos.
+
+[TASK_BUMP_BUSH_DESCRIPTION]
+Bata em {0} arbustos.
+
+[TASK_BUMP_BUSH_ULTRASHORT_DESCRIPTION_SINGLE]
+Bata em {0} arbustos.
+
+[TASK_BUMP_BUSH_ULTRASHORT_DESCRIPTION]
+Bata em {0} arbustos.
+
+[TASK_BUMP_TRAIN_DESCRIPTION_SINGLE]
+Bata em {0} trens.
+
+[TASK_BUMP_TRAIN_DESCRIPTION]
+Bata em {0} trens.
+
+[TASK_BUMP_TRAIN_ULTRASHORT_DESCRIPTION_SINGLE]
+Bata em {0} trens.
+
+[TASK_BUMP_TRAIN_ULTRASHORT_DESCRIPTION]
+Bata em {0} trens.
+
+[TASK_HOVERBOARD_DESCRIPTION_SINGLE]
+Use {0} pranchas.
+
+[TASK_HOVERBOARD_DESCRIPTION]
+Use {0} pranchas.
+
+[TASK_HOVERBOARD_ULTRASHORT_DESCRIPTION_SINGLE]
+Use {0} pranchas.
+
+[TASK_HOVERBOARD_ULTRASHORT_DESCRIPTION]
+Use {0} pranchas.
+
+[TASK_HOVERBOARD_EXPIRE_DESCRIPTION_SINGLE]
+Use {0} prancha sem travar.
+
+[TASK_HOVERBOARD_EXPIRE_DESCRIPTION]
+Use {0} prancha sem travar.
+
+[TASK_HOVERBOARD_EXPIRE_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} prancha sem travar.
+
+[TASK_HOVERBOARD_EXPIRE_ULTRASHORT_DESCRIPTION]
+{0} prancha sem travar.
+
+[TASK_SCORE_SINGLERUN_DESCRIPTION_SINGLE]
+Marque {0} pontos em uma corrida.
+
+[TASK_SCORE_SINGLERUN_DESCRIPTION]
+Marque {0} pontos em uma corrida.
+
+[TASK_SCORE_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} ponto em uma corrida.
+
+[TASK_SCORE_SINGLERUN_ULTRASHORT_DESCRIPTION]
+{0} ponto em uma corrida.
+
+[TASK_NOCOINS_WITHOUTSCORE_DESCRIPTION_SINGLE]
+Obtenha {0} pontos em uma rodada sem coletar moedas.
+
+[TASK_NOCOINS_WITHOUTSCORE_DESCRIPTION]
+Obtenha {0} pontos em uma rodada sem coletar moedas.
+
+[TASK_NOCOINS_WITHOUTSCORE_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} ponto sem moedas.
+
+[TASK_NOCOINS_WITHOUTSCORE_ULTRASHORT_DESCRIPTION]
+{0} ponto sem moedas.
+
+[TASK_DOUBLE_MULTIPLIER_SINGLERUN_DESCRIPTION_SINGLE]
+Pegue o {0} Multiplicador 2X de uma vez.
+
+[TASK_DOUBLE_MULTIPLIER_SINGLERUN_DESCRIPTION]
+Pegue o {0} Multiplicador 2X de uma vez.
+
+[TASK_DOUBLE_MULTIPLIER_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue o {0} Multiplicador 2X em uma corrida.
+
+[TASK_DOUBLE_MULTIPLIER_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Pegue o {0} Multiplicador 2X em uma corrida.
+
+[TASK_DODGEBARRIERS_SINGLERUN_DESCRIPTION_SINGLE]
+Desvie de {0} barreiras em uma corrida.
+
+[TASK_DODGEBARRIERS_SINGLERUN_DESCRIPTION]
+Desvie de {0} barreiras em uma corrida.
+
+[TASK_DODGEBARRIERS_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Desvie de {0} barreiras em uma corrida.
+
+[TASK_DODGEBARRIERS_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Desvie de {0} barreiras em uma corrida.
+
+[TASK_HOVERBOARD_EXPIRE_SINGLERUN_DESCRIPTION_SINGLE]
+Use {0} prancha em uma corrida sem travar.
+
+[TASK_HOVERBOARD_EXPIRE_SINGLERUN_DESCRIPTION]
+Use {0} prancha em uma corrida sem travar.
+
+[TASK_HOVERBOARD_EXPIRE_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Use {0} prancha em uma corrida sem travar.
+
+[TASK_HOVERBOARD_EXPIRE_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Use {0} prancha em uma corrida sem travar.
+
+[TASK_BUMPBARRIER_SINGLERUN_DESCRIPTION_SINGLE]
+Tropece {0} barreiras em uma corrida.
+
+[TASK_BUMPBARRIER_SINGLERUN_DESCRIPTION]
+Tropece {0} barreiras em uma corrida.
+
+[TASK_BUMPBARRIER_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Tropece {0} barreiras em uma corrida.
+
+[TASK_BUMPBARRIER_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Tropece {0} barreiras em uma corrida.
+
+[TASK_BUMP_LIGHTSIGNAL_SINGLERUN_DESCRIPTION_SINGLE]
+Bata em {0} sinais de luz em uma corrida.
+
+[TASK_BUMP_LIGHTSIGNAL_SINGLERUN_DESCRIPTION]
+Bata em {0} sinais de luz em uma corrida.
+
+[TASK_BUMP_LIGHTSIGNAL_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Bata em {0} sinais de luz em uma corrida.
+
+[TASK_BUMP_LIGHTSIGNAL_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Bata em {0} sinais de luz em uma corrida.
+
+[TASK_JUMPONTRAIN_INROW_DESCRIPTION_SINGLE]
+Pule e pouse em um trem {0} vezes seguidas.
+
+[TASK_JUMPONTRAIN_INROW_DESCRIPTION]
+Pule e pouse em um trem {0} vezes seguidas.
+
+[TASK_JUMPONTRAIN_INROW_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule e pouse em um trem {0} vezes seguidas.
+
+[TASK_JUMPONTRAIN_INROW_ULTRASHORT_DESCRIPTION]
+Pule e pouse em um trem {0} vezes seguidas.
+
+[TASK_STAYIN_ONELINE_DESCRIPTION_SINGLE]
+Fique na mesma pista por {0} segundo.
+
+[TASK_STAYIN_ONELINE_DESCRIPTION]
+Fique na mesma pista por {0} segundo.
+
+[TASK_STAYIN_ONELINE_ULTRASHORT_DESCRIPTION_SINGLE]
+Fique na mesma pista por {0} segundo.
+
+[TASK_STAYIN_ONELINE_ULTRASHORT_DESCRIPTION]
+Fique na mesma pista por {0} segundo.
+
+[TASK_DAILYQUEST_INROW_DESCRIPTION_SINGLE]
+Conclua {0} Desafio Diário.
+
+[TASK_DAILYQUEST_INROW_DESCRIPTION]
+Conclua o Desafio Diário por {0} dias consecutivos.
+
+[TASK_DAILYQUEST_INROW_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} Desafio Diário
+
+[TASK_DAILYQUEST_INROW_ULTRASHORT_DESCRIPTION]
+{0} Desafio Diário
+
+[TASK_NOJUMPS_WITHOUT_SCORE_DESCRIPTION_SINGLE]
+Marque {0} pontos sem pular.
+
+[TASK_NOJUMPS_WITHOUT_SCORE_DESCRIPTION]
+Marque {0} pontos sem pular.
+
+[TASK_NOJUMPS_WITHOUT_SCORE_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} ponto sem saltos
+
+[TASK_NOJUMPS_WITHOUT_SCORE_ULTRASHORT_DESCRIPTION]
+{0} ponto sem saltos
+
+[TASK_NOROLLS_WITHOUT_SCORE_DESCRIPTION_SINGLE]
+Marque {0} pontos sem rolar.
+
+[TASK_NOROLLS_WITHOUT_SCORE_DESCRIPTION]
+Marque {0} pontos sem rolar.
+
+[TASK_NOROLLS_WITHOUT_SCORE_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} ponto sem jogadas
+
+[TASK_NOROLLS_WITHOUT_SCORE_ULTRASHORT_DESCRIPTION]
+{0} ponto sem jogadas
+
+[TASK_NOPOWERUPS_WITHOUT_SCORE_DESCRIPTION_SINGLE]
+Marque {0} sem powerups
+
+[TASK_NOPOWERUPS_WITHOUT_SCORE_DESCRIPTION]
+Marque {0} sem powerups
+
+[TASK_NOPOWERUPS_WITHOUT_SCORE_ULTRASHORT_DESCRIPTION_SINGLE]
+Marque {0} sem powerups
+
+[TASK_NOPOWERUPS_WITHOUT_SCORE_ULTRASHORT_DESCRIPTION]
+Marque {0} sem powerups
+
+[TASK_ONE_OF_EACH_POWERUP_DESCRIPTION_SINGLE]
+Pegue todos os tipos de Powerup de uma vez.
+
+[TASK_ONE_OF_EACH_POWERUP_DESCRIPTION]
+Pegue todos os tipos de Powerup de uma vez.
+
+[TASK_ONE_OF_EACH_POWERUP_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue todos os tipos de Powerup de uma vez.
+
+[TASK_ONE_OF_EACH_POWERUP_ULTRASHORT_DESCRIPTION]
+Pegue todos os tipos de Powerup de uma vez.
+
+[TASK_SCOORE_BOOSTER_DESCRIPTION_SINGLE]
+Use {0} Booster de Pontuação.
+
+[TASK_SCOORE_BOOSTER_DESCRIPTION]
+Use {0} Booster de Pontuação.
+
+[TASK_SCOORE_BOOSTER_ULTRASHORT_DESCRIPTION_SINGLE]
+Use {0} Booster de Pontuação.
+
+[TASK_SCOORE_BOOSTER_ULTRASHORT_DESCRIPTION]
+Use {0} Booster de Pontuação.
+
+[TASK_BEATOWN_HIGHSCORE_DESCRIPTION_SINGLE]
+Supere sua Própria Pontuação Mais Alta
+
+[TASK_BEATOWN_HIGHSCORE_DESCRIPTION]
+Supere sua Própria Pontuação Mais Alta
+
+[TASK_BEATOWN_HIGHSCORE_ULTRASHORT_DESCRIPTION_SINGLE]
+Supere a Pontuação Mais Alta
+
+[TASK_BEATOWN_HIGHSCORE_ULTRASHORT_DESCRIPTION]
+Supere a Pontuação Mais Alta
+
+[TASK_GET_AMOUNT_OF_COINS_DESCRIPTION_SINGLE]
+Obtenha exatamente {0} moedas.
+
+[TASK_GET_AMOUNT_OF_COINS_DESCRIPTION]
+Obtenha exatamente {0} moedas.
+
+[TASK_GET_AMOUNT_OF_COINS_ULTRASHORT_DESCRIPTION_SINGLE]
+Obtenha exatamente {0} moedas.
+
+[TASK_GET_AMOUNT_OF_COINS_ULTRASHORT_DESCRIPTION]
+Obtenha exatamente {0} moedas.
+
+[TASK_ACTIVE_POWERUPS_DESCRIPTION_SINGLE]
+Tenha {0} powerups ativos 
+
+[TASK_ACTIVE_POWERUPS_DESCRIPTION]
+Tenha {0} powerups ativos ao mesmo tempo.
+
+[TASK_ACTIVE_POWERUPS_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} PowerUp Ativo
+
+[TASK_ACTIVE_POWERUPS_ULTRASHORT_DESCRIPTION]
+{0} PowerUp Ativo
+
+[TASK_COINSWITH_JETPACK_DESCRIPTION_SINGLE]
+Pegue {0} moedas com o Jetpack.
+
+[TASK_COINSWITH_JETPACK_DESCRIPTION]
+Pegue {0} moedas com o Jetpack.
+
+[TASK_COINSWITH_JETPACK_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} moeda com Jetpack
+
+[TASK_COINSWITH_JETPACK_ULTRASHORT_DESCRIPTION]
+{0} moeda com Jetpack
+
+[TASK_SCOOREWITH_SCORE_BOOSTER_DESCRIPTION_SINGLE]
+Marque {0} com Booster de Pontuação.
+
+[TASK_SCOOREWITH_SCORE_BOOSTER_DESCRIPTION]
+Marque {0} com Booster de Pontuação.
+
+[TASK_SCOOREWITH_SCORE_BOOSTER_ULTRASHORT_DESCRIPTION_SINGLE]
+Marque {0} com Booster de Pontuação.
+
+[TASK_SCOOREWITH_SCORE_BOOSTER_ULTRASHORT_DESCRIPTION]
+Marque {0} com Booster de Pontuação.
+
+[TASK_EARNCOIN_WITHOUT_TOUCHING_GROUND_DESCRIPTION_SINGLE]
+Pegue {0} moedas sem tocar no solo.
+
+[TASK_EARNCOIN_WITHOUT_TOUCHING_GROUND_DESCRIPTION]
+Pegue {0} moedas sem tocar no solo.
+
+[TASK_EARNCOIN_WITHOUT_TOUCHING_GROUND_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} moeda do chão
+
+[TASK_EARNCOIN_WITHOUT_TOUCHING_GROUND_ULTRASHORT_DESCRIPTION]
+{0} moeda do chão
+
+[TASK_SKIP_TASK_DESCRIPTION_SINGLE]
+Pule {0} tarefas na Loja.
+
+[TASK_SKIP_TASK_DESCRIPTION]
+Skip {0} tasks in the Shop.
+
+[TASK_SKIP_TASK_ULTRASHORT_DESCRIPTION_SINGLE]
+Pule {0} tarefas
+
+[TASK_SKIP_TASK_ULTRASHORT_DESCRIPTION]
+Pule {0} tarefas
+
+[TASK_PICKUP_KEYS_SINGLERUN_DESCRIPTION_SINGLE]
+Pegue {0} Gemas de uma vez.
+
+[TASK_PICKUP_KEYS_SINGLERUN_DESCRIPTION]
+Pegue {0} Gemas de uma vez.
+
+[TASK_PICKUP_KEYS_SINGLERUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue {0} Gemas de uma vez.
+
+[TASK_PICKUP_KEYS_SINGLERUN_ULTRASHORT_DESCRIPTION]
+Pegue {0} Gemas de uma vez.
+
+[TASK_PICKUP_KEYS_DESCRIPTION_SINGLE]
+Pegue {0} Gemas
+
+[TASK_PICKUP_KEYS_DESCRIPTION]
+Pegue {0} Gemas
+
+[TASK_PICKUP_KEYS_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue {0} Gemas
+
+[TASK_PICKUP_KEYS_ULTRASHORT_DESCRIPTION]
+Pegue {0} Gemas
+
+[TASK_SPEND_KEYS_DESCRIPTION_SINGLE]
+Use {0} Gemas.
+
+[TASK_SPEND_KEYS_DESCRIPTION]
+Use {0} Gemas.
+
+[TASK_SPEND_KEYS_ULTRASHORT_DESCRIPTION_SINGLE]
+Use {0} Gemas.
+
+[TASK_SPEND_KEYS_ULTRASHORT_DESCRIPTION]
+Use {0} Gemas.
+
+[TASK_COLLECT_COINS_LEFTLANE_DESCRIPTION_SINGLE]
+Pegue {0} moedas na pista da esquerda.
+
+[TASK_COLLECT_COINS_LEFTLANE_DESCRIPTION]
+Pegue {0} moedas na pista da esquerda.
+
+[TASK_COLLECT_COINS_LEFTLANE_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} moeda na pista da esquerda
+
+[TASK_COLLECT_COINS_LEFTLANE_ULTRASHORT_DESCRIPTION]
+{0} moeda na pista da esquerda
+
+[TASK_COLLECT_COINS_CENTERLANE_DESCRIPTION_SINGLE]
+Pegue {0} moedas na pista do meio.
+
+[TASK_COLLECT_COINS_CENTERLANE_DESCRIPTION]
+Pegue {0} moedas na pista do meio.
+
+[TASK_COLLECT_COINS_CENTERLANE_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} moeda na pista do meio
+
+[TASK_COLLECT_COINS_CENTERLANE_ULTRASHORT_DESCRIPTION]
+{0} moeda na pista do meio
+
+[TASK_COLLECT_COINS_RIGHTLANE_DESCRIPTION_SINGLE]
+Pegue {0} moedas na pista da direita.
+
+[TASK_COLLECT_COINS_RIGHTLANE_DESCRIPTION]
+Pegue {0} moedas na pista da direita.
+
+[TASK_COLLECT_COINS_RIGHTLANE_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} moeda na pista da direita
+
+[TASK_COLLECT_COINS_RIGHTLANE_ULTRASHORT_DESCRIPTION]
+{0} moeda na pista da direita
+
+[HOVERBOARD_SELCTECT_BUTTON_SELECT]
+Selecione
+
+[HOVERBOARD_SELCTECT_BUTTON_SELECTED]
+Selecionado
+
+[UICHARACTER_SELECT_BUTTON_SELECT]
+Selecione
+
+[UICHARACTER_SELECT_BUTTON_SELECTED]
+Selecionado
+
+[TASK_POPUP_PROGRESS_DONE]
+{0:0 %} Feito
+
+[CELEBRATION_POPUP_CONTINUE]
+Clique para continuar
+
+[CELEBRATION_POPUP_OPEN]
+Toque para abrir
+
+[CLOWN_THEME1_THEME_TITLE]
+Roupa Hailey
+
+[CLOWN_THEME2_THEME_TITLE]
+Roupa de Palhaço
+
+[TURTLEFOK_THEME1_THEME_TITLE]
+Roupa de Turtlefok
+
+[EXPLORER_THEME1_THEME_TITLE]
+Roupa de Explorador
+
+[TURTLEFOK_THEME2_THEME_TITLE]
+Roupa de Turtlefok
+
+[NIJIA_DARK_THEME_TITLE]
+Roupa de Nijia
+
+[ELLEN_ARMY_THEME_TITLE]
+Roupa Leslie
+
+[LEE_STAR_THEME_TITLE]
+Roupa de Lee
+
+[ELLEN_COOL_THEME_TITLE]
+Roupa de Palhaço
+
+[BRAG_CELEBRATION_NEW_HIGHSCORE]
+Novo recorde
+
+[KELVIN_BASKET_THEME_TITLE]
+Roupa de Kelvin
+
+[KELVIN_SMOOTH_THEME_TITLE]
+Roupa de Kelvin
+
+[STRONG_SMOOTH_THEME_TITLE]
+Roupa Caitlin
+
+[STRONG_BASKET_THEME_TITLE]
+Roupa Forte
+
+[THEME_UNLOCK_DESCRIPTION]
+Desbloquear {0} primeiro
+
+[VENICE_SMOOTH_THEME_TITLE]
+Roupa de Veneza
+
+[TAG_SMOOTH_THEME_TITLE]
+Roupa de Tag
+
+[DARCY_SMOOTH_THEME_TITLE]
+Roupa de Rost
+
+[PURCHASE_COINS_ONE_NO_INTERNET]
+Você precisa de mais {0} moedas.
+
+[PURCHASE_COINS_MULTIPLE_NO_INTERNET]
+Você precisa de mais {0} moedas.
+
+[PURCHASE_KEYS_ONE_NO_INTERNET]
+Você precisa de mais {0} Gemas.
+
+[PURCHASE_KEYS_MULTIPLE_NO_INTERNET]
+Você precisa de mais {0} Gemas.
+
+[PURCHASE_COINS_ONE_NO_INTERNET_NO_BILLING]
+Você precisa de mais {0} moedas.
+
+[PURCHASE_COINS_MULTIPLE_NO_INTERNET_NO_BILLING]
+Você precisa de mais {0} moedas.
+
+[PURCHASE_KEYS_ONE_NO_INTERNET_NO_BILLING]
+Você precisa de mais {0} Gemas.
+
+[PURCHASE_KEYS_MULTIPLE_NO_INTERNET_NO_BILLING]
+Você precisa de mais {0} Gemas.
+
+[NOT_ENOUGH_COINS]
+Moedas insuficientes!
+
+[NOT_ENOUGH_KEYS]
+Gemas insuficientes!
+
+[CELEBRATION_POPUP_COLLECT_MORE_TOKENS]
+Colete mais {0} para desbloquear {1}
+
+[CELEBRATION_POPUP_YOU_UNLOCKED_TROPHY]
+Você desbloqueou {0}
+
+[CELEBRATION_POPUP_MEDAL_BIG_LABEL]
+Medalha
+
+[CELEBRATION_POPUP_CHARACTER_UNLOCK]
+Você desbloqueou
+{0}
+
+[CELEBRATION_POPUP_EVENT_BOARD_TRYOUT]
+Você desbloqueou
+{0} E {1}
+
+[CELEBRATION_POPUP_COINS_AMOUNT]
+{0} Moedas
+
+[CELEBRATION_POPUP_KEYS_AMOUNT]
+{0} Gemas
+
+[CELEBRATION_POPUP_KEY_AMOUNT]
+{0} Gemas
+
+[TASK_PICKUP_POWER_JUMPERS_DESCRIPTION_SINGLE]
+Pegue {0} Power Jumpers.
+
+[TASK_PICKUP_POWER_JUMPERS_DESCRIPTION]
+Pegue {0} Power Jumpers.
+
+[TASK_PICKUP_POWER_JUMPERS_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} Power Jumper
+
+[TASK_PICKUP_POWER_JUMPERS_ULTRASHORT_DESCRIPTION]
+{0} Power Jumper
+
+[TASK_PICKUP_POWER_JUMPERS_SINGLE_RUN_DESCRIPTION_SINGLE]
+Pegue {0} Power Jumpers de uma vez.
+
+[TASK_PICKUP_POWER_JUMPERS_SINGLE_RUN_DESCRIPTION]
+Pegue {0} Power Jumpers de uma vez.
+
+[TASK_PICKUP_POWER_JUMPERS_SINGLE_RUN_ULTRASHORT_DESCRIPTION_SINGLE]
+Pegue {0} Power Jumpers de uma vez.
+
+[TASK_PICKUP_POWER_JUMPERS_SINGLE_RUN_ULTRASHORT_DESCRIPTION]
+Pegue {0} Power Jumpers de uma vez.
+
+[TASK_COLLECT_COINS_WITH_POWER_JUMPER_DESCRIPTION_SINGLE]
+Pegue {0} moedas com Power Jumper.
+
+[TASK_COLLECT_COINS_WITH_POWER_JUMPER_DESCRIPTION]
+Pegue {0} moedas com Power Jumper.
+
+[TASK_COLLECT_COINS_WITH_POWER_JUMPER_ULTRASHORT_DESCRIPTION_SINGLE]
+{0} Moeda Power Jumper
+
+[TASK_COLLECT_COINS_WITH_POWER_JUMPER_ULTRASHORT_DESCRIPTION]
+{0} Moeda Power Jumper
+
+[TASK_HAVECHARACTERS_DESCRIPTION_SINGLE]
+Tenha {0} funções diferentes.
+
+[TASK_HAVECHARACTERS_DESCRIPTION]
+Tenha {0} funções diferentes.
+
+[TASK_HAVECHARACTERS_ULTRASHORT_DESCRIPTION_SINGLE]
+Tenha {0} funções diferentes.
+
+[TASK_HAVECHARACTERS_ULTRASHORT_DESCRIPTION]
+Tenha {0} funções diferentes.
+
+[INAPP_DATA_BUNDLE_TIER_ONE]
+Pacote de Iniciante
+
+[INAPP_DATA_BUNDLE_TIER_TWO]
+Master Pack
+
+[INAPP_DATA_BUNDLE_TIER_THREE]
+Pacote Campeão
+
+[INAPP_DATA_BUNDLE_TIER_FOUR]
+Pacote Master
+
+[INAPP_DATA_BUNDLE_TIER_FIVE]
+1ª vez +
+
+[TOPRUN_RANK0_TITLE]
+OURO
+
+[TOPRUN_RANK1_TITLE]
+PRATA
+
+[TOPRUN_RANK2_TITLE]
+COBRE
+
+[START_APP_LOADING]
+Carregando...
+
+[UI_POPUP_SETTING_TITLE]
+Configurações
+
+[UI_POPUP_SETTING_NAME]
+Nome:
+
+[UI_POPUP_SETTING_REDEEM]
+Resgatar
+
+[UI_POPUP_SETTING_FOLLOW]
+Seguir
+
+[UI_POPUP_SETTING_LOGIN]
+Conectar
+
+[UI_POPUP_SETTING_MUSIC]
+Música:
+
+[UI_POPUP_SETTING_MUSIC_OPEN]
+ON
+
+[UI_POPUP_SETTING_MUSIC_CLOSE]
+OFF
+
+[UI_POPUP_SETTING_INPUT_NAME_TITLE]
+Insira seu nome:
+
+[UI_POPUP_SETTING_INPUT_NAME_SUBMIT]
+Enviar
+
+[UI_POPUP_SETTING_INPUT_REDEEM_TITLE]
+CÓDIGO DE RESGATE:
+
+[UI_POPUP_SETTING_INPUT_REDEEM_FOLLOW_US]
+SIGA-NOS
+
+[UI_POPUP_SETTING_INPUT_REDEEM_FOLLOW_REDEEM]
+Resgatar
+
+[UI_POPUP_SETTING_INPUT_REDEEM_OK]
+OK
+
+[UI_SCREEN_SHOP_PAY_PRICE_COIN1]
+$0.99
+
+[UI_SCREEN_SHOP_PAY_PRICE_COIN2]
+$1.99
+
+[UI_SCREEN_SHOP_PAY_PRICE_COIN3]
+$2.99
+
+[UI_SCREEN_SHOP_PAY_PRICE_COIN4]
+$4.99
+
+[UI_SCREEN_SHOP_PAY_PRICE_COIN5]
+$9.99
+
+[UI_SCREEN_SHOP_PAY_PRICE_GEM1]
+$0.99
+
+[UI_SCREEN_SHOP_PAY_PRICE_GEM2]
+$1.99
+
+[UI_SCREEN_SHOP_PAY_PRICE_GEM3]
+$5.99
+
+[UI_SCREEN_SHOP_PAY_PRICE_GEM4]
+$9.99
+
+[UI_SCREEN_SHOP_FREE_GEMS]
+Gemas grátis
+
+[UI_SCREEN_SHOP_FREE_GEMS_GET]
+Obter
+
+[UI_SCREEN_CHARACTER_SELECT_BUTTON_FIND]
+Encontrar
+
+[UI_SCREEN_CHARACTER_SELECT_BUTTON_IN]
+Em
+
+[UI_SCREEN_CHARACTER_SELECT_BUTTON_WATCH]
+Grátis
+
+[UI_SCREEN_CHARACTER_SELECT_BUTTON_TRY]
+Teste Grátis
+
+[UI_SCREEN_CHARACTER_SELECT_BUTTON_EXCLUSIVE]
+VIP Exclusivo
+
+[UI_SCREEN_CHARACTER_SELECT_BUTTON_PLAY]
+Jogar
+
+[UI_SCREEN_CHARACTER_SELECT_BUTTON_LEVELLOCK]
+DESBLOQUEIO NV. {0}
+
+[UI_POPUP_ACHIEVEMENT_TITLE]
+Conquistas
+
+[UI_POPUP_ACHIEVEMENT_COMPLETED]
+100% Concluído
+
+[UI_POPUP_ACHIEVEMENT_COMPLETED_GOTTENLABEL]
+Concluído
+
+[UI_POPUP_DAILY_TITLE]
+Recompensas Diárias
+
+[UI_POPUP_DAILY_KEEP_CONTINUE]
+Continue, continue! Amanhã terá mais!
+
+[UI_POPUP_DAILY_BUTTON_GET]
+Resgatar
+
+[UI_SCREEN_RANK_HIGHSCORE_TITLE]
+Pontuação máxima
+
+[UI_SCREEN_RANK_GLOBAL_TITLE]
+honra
+
+[UI_SCREEN_RANK_VIP_TITLE]
+Vip
+
+[UI_SCREEN_RANK_FRIEND_TITLE]
+Amigo
+
+[UI_SCREEN_RANK_TIME]
+Tempo:
+
+[UI_SCREEN_RANK_LEFT]
+esquerda
+
+[UI_SCREEN_RANK_NAME]
+Nome:
+
+[UI_SCREEN_RANK_MEDAL_YOU_HAVE]
+Você tem:
+
+[UI_SCREEN_RANK_MEDAL_BOTTOM]
+Corra e obtenha a melhor pontuação semanal para ganhar uma medalha!
+
+[UI_SCREEN_HELM_SELECT_BUTTON_FREE]
+Ganhe grátis
+
+[UI_POPUP_LOTTERY_TITLE]
+Boa Sorte!
+
+[UI_POPUP_LOTTERY_BUTTON_SPIN_NORMAL]
+Girar
+
+[UI_POPUP_LOTTERY_BUTTON_SPIN_FREE]
+Obtenha grátis
+
+[UI_POPUP_LOTTERY_BUTTON_SPIN_FREE_AGAIN]
+Novamente
+
+[UI_POPUP_LOTTERY_NEXT_FREE_SPIN_TIME]
+Spin In grátis:
+
+[UI_POPUP_RATE_TITLE]
+Avaliar
+
+[UI_POPUP_RATE_CONTENT]
+Você gosta do nosso jogo ?
+
+[UI_POPUP_RATE_BUTTON_GOOD]
+Sim
+
+[UI_POPUP_WATCH_VIDEO_TITLE]
+Exp grátis
+
+[UI_POPUP_WATCH_VIDEO_BUTTON_VIDEO]
+Grátis
+
+[UI_POPUP_CONFIRM_TITLE]
+Mais Moedas
+
+[UI_POPUP_CONFIRM_CONTENT]
+Assista a um anúncio em vídeo para obter mais recompensas em moedas!
+
+[UI_POPUP_CONFIRM_BUTTON_WATCH]
+Assistir
+
+[UI_POPUP_CONFIRM_NO_REMINDER]
+Sem lembrete na próxima vez
+
+[UI_POPUP_GET_FREE_REWARD_TITLE]
+Recompensas
+
+[UI_POPUP_GET_FREE_REWARD_BUTTON_GET]
+Coletar
+
+[UI_POPUP_NOT_ENOUGH_CURENCY_BUTTON_FREE]
+Ganhe grátis
+
+[UI_POPUP_NOT_ENOUGH_CURENCY_BUTTON_BUY]
+Compre
+
+[UI_POPUP_RANK_LOADING_CONTENT]
+Clique para Cancelar
+
+[UI_POPUP_REDEEM_TITLE]
+Recompensa:
+
+[UI_POPUP_REDEEM_BUTTON_GET]
+Obter
+
+[UI_POPUP_SAVE_ME_BUTTON_FREE]
+Grátis
+
+[UI_POPUP_TRY_ROLE_TRY_TITLE]
+EXPERIMENTAR A FUNÇÃO?
+
+[UI_POPUP_TRY_ROLE_BUY_TITLE]
+COMPRAR FUNÇÃO?
+
+[UI_POPUP_TRY_ROLE_BUTTON_WATCH_VIDEO]
+Assistir Vídeo
+
+[UI_POPUP_TRY_ROLE_BUTTON_TRY]
+Experimentar
+
+[UI_POPUP_TRY_ROLE_BUTTON_PLAY]
+Jogar
+
+[UI_POPUP_TRY_ROLE_BUTTON_NO_THANKS]
+NÃO, OBRIGADO
+
+[UI_POPUP_TRY_ROLE_BUTTON_NO_REMINDER]
+Não mostrar novamente em 24h
+
+[UI_SCREEN_GAME_OVER_TITLE]
+MARQUE
+
+[UI_SCREEN_GAME_OVER_BUTTON_CLAIM]
+Resgatar
+
+[UI_SCREEN_GAME_OVER_BUTTON_LOTTERY]
+SORTUDO
+RODA
+
+[UI_SCREEN_GAME_OVER_BUTTON_TRY]
+EXPERIMENTE
+ASSISTIR
+
+[ATLAS_UI_PLAY_BUTTON_SPRITE]
+AX_playBtn
+
+[ATLAS_UI_LOTTERY_BUTTON_SPRITE]
+AX_M_lottery_zi
+
+[ATLAS_UI_ROLE_BUTTON_SPRITE]
+AX_roleBtn
+
+[ATLAS_UI_RANK_BUTTON_SPRITE]
+AX_rankBtn
+
+[ATLAS_UI_VIP_BUTTON_SPRITE]
+VIP_BTN
+
+[ATLAS_UI_LOTTERY_LUCK_SPRITE]
+AX_lottery_luck
+
+[ATLAS_UI_TRY_BUTTON_NEW]
+AX_menu_try_zi
+
+[ATLAS_UI_ONLINE_BUTTON_ONLINE]
+A_menu_zi_online
+
+[ATLAS_UI_ICON_SUBSCRIBE_SPRITE]
+A_icon_lgxj
+
+[ATLAS_SUBSCRIBE_TITLE_SPRITE]
+Subscribe_Title_Vip
+
+[UI_TOP_TIP_MISSION_COMPLETE]
+Missão Concluída
+
+[UI_TOP_TIP_ACHIEVEMENT_COMPLETE]
+Conquista Completa
+
+[UI_TOP_TIP_NET_ERROR]
+Erro de rede
+
+[UI_TOP_TIP_REDEEM_SUCCESS]
+Resgatado com sucesso
+
+[UI_TOP_TIP_REDEEM_CODE_ERROR]
+Erro de código de resgate
+
+[UI_TOP_TIP_GOT_SUCCESSFULLY]
+Obtido com sucesso
+
+[UI_TOP_TIP_SUBSCRIBE_TO_SUCCESS]
+Inscreva-se para o Sucesso
+
+[UI_TOP_TIP_GOOD_JOB]
+Bom trabalho!
+
+[UI_TOP_TIP_FLY_OVER]
+Deslize para a esquerda para voar por cima da parede!
+
+[UI_TOP_TIP_YOU_DID_IT]
+Você conseguiu! Agora VÁ!
+
+[UI_TOP_TIP_YOU_UNLOCK]
+Você desbloqueou
+
+[UI_TOP_TIP_FILL_COMPLETED]
+Preenchimento concluído
+
+[UI_TOP_TIP_TASK_SET_COMPLETE]
+Tarefa
+Acabado!
+
+[UI_POPUP_SUBSCRIBE_CONTENT_REMOVE]
+Remover
+
+[UI_POPUP_SUBSCRIBE_CONTENT_ADS]
+Anúncios
+
+[UI_POPUP_SUBSCRIBE_CONTENT_DISCOUNT_GEMS]
+Gemas em Desconto
+
+[UI_POPUP_SUBSCRIBE_CONTENT_EXCLUSIVE_ROLE]
+Função Exclusiva
+
+[UI_POPUP_SUBSCRIBE_CONTENT_MONK]
+Forte
+
+[UI_POPUP_SUBSCRIBE_CONTENT_DOUBLE_COINS]
+Coletadas Moedas em Dobro
+
+[UI_POPUP_SUBSCRIBE_BUTTON_TRIAL]
+INSCREVA-SE AGORA
+
+[UI_POPUP_SUBSCRIBE_BUTTON_TRIAL_TIP]
+Teste gratuito de 3 dias
+
+[UI_POPUP_SUBSCRIBE_NO_REMINDER]
+Não mostrar novamente em 24h
+
+[UI_POPUP_SUBSCRIBE_SUBSCRIBE_INFO]
+A assinatura é gratuita por {0} e é renovada automaticamente no final do período.
+
+[UI_POPUP_SUBSCRIBE_URL_TERMS_OF_USE]
+Termos de Uso
+
+[UI_POPUP_SUBSCRIBE_URL_PRIVACY_POLICY]
+Política de Privacidade
+
+[UI_POPUP_SUBSCRIBE_BUTTON_RESTORE]
+Restaurar
+
+[UI_MYSTERY_BOX_LEE_S]
+Nunchuk
+
+[UI_MYSTERY_BOX_TURTLEFOK_S]
+Casco de Tartaruga
+
+[UI_SCREEN_SHOP_FREE_GEMS_CD]
+CD
+
+[UI_POPUP_SUBSCRIBE_SUBSCRIBE_INFO_IOS]
+Termos de Assinatura：
+Assine por $4,99 por mês. A assinatura será renovada automaticamente no final de cada período de assinatura, a menos que a renovação automática seja desativada pelo menos 24 horas antes do final do período de assinatura atual. A conta iTunes do usuário será cobrada após a confirmação da compra. Qualquer parte não utilizada da avaliação gratuita será perdida quando o usuário assinar o plano. A assinatura pode ser gerenciada acessando as Configurações da conta do usuário.
+
+[UI_POPUP_SUBSCRIBE_BUTTON_TRIAL_IOS]
+$4,99 por mês
+
+[UI_POPUP_SUBSCRIBE_SUBSCRIBE_INFO_WEEK_IOS]
+Termos de Assinatura：
+Assine por $1,99 por semana. A assinatura será renovada automaticamente no final de cada período de assinatura, a menos que a renovação automática seja desativada pelo menos 24 horas antes do final do período de assinatura atual. A conta iTunes do usuário será cobrada após a confirmação da compra. Qualquer parte não utilizada da avaliação gratuita será perdida quando o usuário assinar o plano. A assinatura pode ser gerenciada acessando as Configurações da conta do usuário.
+
+[UI_POPUP_SUBSCRIBE_BUTTON_TRIAL_WEEK_IOS]
+$1,99 por semana
+
+[UI_POPUP_RATE_CONTENT_IOS]
+Você gosta do nosso jogo?
+
+[UI_POPUP_SUBSCRIBE_BUTTON_PURCHASED]
+Comprou
+
+[UI_POPUP_NEWUPDATE_TITLE]
+NOVA VERSÃO
+
+[UI_POPUP_NEWUPDATE_EXPLAIN]
+Atualize para a versão mais recente e obtenha as recompensas acima!
+
+[UI_POPUP_NEWUPDATE_BUTTON_UPDATEB]
+Atualizar
+
+[UI_POPUP_NEWUPDATE_REWARD_TITLE]
+Obtenha Recompensa
+
+[UI_POPUP_NEWUPDATE_REWARD_EXPLAIN]
+Foi atualizado para a versão mais recente, obtenha as recompensas acima!
+
+[UI_POPUP_NEWUPDATE_BUTTON_REWARD]
+Obter
+
+[UI_POPUP_WATCH_VIDEO_REWARD]
+Recompensas grátis
+
+[UI_POPUP_CELEBRATION_DOUBLE]
+X2
+Recompensa
+
+[UI_POPUP_CELEBRATION_DOUBLE_DESCRIPT]
+Duplique!
+
+[UI_POPUP_SETTING_CONNECT]
+Conectar
+
+[UI_POPUP_SETTING_LGINED]
+Logado
+
+[UI_POPUP_SETTING_LGIN]
+Login
+
+[UI_POPUP_SETTING_LOOK]
+Conquistas
+
+[UI_CELEBRATION_GE]
+X
+
+[UI_POPUP_TRY_HOVERBOARD_TITLE_H]
+Desbloquear gratuitamente
+
+[UI_POPUP_TRY_HOVERBOARD_TITLE_R]
+Desbloquear gratuitamente
+
+[UI_POPUP_TRY_HOVERBOARD_TIME_D]
+d
+
+[UI_POPUP_TRY_HOVERBOARD_TIME_H]
+h
+
+[UI_POPUP_TRY_HOVERBOARD_SKILL_TITLE_H]
+Habilidade
+
+[UI_POPUP_TRY_HOVERBOARD_SKILL_TITLE_R]
+Habilidade
+
+[UI_POPUP_TRY_HOVERBOARD_SKILL1_H]
++{0}Pontuação Múltipla
+
+[UI_POPUP_TRY_HOVERBOARD_SKILL2_H]
+Ímã de Moedas
+
+[UI_POPUP_TRY_HOVERBOARD_SKILL1_R]
+{0}“Me Salve” grátis
+
+[UI_POPUP_TRY_HOVERBOARD_FREE]
+Tentando
+
+[UI_POPUP_TRY_HOVERBOARD_BOTTOM_INFO]
+Assista ao vídeo {0} vezes para desbloquear gratuitamente.
+
+[UI_POPUP_TRY_HOVERBOARD_FILL_TITLE]
+Como preencher?
+
+[UI_POPUP_TRY_HOVERBOARD_FILL_H_CONTENT1]
+Clique no botão assistir vídeo para entrar no jogo!
+
+[UI_POPUP_TRY_HOVERBOARD_FILL_H_CONTENT2]
+Use o prancha, mantenha-se ativo e colete moedas!
+
+[UI_POPUP_TRY_HOVERBOARD_FILL_H_CONTENT3]
+Quando coletar moedas suficientes, esse preenchimento estará concluído!
+
+[UI_POPUP_TRY_HOVERBOARD_FILL_R_CONTENT1]
+Clique no botão assistir vídeo para entrar no jogo!
+
+[UI_POPUP_TRY_HOVERBOARD_FILL_R_CONTENT2]
+Use a função, continue correndo!
+
+[UI_POPUP_TRY_HOVERBOARD_FILL_R_CONTENT3]
+Quando executado o tempo suficiente, este preenchimento é concluído!
+
+[UI_SCREEN_PAUSE_UI_TITLE]
+Próxima Pontuação Múltipla:
+
+[UI_POPUP_ONLINE_REWARD_TITLE]
+Recompensas online
+
+[UI_POPUP_ONLINE_REWARD_ONLINE_TIME]
+Tempo online
+
+[UI_POPUP_ONLINE_REWARD_INTERVAL_TIME]
+{0} min
+
+[UI_POPUP_ONLINE_REWARD_BUTTON_GET]
+Obter
+
+[UI_POPUP_SUBSCRIBE_TRIAL_LABEL]
+Clube VIP
+
+[TASK_POPUP_LABEL0]
+Conclua a tarefa para aprimorar o nível!
+
+[TASK_POPUP_LOCK_LABEL]
+Desbloquear {0} em
+
+[TASK_POPUP_UNLOCK_LABEL]
+{0} desbloqueado 
+
+[TASK_POPUP_NEXT]
+Próximo
+
+[UNLOCK_NEWSCENE_POPUP_TITLE]
+Desbloquear nova cena
+
+[UNLOCK_NEWSCENE_POPUP_SCENE_NAME]
+{0} desbloqueado!
+
+[UNLOCK_NEWSCENE_POPUP_SCENE_DESCRIP]
+Você já desbloqueou {0} cenas
+você pode entrar nesta cena através do portal
+
+[ATLAS_UI_TASK_BUTTON]
+task_zi
+
+[SCENE_BANGKOK]
+Floresta
+
+[SCENE_NEWYORK]
+Nova York
+
+[SCENE_PARIS]
+Paris
+
+[GAMEOVER_VIPTIP]
+VIP
+
+[FRANK_PHARAOH_THEME_TITLE]
+Roupa de Frank
+
+[ListTitle_label_01]
+Promoção
+
+[ListTitle_label_02]
+Baú de tesouro
+
+[ListTitle_label_03]
+Moedas
+
+[ListTitle_label_04]
+Gemas
+
+[ListTitle_label_05]
+Uso Único
+
+[UI_POPUP_PLAYER_LEVEL_INFO]
+Ganhe experiência e complete a tarefa para desbloquear o próximo nível.
+
+[UI_POPUP_PLAYER_LEVEL_SCORE_MULTIPLE]
+Pontuação Múltipla
+
+[UI_POPUP_LEVEL_UP_TITILE]
+UPAR!
+
+[UI_POPUP_LEVEL_UP_YOU_UNLOCK]
+Você desbloqueou
+
+[UI_POPUP_LEVEL_UP_NEW]
+Novo!
+
+[UI_POPUP_LEVEL_UP_ROLE]
+Função
+
+[UI_POPUP_LEVEL_UP_MULTIPLE]
+múltiplo +1
+
+[UI_POPUP_LEVEL_UP_SCORE]
+Marque
+
+[UI_POPUP_LEVEL_UP_SCREEN]
+Tela
+
+[BOX_NAME_GOLD]
+Caixa de Ouro
+
+[BOX_NAME_SLIVER]
+Caixa Raro
+
+[BOX_NAME_NORMAL]
+Caixa normal
+
+[BOX_NAME_FREE]
+Caixa grátis
+
+[BOX_NAME_VIEW]
+Caixa de Anúncio
+
+[BOX_NAME_GAME]
+Caixa de Jogo
+
+[SHOP_BOX_LABEL_FERR]
+Grátis
+
+[BOX_PREVIEW_POPUP_REWARD_LABEL]
+Recompensas
+
+[BOX_OPEN_SHOW_ALL_REWARD_BTN]
+Coletar
+
+[BOX_OPEN_SKIP]
+PULAR
+
+[UI_POPUP_LEVEL_UP_HELMET]
+Quadro
+
+[UPGRADE_BTN_LAB]
+Upgrades
+
+[UPGRADE_DESCRIBE_JETPACK]
+Levanta você no ar para pegar moedas
+
+[UPGRADE_DESCRIBE_SUPER_SENAKERS]
+protegê-lo de uma colisão
+
+[UPGRADE_DESCRIBE_MAGENTE]
+Atrai todas as moedas próximas
+
+[UPGRADE_DESCRIBE_MULTIPLIER]
+Pontuação dupla durante a corrida
+
+[UI_CHEST_REWARD_SEXP]
+exp
+
+[UI_CHEST_REWARD_LEXP]
+exp
+
+[UI_CHEST_REWARD_MEXP]
+exp
+
+[UI_POPUP_SUBSCRIBE_CONTENT_MONK_CAPITAL]
+Forte
+
+[UI_LAB_DOUBLE_CAPITAL]
+DUPLIQUE
+
+[UI_LAB_COINS_CAPITAL]
+MOEDAS
+
+[UI_LAB_GEMS_CAPITAL]
+Gemas
+
+[UI_LAB_VIP_BADGE_CAPITAL]
+EMBLEMA VIP
+
+[UI_LAB_RANK_CAPITAL]
+RANK
+
+[UI_LAB_TRIAL_CAPITAL]
+Se inscrever
+
+[UI_LAB_VIP_TIME_LABEL]
+Melhor Promoção
+
+[UI_BEGINNERS_PACK_CAPITAL]
+INICIANTES
+
+[UI_SHOP_BUY_TIMES_LABEL]
+PACOTE
+
+[UI_SHOP_DISCOUNT_LABEL]
+90%OFF  
+
+[UI_LAB_REMOVE_CAPITAL]
+REMOVER
+
+[UI_LAB_PRIVILEGE_CAPITAL]
+PRIVILÉGIO
+
+[UI_LAB_PROPS_CAPITAL]
+ADEREÇOS
+
+[UI_LAB_ROLE_CAPITAL]
+FUNÇÃO
+
+[UI_POPUP_PLAYER_LEVEL_EXP_DESCRIPTION]
+Ganhe experiência para desbloquear seu próximo nível.
+
+[RANK_SCREEN_LV_LABEL]
+NV. {0}
+
+[NOT_ENOUGH_UNLOCK_TIP]
+{0} insuficientes!
+
+[TASK_POPUP_REFRESH_MISSION]
+Atualizar
+
+[TASK_POPUP_NEXT_MISSION_IN]
+Próxima missão em:
+
+[UI_POPUP_NEWVERSIONTIP_DESCRIPTION]
+A nova versão adicionou o nível e a caixa do tesouro
+
+[UI_POPUP_NEWVERSIONTIP_TITLE]
+Nova versão
+
+[UI_STARTER_PACK_CAPITAL]
+PACOTE DE INICIANTE
+
+[UI_POPUP_SUBSCRIBE_BUTTON_TRIAL_TIP_IOS]
+{0} teste gratuito de 3 dias,então {2} {1} $1.99{2} {0} por semana{2}
+
+[UI_POPUP_DAILY_AD_DOUBLE_TIP]
+Assista a um anúncio em vídeo para recompensas em dobro.
+
+[UI_POPUP_HELMET_AD_GET_TIP]
+Assista a um anúncio em vídeo para 3 pranchas.
+
+[UI_POPUP_LOTTERY_AD_SPIN_TIP]
+Assista a um anúncio em vídeo para giro grátis.
+
+[UI_POPUP_SAVE_ME_AD_REVIVE_TIP]
+Assista a um anúncio em vídeo para reviver gratuitamente.
+
+[UI_POPUP_TASK_AD_MORE_MISSION_TIP]
+Atualizar
+Grátis
+
+[UI_SCREEN_GAME_OVER_AD_MORE_TIP]
+Assista a um anúncio em vídeo para mais moedas.
+
+[UI_SCREEN_GAME_OVER_AD_TRY_TIP]
+Assista a um anúncio em vídeo para experimentar.
+
+[UI_TOP_TIP_NO_ADS]
+Nenhum anúncio de vídeo disponível!
+
+[UI_TOP_TIP_HAD_SELECT]
+Selecionou!
+
+[UI_POPUP_VIDEO_LOADING]
+Carregando Anúncio…
+
+[UI_POPUP_GET_FREE_ROLE_TITLE1]
+Faça login novamente em {0} dias gratuitamente
+para obter
+
+[UI_POPUP_GET_FREE_ROLE_TITLE2]
+uma nova função-{0}
+
+[UI_POPUP_GET_FREE_ROLE_BUTTON]
+Eu sei
+
+[UI_SCREEN_CHARACTER_UNLOCK_DAILY]
+Obtê-lo agora
+
+[UI_TOP_TIP__CHARACTER_UNLOCK_DAILY_4]
+Grátis em qualquer compra!
+
+[UI_TOP_TIP__CHARACTER_UNLOCK_DAILY_7]
+entre para obter
+
+[UI_SCREEN_SHOP__FREE_COINS_GEMS]
+Assista a um anúncio em vídeo de 600 moedas ou 2 gemas.
+
+[TASK_RECORD_SHARE_DESCRIPTION]
+结算时分享{0}次抖音短视频。
+
+[TASK_RECORD_SHARE_DESCRIPTION_SINGLE]
+结算时分享{0}次抖音短视频。
+
+[TASK_RECORD_SHARE_ULTRASHORT_DESCRIPTION_SINGLE]
+结算时分享{0}次抖音短视频。
+
+[TASK_RECORD_SHARE_ULTRASHORT_DESCRIPTION]
+结算时分享{0}次抖音短视频。
+
+[TASK_OPEN_ANY_CHESE_DESCRIPTION]
+Abra qualquer caixa {0} vezes na loja.
+
+[TASK_OPEN_ANY_CHESE_DESCRIPTION_SINGLE]
+Abra qualquer caixa {0} vezes na loja.
+
+[TASK_OPEN_ANY_CHESE_ULTRASHORT_DESCRIPTION_SINGLE]
+Abra qualquer caixa {0} vezes na loja.
+
+[TASK_OPEN_ANY_CHESE_ULTRASHORT_DESCRIPTION]
+Abra qualquer caixa {0} vezes na loja.
+
+[TASK_LOTTERY_DRAW_DESCRIPTION]
+Gire na loteria {0} vezes.
+
+[TASK_LOTTERY_DRAW_DESCRIPTION_SINGLE]
+Gire na loteria {0} vezes.
+
+[TASK_LOTTERY_DRAW_ULTRASHORT_DESCRIPTION_SINGLE]
+Gire na loteria {0} vezes.
+
+[TASK_LOTTERY_DRAW_ULTRASHORT_DESCRIPTION]
+Gire na loteria {0} vezes.
+
+[BOX_OPEN_SHOW_ALL_REWARD_VIDEO_BTN]
+Duplique
+
+[TASK_POPUP_REFRESH_MISSION_Video]
+Atualizar grátis
+
+[UI_POPUP_NO_NETWORK_TIP_TITLE]
+Sem rede
+
+[UI_POPUP_NO_NETWORK_TIP_INFO]
+Sem rede! Você não poderá reivindicar prêmios.
+
+[UI_POPUP_ROLE_VIDEO_UNLOCK_TITLE]
+Falha em desbloquear
+
+[UI_POPUP_ROLE_VIDEO_UNLOCK_INFO]
+O desbloqueio falhou
+(Toda vez que você tem 2% de probabilidade de desbloquear o personagem diretamente)
+
+[UI_POPUP_GET_FREE_REWARD_LEVEL_UP_TITLE]
+RECOMPENSAS DE NÍVEL {0}
+
+[UI_SCREEN_CHARACTER_VIDEO_FORCED_UNLOCK]
+Desbloqueio Forçado
+
+[TIP_VIDEO_BUTTON_LOADING]
+Carregando...
+
+[TIP_VIDEO_BUTTON_NO_NETWORK]
+Sem rede
+
+[UI_POPUP_RATE_BUTTON_BAD]
+Não
+
+[UI_POPUP_RATE_CONTENT_TWO]
+Você gosta deste jogo?
+Avalie-nos com 5 estrelas!
+
+[UI_POPUP_RATE_TITLE_TWO]
+Nos avalie
+
+[UI_POPUP_RATE_SUGGESTION_TITLE]
+Sugestão
+
+[UI_POPUP_RATE_SUGGESTION_EMAIL]
+Seu email:
+
+[UI_POPUP_RATE_SUGGESTION_CONTENT]
+Sua sugestão:
+
+[SCENE_CANDY]
+Terra dos Doces
+
+[LOADING_TIPS]
+Dicas: 
+
+[LOADING_TIPS_LAB_01]
+Dicas: múltiplo superior
+
+[LOADING_TIPS_LAB_02]
+Dicas: Aprimore o nível para destravar mais cenas.
+
+[LOADING_TIPS_LAB_03]
+Dicas: múltiplo superior
+
+[LOADING_TIPS_LAB_04]
+Dicas: Aprimore o nível para destravar mais cenas.
+
+[RANK_REWARD_LAB_01]
+Top {0} recompensas:
+
+[RANK_REWARD_LAB_02]
+Top {0} recompensas:
+
+[RANK_REWARD_LAB_03]
+Depois de {0}:
+
+[SHOP_PACK_TIP]
+Premium
+
+[PACK_TITLE_BG]
+pack_title_en
+
+[SAVE_ME_POPUP_BUTTON_LABEL2]
+Fim de jogo!
+
+[SAVE_ME_POPUP_BUTTON_LABEL3]
+Próximo
+
+[UI_POPUP_NO_NETWORK_GET_INFO]
+Rede desconectada! Conecte a rede para reivindicar prêmios.
+
+[UI_POPUP_NO_NETWORK_GET_CANCAL]
+Cancelar
+
+[UI_POPUP_NO_NETWORK_GET_OK]
+Ok
+
+[UI_POPUP_TRY_HOVERBOARD_TIME_M]
+m
+
+[UI_POPUP_TRY_HOVERBOARD_TIME_S]
+s
+
+[UI_POPUP_Pack_END_TIME]
+Termina em:
+
+[CHARACTERS_BRACELET]
+Ruchika
+
+[CHARACTERS_HEADSET]
+kaka
+
+[CHARACTERS_LOLLIPOP]
+Adjan
+
+[UI_POPUP_ACTIVITE_COLLECTION_LIMITED_EXCHANGE]
+Troca Limitada
+
+[UI_POPUP_ACTIVITE_COLLECTION_PARKOUR_COLLECT]
+Parkour,coleta
+
+[UI_POPUP_ACTIVITE_COLLECTION_GET_REWARDS]
+Obtenha Recompensa!
+
+[UI_POPUP_ACTIVITE_COLLECTION_EXCHANGE_FOR]
+Troca por {0}
+
+[UI_POPUP_ACTIVITE_COLLECTION_LIMITED_ONE]
+(Limitado em Um)
+
+[UI_SCREEN_CHARACTER_UNLOCK_ACTIVITE_NO]
+Desbloqueio de Atividade
+
+[UI_POPUP_ACTIVITE_COLLECTION_BRACELET]
+Pulseira
+
+[UI_POPUP_ACTIVITE_COLLECTION_HEADSET]
+Fone de Ouvido
+
+[UI_POPUP_ACTIVITE_COLLECTION_LOLLIPOP]
+Pirulito
+
+[UI_POPUP_HIGHSCORE_CONTENT_SHARE]
+REPARTIR
+
+[UI_POPUP_HIGHSCORE_CONTENT_NEXT]
+PRÓXIMO
+
+[HOVERBOARDS_MAGIC_CARPET]
+Tapete mágico
+
+[HOVERBOARDS_GUITAR]
+Violão
+
+[HOVERBOARDS_Cookies]
+Biscoitos
+
+[UI_POPUP_SUBSCRIBE_YOU_ARE_SUBSCRIBED]
+Você está inscrito!
+
+[UI_POPUP_SUBSCRIBE_GET_IMMEDIATELY]
+Obtenha 20 imediatamente
+
+[UI_POPUP_SUBSCRIBE_GET_GEM_PER_DAY]
+4 / dia
+
+[UI_POPUP_SUBSCRIBE_GET_BOX_PER_DAY]
+1 / dia
+
+[PRINCESS_DRESS_THEME_TITLE]
+Roupa de Princesa
+
+[CHARACTERS_MEXICO]
+Luisa
+
+[CHARACTERS_DANCE]
+Surabhi
+
+[HOVERBOARDS_SOUL]
+SoulBoard
+
+[UI_POPUP_VALUE_ROLE_TITLE]
+Papel de Supervalor
+
+[UI_POPUP_VALUE_ROLE_SKILL_INFO2]
++5Pontuação Múltipla
+
+[UI_POPUP_SUPER_COMBO_GIFT_TITLE]
+Super presente combo
+
+[UI_POPUP_SUPER_DIAMOND_GIFT_TITLE]
+Super presente de diamante
+
+[CHARACTERS_FLASH]
+Instantâneo
+
+[CHARACTERS_SAMBA]
+Gisele
+
+[CHARACTERS_DRAGON]
+Dragão
+
+[UI_POPUP_SUBSCRIBE_SUBSCRIBE_INFO_WEEK]
+A assinatura é oferecida semanalmente por {0} e é renovada automaticamente no final do período.
+
+[UI_POPUP_SUBSCRIBE_BTN_WEEK]
+/Semana
+
+[UI_POPUP_SUBSCRIBE_BTN_MONTH]
+/Mês
+
+[UI_SCREEN_GAME_OVER_REMOVE_ALL_ADS]
+Quitar todos los anuncios
+
+[UI_POPUP_VALUE_ROLE_GET_IT_NOW]
+OBTÊ-LO AGORA
+
+[CHARACTERS_JORDAN]
+Enterrada
+
+[HOVERBOARDS_STARLIGHT]
+Luz das estrelas Borda
+
+[HOVERBOARDS_PEACOCK]
+Pavão Borda
+
+[UI_SCREEN_GAME_OVER_DOUBLE]
+DUPLO
+
+[UI_SCREEN_GAME_OVER_TRIPLE]
+TRIPLO
+
+[UI_SCREEN_GAME_OVER_NO_THANKS]
+Não, obrigado
+
+[UI_SCREEN_GAME_OVER_NEXT]
+Continuar
+
+[UI_SCREEN_CHARACTER_RESTORE]
+Restaurar
+
+[UI_POPUP_SAMBA_COMBO_GIFT_TITLE]
+Pacote combo Giselle
+
+[RANK_HONOR01]
+campeão
+
+[RANK_HONOR02]
+Diamante
+	
+[RANK_HONOR03]
+Ouro
+
+[RANK_HONOR04]
+Prata
+
+[RANK_HONOR05]
+Bronze
+
+[RANK_SEASON]
+Semana {0}
+
+[RANK_FINISHED]
+Completado!
+
+[RANK_BACK]
+Retorna
+
+[RANK_HONOR06]
+Sem classificação
+
+[RANK_NO_RANK_LAB]
+Coloque mais alto para recompensas
+
+[TASK_POPUP_ZONE_NAME_SNOW_SUBWAY]
+Pista de neve
+
+[TASK_POPUP_ZONE_NAME_CITY_ROAD]
+cidade futurista
+
+[TASK_POPUP_ZONE_NAME_FANTASY_FOREST]
+Minicomputador
+
+[TASK_POPUP_ZONE_NAME_CANDY_WORLD]
+Fábrica abandonada
+
+[TASK_POPUP_SCORE_MULTIPLIER]
+Pontuação múltipla:
+
+[TASK_POPUP_SKIP_BTN_SKIP]
+pular
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE01]
+Old Faithful
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE02]
+Dinheiro não é tudo
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE03]
+Nem mais nem menos
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE04]
+Sempre divertido
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE05]
+Viagem no tempo
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE06]
+Amante do Hoverboard
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE07]
+Top Run Master
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE08]
+Fashionistas
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE09]
+Caçador de tesouros
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE10]
+Mestre da Missão
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE11]
+Alto saltador
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE12]
+Upar
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE13]
+Gold Runner
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE14]
+Diamond Runner
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE15]
+Direto em frente
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE16]
+Sem atuação
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE17]
+Excelente concorrente
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE18]
+Colecionadora
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE19]
+Fique no topo
+
+[UI_POPUP_ACHIEVEMENT_NEW_TITLE20]
+Joias da sorte
+
+[TASK_VIEW_VIDEO_DAYS]
+Assista ao vídeo em {0} dias diferentes
+
+[TASK_ENTER_PORTAL_AMOUNT]
+Mais cenas, entre no portal {0} vezes
+
+[TASK_GET_HELMET_AMOUNT]
+Quanto mais, melhor, tenha {0} skates
+
+[TASK_PLAY_LEVEL]
+Suba de nível, atualize para o nível {0}
+
+[TASK_RUN_WITH_SUPER_SNEAKERS_SINGLE_RUN]
+Corra durante {0} minutos com sapatos de salto
+
+[TASK_STAY_IN_ONE_LANE_WITHOUT_SCORE]
+Mantenha a rota, consiga {0} pontos pela mesma trilha
+
+[TASK_NO_JUMP_AND_ROLL_WITHOUT_SCORE]
+Obtenha {0} pontos por uma corrida sem rolar ou pular
+
+[TASK_GOLDEN_RANK_COUNT]
+No quadro de honra, ganhou um total de {0} títulos de ouro
+
+[TASK_DIAMOND_RANK_COUNT]
+No quadro de honra, um total de {0} classificações de diamante
+
+[TASK_CHAMPION_RANK_COUNT]
+No quadro de honra, ganhou um total de {0} classificações no campeonato
+
+[TASK_MISSION_NUMBER]
+No jogo, {0} tarefas foram concluídas no total
+
+[TASK_UPGRADE_NUMBER]
+Melhore a habilidade, atualize qualquer item {0} vezes
+
+[TASK_TRANSCEND_NUMBER]
+No jogo, marque mais de {0} jogadores diferentes
+
+[RANK_REWARD_BTN]
+Obter resultados
+
+[RANK_HORNOR_TIP_OTHER]
+Esse cara ganhou o ranking {0} na semana passada!
+
+[RANK_HORNOR_TIP_MY]
+Você ganhou a classificação {0} na semana passada!
+
+[TASK_CHARACTER_THEMES_NUMBER]
+Vista-se legal, desbloqueie {0} ternos
+
+[RANK_HORNOR_SCORE]
+{0} marcas Promoção
+ 
+[RANK_RULE_LAB]
+Competições semanais de alta pontuação, competir com jogadores de todo o mundo
+
+[SAVE_ME_PK_LAB]
+Apenas {0} pontos para vencer {1}
+
+[RANK_LAST_WEEK]
+Semana Anterior
+
+[ABNORMAL_DATE]
+Pontuação anormal
+upload falhou
+
+[RANK_TIME_LAB]
+{0}d {1}h
+
+[CHARACTERS_CRICKET]
+Capitão de críquete
+
+[CHARACTERS_RUGBY]
+Quarterback
+
+[LEAVING_TITLE]
+vá embora?
+
+[LEAVING_DES]
+Seu progresso no jogo será perdido
+
+tem certeza?
+
+[LEAVING_BTN01]
+Fique
+
+[LEAVING_BTN02]
+vá embora
+
+[UI_BOTTOM_CHARACTER_FOOTER_CHARACTERS]
+Personagem
+
+[UI_BOTTOM_CHARACTER_FOOTER_HOVERBOARDS]
+Hoverboards
+
+[UI_BOTTOM_SHOP_FOOTER_STORE]
+Loja
+
+[UI_BOTTOM_SHOP_FOOTER_UPGRADES]
+Fortalecer
+
+[UI_SCREEN_SHOP_SPECIAL_OFFERS]
+Ofertas especiais
+
+[UI_SCREEN_SHOP_FIRST_BUY_TIP1]
+RECEBA {0} DE GRAÇA
+
+[UI_SCREEN_SHOP_FIRST_BUY_TIP2]
+com qualquer compra
+
+[LV_TIPS_LAB]
+Ganhe experiência por meio de baús de tesouro e missões.
+
+Suba de nível para desbloquear novas cenas e mais conteúdo de jogo.
+
+[BP_NAME]
+Parkour Pass
+
+[BP_SEASON]
+Temporada {0}
+
+[BP_REWARD_TIP]
+Recompensa de nível {0}: {1}
+
+[BP_REWARD01]
+Papel limitado!
+
+[BP_REWARD02]
+Skate limitado!
+
+[BP_REWARD03]
+{0} moedas de ouro!
+
+[BP_CLOSE]
+desligar
+
+[BP_NEXT_REWARD]
+Próxima recompensa:
+
+[BP_TIP_TITLE]
+Pular este nível?
+
+[BP_TIP_LAB]
+Gaste 10 diamantes para receber recompensas diretamente
+
+[BP_COMPLETE]
+Objetivo concluído!
+
+[CHARACTERS_GLOBE]
+Estudioso indiano
+
+[CHARACTERS_ARABIAN]
+Príncipe árabe
+
+[CHARACTERS_SINGER]
+Cantora americana
+
+[CHARACTERS_VIKING]
+Guerreiro viking
+
+[CHARACTERS_SCIENTIST]
+Cientista
+
+[HOVERBOARDS_MUSIC]
+Música borda
+
+[HOVERBOARDS_VIKING]
+Barco borda
+
+[DAILY_CHALLENGE_NAME]
+Tarefa diária
+
+[DAILY_CHALLENGE_HIGHSCORE]
+Pontuação alta do dia
+
+[DAILY_CHALLENGE_MAIN]
+Desafio diário
+
+[DAILY_CHALLENGE_FINISH]
+Complete as tarefas diárias
+
+[DAILY_CHALLENGE_TIPTEXT]
+Obtenha pontuações altas e ganhe recompensas diárias
+
+[DAILY_CHALLENGE_TIPTEXT_1]
+Quanto maior a pontuação, mais rica será a recompensa
+
+[DAILY_CHALLENGE_BEAT]
+Apenas {0} pontos para completar {1}
+
+[UI_ROLE_VIEW]
+Verificar
+
+[BP_CELL_REWARD_TIP]
+Obtenha a recompensa anterior primeiro
+
+[BP_ALL_FINISHDE]
+Temporada completada
+
+[BP_TIME_END]
+A temporada acabou
+
+[BP_REWARD_UNLIOCK]
+Recompensa desbloqueada
+
+[TAP_TO_PLAY]
+TOQUE PARA JOGAR
+
+[BP_TIME_OVER_DES]
+Esta temporada acabou, preste atenção à atualização da versão e ganhe as recompensas da nova temporada
+
+[UI_POPUP_DAILY_LIMIT_PACK_TITLE]
+Tempo limitado de oferta
+
+[UI_POPUP_DAILY_LIMIT_PACK_POPULAR]
+Popular
+
+[UI_POPUP_VIDEO_SHOP_INFO]
+Precisa assistir ao vídeo:
+
+[BP_RULES_DES]
+Conclua a coleção para obter recompensas
+
+[SCORE_CHALLENGE_END]
+Ganhou o {0} lugar na temporada passada
+
+[CHALLENGE_TITLE]
+Desafio
+
+[WEEKLY_ACTIVITY]
+Atividade
+
+[CHALLENGE_RULE]
+Os pontos acumulados durante o período do evento são classificados
+
+[CHALLENGE_TIP_DES]
+O desafio de pontuação cumulativa foi iniciado. Você precisa obter pontos no jogo para participar do desafio
+
+[HOVERBOARDS_ROCKET]
+Placa do foguete
+
+[HOVERBOARDS_TAXI]
+Quadro de táxis
+
+[HOVERBOARDS_WAVE]
+Wave Board
+
+[HOVERBOARDS_POP]
+Pop Board
+
+[HOVERBOARDS_POINTER]
+Ponteiro
+
+[CHARACTERS_AMERICANINDIA]
+Índio americano
+
+[CHARACTERS_SAILOR]
+Marinheiro
+
+[CHARACTERS_SWIMMER]
+Nadador
+
+[CHARACTERS_VAMPIRE]
+Vampiro
+
+[CHARACTERS_BUILDER]
+Construtor
+
+[BUILDER_HOLIDAY_THEME_TITLE]
+Roupa de construtor
+
+[UI_POPUP_ACTIVITY_MONDAY]
+Segunda-feira
+
+[UI_POPUP_ACTIVITY_TUESDAY]
+terça
+
+[UI_POPUP_ACTIVITY_WEDNESDAY]
+quarta-feira
+
+[UI_POPUP_ACTIVITY_THURSDAY]
+quinta-feira
+
+[UI_POPUP_ACTIVITY_FRIDAY]
+sexta-feira
+
+[UI_POPUP_ACTIVITY_SATURDAY]
+sábado
+
+[UI_POPUP_ACTIVITY_SUNDAY]
+Domigo
+
+[UI_POPUP_ACTIVITY_SUPER_BOX_TITLE1]
+Super Game Baú
+
+[UI_POPUP_ACTIVITY_SUPER_BOX_TITLE2]
+Pode ser pego no jogo
+
+[UI_POPUP_ACTIVITY_SCORE_MULTIPLE_TITLE1]
+Bônus
+
+[UI_POPUP_ACTIVITY_SCORE_MULTIPLE_TITLE2]
+Multiplicador de pontuação aumentado em {0}
+
+[UI_POPUP_ACTIVITY_TRY_BOARD_TITLE1]
+Experimente esta placa
+
+[UI_POPUP_ACTIVITY_TRY_BOARD_TITLE2]
+Use este quadro gratuitamente
+
+[UI_POPUP_ACTIVITY_COLLECT_PROP_TITLE1]
+Coletar e trocar
+
+[UI_POPUP_ACTIVITY_COLLECT_PROP_TITLE2]
+Colete itens para trocar o baú
+
+[UI_SCREEN_HELM_BOARD_SKILL_SUPER_JUMP]
+Super pulo
+
+[UI_SCREEN_HELM_BOARD_SKILL_SUPER_SPEED]
+Super velocidade
+
+[UI_SCREEN_HELM_BOARD_SKILL_STAY_LOW]
+Continue abaixado
+
+[UI_SCREEN_HELM_BOARD_SKILL_EFFECT_TRAIL]
+Trilha de Efeito
+
+[UI_MYSTERY_BOX_VAMPIRE_S]
+Dardo de morcego
+
+[UI_MYSTERY_BOX_BUILDER_S]
+Capacete
+
+[WEEKLY_COMPLETED]
+Evento de coleta de fim de semana
+
+[WEEKLY_SUPER_BOX]
+Super Baú
+
+[SCORE_CHALLENGE_END2]
+Ganhou o {0} lugar na temporada passada
+Continue trabalhando duro, apenas os dez primeiros serão recompensados
+
+[SWIMMER_HOLIDAY_THEME_TITLE]
+Roupa de nadador
+
+[FB_LOGIN_LAB]
+Jogar com amigos
+
+[RANK_HONOR_REWARD]
+{0} Bônus
+
+[BOND_TITLE]
+Atributo de título
+
+[BOND_NAME01]
+Princess League
+
+[BOND_NAME02]
+Kungfu real
+
+[BOND_NAME03]
+Atletas se reúnem
+
+[BOND_NAME04]
+Carnaval de halloween
+
+[BOND_BUFF01]
+A duração do Hoverboard aumenta em {0}%
+
+[BOND_BUFF02]
+Diminuir {0} joia necessária para cada avivamento
+
+[BOND_BUFF03]
+As moedas aumentam em {0}% quando o jogo termina
+
+[BOND_BUFF04]
+As pontuações aumentam em {0}% quando o jogo termina
+
+[BOND_TIP]
+Desbloquear o personagem combinado pode ativar o atributo de ligação, que tem efeito permanente
+
+[HONOR_NO1_REWARD]
+Primeiro lugar no grupo
+
+[CHARACTERS_WITCH]
+Kiki
+
+[CHARACTERS_SUPERGIRL]
+Lane
+
+[CHARACTERS_BARBER]
+Tony
+
+[CHARACTERS_EQYPTIANPRINCESS]
+Anabel
+
+[HOVERBOARDS_BROOM]
+Skate vassoura
+
+[FRANK_POLICE_THEME_TITLE]
+Police Frank
+
+[VIKING_ROYAL_THEME_TITLE]
+Guarda Real
+
+[NIJIA_WARRIOR_THEME_TITLE]
+Guerreiro ninja
+
+[BOND_ICON_NAME]
+LIGAÇÃO
+
+[UNLOCK_LAB]
+Desbloquear
+
+[HALLPWEENPACK_NAME]
+Pacote de presente de Halloween
+
+[FB_GIFT_LAB]
+Presente do Facebook
+
+[FB_SHOW_LAB]
+Visite nossa página no Facebook para acompanhar os últimos desenvolvimentos
+
+[FB_LAB]
+Facebook
+
+[NEW_ACTIVITY]
+Nova atividade
+
+[CHECK_LAB]
+Verifica
+
+[BOND_BUFF_GAMEOVER]
+LIGAÇÃO+{0}%
+
+[WITCH_MAGIC_THEME_TITLE]
+Roupa Kiki
+
+[TASK_TIP_POPUP_TITLE]
+Missões e pontuação elevada
+
+[TASK_TIP01_TITLE]
+Obter Exp
+
+[TASK_TIP01_DES]
+Complete as missões para obter exp
+
+[TASK_TIP02_TITLE]
+Pontuação mais alta
+
+[TASK_TIP02_DES]
+Mais multiplicador de pontuação, maior pontuação obtém
+
+[LEVEL_LAB]
+Nível
+
+[HALLPWEENPACK_NAME_IOS]
+Pacote de presente de Halloween
+
+[MONTH_01]
+Janeiro
+
+[MONTH_02]
+fevereiro
+
+[MONTH_03]
+Março
+
+[MONTH_04]
+abril
+
+[MONTH_05]
+Posso
+
+[MONTH_06]
+junho
+
+[MONTH_07]
+julho
+
+[MONTH_08]
+agosto
+
+[MONTH_09]
+setembro
+
+[MONTH_10]
+Outubro
+
+[MONTH_11]
+novembro
+
+[MONTH_12]
+dezembro
+
+[WEEK_01]
+Segunda-feira
+
+[WEEK_02]
+terça
+
+[WEEK_03]
+quarta-feira
+
+[WEEK_04]
+quinta-feira
+
+[WEEK_05]
+Sexta-feira
+
+[WEEK_06]
+sábado
+
+[WEEK_07]
+Domingo
+
+[DAILY_CHALLENGE_TITLE]
+desafio diário
+
+[CALENDAR_PLAY_BTN]
+REPRODUZIR
+
+[CALENDAR_COMPLETE_LAB]
+Desafio de hoje concluído
+
+[CALENDAR_DAILY]
+win
+
+[MEDALS_UNLOCK_JD]
+Desbloqueie as medalhas{0}
+
+[MEDALS_TITLE2]
+Pegue as medalhas
+
+[MAP_LEVEL_TITLE]
+level
+
+[SKIN_TEXT]
+skin
+
+[EVENT_NEW_TITLE]
+novo desafio
+
+[EVENT_NEW_NAME]
+desafio da primavera
+
+[EVENT_NEW_DES]
+O evento do desafio começou, vá conferir
+
+[EVENT_END_DES]
+O evento terminou, obrigado por participar
+
+[EVENT_END_BUT_DES]
+Ver recompensas
+
+[EVENT_END_TITLE]
+o evento terminou
+
+[UPGRADES_MAX_LAB]
+Full level
+
+[EVENT_NAME_01]
+Explore o Cubo de Rubik
+
+[EVENT_NAME_02]
+orgia brasileira
+
+[EVENT_NAME_03]
+holi indiano
+
+[EVENT_NAME_04]
+cerveja de Munique
+
+[EVENT_NAME_05]
+Caminho para a Riqueza
+
+[EVENT_NAME_06]
+Festival de Roskilde
+
+[EVENT_NAME_07]
+Festival do Corno
+
+[EVENT_NAME_08]
+surf no Havaí
+
+[HALL_TITLE]
+Salón de troféu
+
+[EVENT_LOCKED_TEXT]
+nível{0}
+desbloquear
+
+[EVENT_MISSION_TITLE_TIME]
+Chegue ao final em {0} segundos
+
+[EVENT_MISSION_TITLE_COLLECT]
+Colete {0} {1}
+
+[EVENT_MISSION_TITLE_RACE]
+Primeiro lugar na competição
+
+[EVENT_MISSION_TITLE_MOTORBOAT]
+Dirija uma lancha para coletar {0} moedas
+
+[EVENT_MISSION_TITLE_SKATEBOARD]
+Colete {0} moedas usando o skate
+
+[MAP_TROPHY]
+troféu
+
+[HALL_LOCKED_TEXT]
+Novo evento não foi iniciado
+
+[RANK_UNLOCK_TIPS]
+Ainda não está aberto
+
+[EVENT_MISSION_COLLECTION_NAME01]
+cubo de Rubik
+
+[EVENT_MISSION_COLLECTION_NAME02]
+palestrante
+
+[EVENT_MISSION_COLLECTION_NAME03]
+lata de tinta spray
+
+[EVENT_MISSION_COLLECTION_NAME04]
+Cerveja
+
+[EVENT_MISSION_COLLECTION_NAME05]
+cédula
+
+[EVENT_MISSION_COLLECTION_NAME06]
+fone de ouvido
+
+[EVENT_MISSION_COLLECTION_NAME07]
+chapéu
+
+[EVENT_MISSION_COLLECTION_NAME08]
+sapatos de rolo
+
+[UI_IN_GAMEUI_MOTORBOART_TEACHING_INFO]
+Arraste o joystick para controlar a melhor área
+
+[EVENT_RETRY_BTN]
+Rever
+
+[EVENT_VICTORY]
+Vitória
+
+[EVENT_NEXT]
+Netx
+
+[EVENT_CONTINUE]
+Continuar
+
+[CALENDAR_MEDAL_TITLE]
+Coleção de medalhas
+
+[CALENDAR_UNCOMPLETE_LAB]
+Desafio não concluído
+
+[EVENT_LOCKED_TITLE]
+próximo desafio
+
+[TASK_PASS_TUTORIAL]
+Conclua o tutorial para iniciantes
+
+[TASK_PLAY_ENDLSEE_GAME]
+Jogue {0} jogos
+
+[DAILY_SCORE_TITLE]
+tarefas diárias
+
+[DAILY_SCORE_HIGHSCORE]
+Pontuação máxima
+
+[DAILY_CHMPLETED]
+Pontuação máxima diária concluída
+
+[LEVEL_REWARD_DES01]
+Você pode desbloquear novos personagens
+
+[LEVEL_REWARD_DES02]
+Você pode inserir uma nova cena
+
+[UI_SCREEN_CHARACTER_VIEW_PROGRESS]
+Ver progresso
+
+[UI_POPUP_EXIT_TITLE]
+Desistir
+
+[UI_POPUP_EXIT_INFO]
+Você está saindo do jogo,
+      Tem certeza?
+
+[UI_POPUP_EXIT_STAY]
+Fique
