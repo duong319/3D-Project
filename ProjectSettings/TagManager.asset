@@ -33,11 +33,13 @@ TagManager:
   - TutorialLevel
   - HitB1Wall
   - One
+  - Coin
+  - Obstacle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
@@ -61,10 +63,10 @@ TagManager:
   - 3DOverlay
   - intoWater
   - MotoBoatTrigger
-  - 
-  - 
-  - 
-  - 
+  - Coin
+  - HitBus
+  - HitBarrier
+  - Obstacle
   - 
   m_SortingLayers:
   - name: Default
