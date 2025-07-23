@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -136,6 +136,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        Debug.Log("Va chạm với: " + hit.gameObject.name + ", Tag: " + hit.gameObject.tag);
+
         if (hit.gameObject.CompareTag("Obstacle"))
         {
             Debug.Log("hit");
