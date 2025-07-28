@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 direction;
     public Animator animator;
     private bool isDead = false;
+    
 
     [Header("Movement")]
 
@@ -18,6 +20,8 @@ public class PlayerController : MonoBehaviour
     [Header("Jump")]
     public float jumpForce = 8f;
     public float gravity = -20f;
+    public float downForce = -50f;
+
 
 
     [Header("Slide")]
@@ -34,33 +38,41 @@ public class PlayerController : MonoBehaviour
         originalCenter = controller.center;
         originalHeight = controller.height;
         animator = GetComponent<Animator>();
+        ScoreManager.Instance.Reset();
     }
 
     void Update()
     {
-        if(isDead) return;
+        if (isDead) return;
         float targetX = (currentLane - 1) * laneDistance;
         float deltaX = targetX - transform.position.x;
-
-
+       
         Vector3 moveVector = new Vector3(deltaX, direction.y, forwardSpeed);
         controller.Move(moveVector * Time.deltaTime * laneSwitchSpeed);
 
+
         if (SwipeManager.swipeRight)
         {
-            int rand = Random.Range(0, 2);
-            string dogeState = rand == 0 ? "DodgeRight1" : "DodgeRight2";
+            if (controller.isGrounded)
+            {
+                int rand = Random.Range(0, 2);
+                string dogeState = rand == 0 ? "DodgeRight1" : "DodgeRight2";
 
-            animator.SetTrigger(dogeState);
+                animator.SetTrigger(dogeState);
+            }
             MoveLane(1);
         }
 
         if (SwipeManager.swipeLeft)
         {
-            int rand = Random.Range(0, 2);
-            string dogeState = rand == 0 ? "DodgeLeft1" : "DodgeLeft2";
 
-            animator.SetTrigger(dogeState);
+            if (controller.isGrounded)
+            {
+                int rand = Random.Range(0, 2);
+                string dogeState = rand == 0 ? "DodgeLeft1" : "DodgeLeft2";
+
+                animator.SetTrigger(dogeState);
+            }
             MoveLane(-1);
         }
 
@@ -68,7 +80,21 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
-        if (SwipeManager.swipeDown && controller.isGrounded && !isSliding) StartSlide();
+        if (SwipeManager.swipeDown && !isSliding)
+        {
+            if (controller.isGrounded)
+            {
+                StartSlide();
+            }
+            else
+            {
+                Vector3 Down = new Vector3(currentLane, downForce, forwardSpeed);
+                controller.Move(Down * Time.deltaTime);
+                direction.y = downForce;
+                Debug.Log("down");
+                animator.SetTrigger("Landing");
+            }
+        }
 
 
         if (controller.isGrounded)
@@ -96,6 +122,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+
         int rand = Random.Range(0, 2);
         string jumpState = rand == 0 ? "Jump1" : "Jump2";
 
@@ -103,13 +130,16 @@ public class PlayerController : MonoBehaviour
         Vector3 move = new Vector3(currentLane, jumpForce, forwardSpeed);
         controller.Move(move * Time.deltaTime);
         direction.y = jumpForce;
+        MissionManager.Instance.ReportProgress(MissionType.Jump, 1);
 
     }
 
     private void StartSlide()
     {
-        animator.SetTrigger("Slide");
-        Debug.Log("Slide");
+        int rand = Random.Range(0, 2);
+        string slideState = rand == 0 ? "Slide1" : "Slide2";
+
+        animator.SetTrigger(slideState);
         isSliding = true;
         slideTimer = slideDuration;
         controller.height = originalHeight / 2f;
@@ -132,18 +162,18 @@ public class PlayerController : MonoBehaviour
         forwardSpeed = 0f;
         direction = Vector3.zero;
         Debug.Log("Die");
+        StartCoroutine(ShowRevivePanel());
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    IEnumerator ShowRevivePanel()
     {
-        Debug.Log("Va chạm với: " + hit.gameObject.name + ", Tag: " + hit.gameObject.tag);
+        yield return new WaitForSeconds(2f);
+        FindFirstObjectByType<ReviveUi>().ShowPanel();
+        
 
-        if (hit.gameObject.CompareTag("Obstacle"))
-        {
-            Debug.Log("hit");
-            Die();
-        }
     }
+
+
 
 
 }

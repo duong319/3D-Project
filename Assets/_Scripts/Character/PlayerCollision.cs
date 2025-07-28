@@ -31,15 +31,18 @@ public class PlayerCollision : MonoBehaviour
         if (other.CompareTag("Coin"))
         {
             Debug.Log("Coin!");
+            ScoreManager.Instance.AddCoin(1);
             Destroy(other.gameObject);
-            
+            MissionManager.Instance.ReportProgress(MissionType.CollectCoin, 1);
+            CurrencyManager.Instance.AddCoins(1);
+
         }
 
-        //if (other.CompareTag("PowerUp"))
-        //{
-        //    //Debug.Log("PowerUp!");
-        //    Destroy(other.gameObject);
-            
-        //}
+        if (other.CompareTag("PowerUp"))
+        {
+            //Debug.Log("PowerUp!");
+            Destroy(other.gameObject);
+
+        }
     }
 }

@@ -2,34 +2,31 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1045 &1
 EditorBuildSettings:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
+  serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Abroad/LoadingScene_UGUI.unity
-    guid: c155dbebf790c0d428564c8bc9fc67c7
+    path: Assets/_Scenes/MainMenu.unity
+    guid: 288f568f47fac574bbf9b36d1450ba6e
   - enabled: 1
-    path: Assets/Scenes/Abroad/Merge_UGUI.unity
-    guid: ca1bbb850f1201140b09fb8df11c1b83
+    path: Assets/_Scenes/GamePlay.unity
+    guid: ed65d4df0b8954942a58d765f79e0f14
   - enabled: 1
-    path: Assets/Scenes/Abroad/New York.unity
-    guid: 003a85c1e6a54e44bbd575f79da0c781
+    path: Assets/_Scenes/Achievements.unity
+    guid: 6c62a7250a4350645a117eaadbc82867
   - enabled: 1
-    path: Assets/Scenes/Abroad/Paris.unity
-    guid: 191c2b8666696184db2456586d9ab5c0
+    path: Assets/_Scenes/DailyScore.unity
+    guid: 6e18ea8e8c6be634083c8e635c97cbe2
   - enabled: 1
-    path: Assets/Scenes/Abroad/Bangkok.unity
-    guid: 02b1d155686212942bf0e0bee635e92b
+    path: Assets/_Scenes/Level.unity
+    guid: 7862de19fa842564a8cede81a3f9db89
   - enabled: 1
-    path: Assets/Scenes/Abroad/Candy.unity
-    guid: 7b3d7b3efb8aa0947a7921d55ef71479
+    path: Assets/_Scenes/Missions.unity
+    guid: c7f066b4de4b9004d90d430db8fc37dc
   - enabled: 1
-    path: Assets/Scenes/Abroad/Motoboat.unity
-    guid: eca7e32e207fe444a9287f091c785f85
+    path: Assets/_Scenes/PlayerDead.unity
+    guid: 6d4e672306bce9e4a84b753c5df0c5f7
   - enabled: 1
-    path: Assets/Scenes/Abroad/HoverBoard.unity
-    guid: 4c170adc33f66e448a20d50e2a0cc25f
-  - enabled: 1
-    path: Assets/Scenes/Abroad/EventLevel.unity
-    guid: c0035de162c7cf149af2ce062c7c76d5
+    path: Assets/_Scenes/Store&&Upgrades.unity
+    guid: 53f3e9cb56da6d64088dc03fdd600ef3
   m_configObjects: {}

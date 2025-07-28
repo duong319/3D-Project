@@ -35,6 +35,7 @@ TagManager:
   - One
   - Coin
   - Obstacle
+  - PowerUp
   layers:
   - Default
   - TransparentFX

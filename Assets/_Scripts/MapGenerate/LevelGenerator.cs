@@ -25,7 +25,7 @@ public class LevelGenerator : MonoBehaviour
 
     void Update()
     {
-        if (player.position.z - 700f > spawnZ - tilesOnScreen * tileLength)
+        if (player.position.z - 900f > spawnZ - tilesOnScreen * tileLength)
         {
             SpawnTile();
             DeleteOldestTile();
