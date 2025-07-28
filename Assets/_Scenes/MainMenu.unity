@@ -2112,8 +2112,9 @@ GameObject:
   m_Component:
   - component: {fileID: 867302075}
   - component: {fileID: 867302074}
-  - component: {fileID: 867302076}
   - component: {fileID: 867302077}
+  - component: {fileID: 867302078}
+  - component: {fileID: 867302079}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -2148,22 +2149,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &867302076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867302073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04211d5832276d243b273040a527f4e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentCoins: 0
-  player: {fileID: 0}
-  totalScore: 0
-  scoreMultiplier: 0
 --- !u!114 &867302077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2176,6 +2161,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3877c7f36965448a94c8a483a304dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &867302078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867302073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04211d5832276d243b273040a527f4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCoins: 0
+  player: {fileID: 4359322087594787830}
+  highScore: 0
+  totalScore: 0
+  scoreMultiplier: 0
+--- !u!114 &867302079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867302073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d567104d186452743bf1c197b32bd713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardData: {fileID: 11400000, guid: 1bfa8732418901a499fe9f88dce2aeb8, type: 2}
+  todayHighScore: 0
 --- !u!1 &878769884
 GameObject:
   m_ObjectHideFlags: 0

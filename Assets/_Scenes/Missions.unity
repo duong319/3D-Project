@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 199408174}
   - component: {fileID: 199408173}
   - component: {fileID: 199408176}
+  - component: {fileID: 199408177}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -296,6 +297,18 @@ MonoBehaviour:
   player: {fileID: 0}
   totalScore: 0
   scoreMultiplier: 0
+--- !u!114 &199408177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199408172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3877c7f36965448a94c8a483a304dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &322360645
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,7 +733,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 482382368}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 199408177}
+        m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
+        m_MethodName: ShopAndUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &482382368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,7 +1001,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 702156535}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 199408177}
+        m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
+        m_MethodName: ShopAndUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &702156535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,7 +1522,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 856276480}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 199408177}
+        m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
+        m_MethodName: PlayerLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &856276480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1716,7 +1765,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 961326158}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 199408177}
+        m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &961326158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2517,7 +2578,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1470959812}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 199408177}
+        m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
+        m_MethodName: PlayerLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1470959812
 MonoBehaviour:
   m_ObjectHideFlags: 0

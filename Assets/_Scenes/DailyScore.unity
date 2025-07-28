@@ -2277,7 +2277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61456a053e9bad49afd175e41187dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tierIndex: 0
+  tierIndex: 3
   progressSliderClaimed: {fileID: 470919049}
   claimButton: {fileID: 2024783167}
   claimedMark: {fileID: 1649605294}
@@ -2618,7 +2618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61456a053e9bad49afd175e41187dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tierIndex: 0
+  tierIndex: 4
   progressSliderClaimed: {fileID: 908172984}
   claimButton: {fileID: 1114548458}
   claimedMark: {fileID: 398471424}
@@ -3908,6 +3908,7 @@ GameObject:
   - component: {fileID: 991680280}
   - component: {fileID: 991680279}
   - component: {fileID: 991680282}
+  - component: {fileID: 991680283}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3948,7 +3949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rewardData: {fileID: 11400000, guid: 1bfa8732418901a499fe9f88dce2aeb8, type: 2}
-  todayHighScore: 0
+  todayHighScore: 6000
 --- !u!4 &991680281
 Transform:
   m_ObjectHideFlags: 0
@@ -3977,9 +3978,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCoins: 0
-  player: {fileID: 0}
+  player: {fileID: 991680281}
+  highScore: 0
   totalScore: 0
   scoreMultiplier: 0
+--- !u!114 &991680283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991680278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3877c7f36965448a94c8a483a304dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1003667801
 GameObject:
   m_ObjectHideFlags: 0
@@ -4581,7 +4595,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 560836681}
   m_FillRect: {fileID: 869935567}
   m_HandleRect: {fileID: 560836680}
@@ -7445,7 +7459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61456a053e9bad49afd175e41187dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tierIndex: 0
+  tierIndex: 1
   progressSliderClaimed: {fileID: 792941804}
   claimButton: {fileID: 1838041490}
   claimedMark: {fileID: 1254903188}
@@ -7789,7 +7803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61456a053e9bad49afd175e41187dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tierIndex: 1
+  tierIndex: 0
   progressSliderClaimed: {fileID: 1986364678}
   claimButton: {fileID: 147361874}
   claimedMark: {fileID: 1088561983}
@@ -9678,7 +9692,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2049138982}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 991680283}
+        m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2049138982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10075,6 +10101,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 881351170}
   - {fileID: 1371647188}
+  - {fileID: 991680281}
   - {fileID: 2081353780}
   - {fileID: 924952257}
-  - {fileID: 991680281}

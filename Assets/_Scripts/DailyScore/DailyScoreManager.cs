@@ -22,6 +22,7 @@ public class DailyScoreManager : MonoBehaviour
 
     public void UpdateHighScore(int score)
     {
+        
         if (score > todayHighScore)
         {
             todayHighScore = score;

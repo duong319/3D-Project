@@ -46,4 +46,9 @@ public class MainMenuBtn : MonoBehaviour
         SceneManager.LoadScene("Level");
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }

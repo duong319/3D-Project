@@ -9,6 +9,7 @@ public class ScoreManager : MonoBehaviour
     public Transform player;
     private float startZ;
     private int lastScore = 0;
+    public int highScore;
     public int totalScore;
 
     public int scoreMultiplier;
@@ -18,8 +19,7 @@ public class ScoreManager : MonoBehaviour
         if (Instance == null) Instance = this;
      
         AddscoreMultiplier(0);
-        scoreMultiplier = PlayerPrefs.GetInt("scoreMultiplier");
-        lastScore = PlayerPrefs.GetInt("highScore");
+        scoreMultiplier = PlayerPrefs.GetInt("scoreMultiplier");       
 
     }
 
@@ -31,6 +31,7 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         UpdateScoreByDistance();
+        highScore = PlayerPrefs.GetInt("highScore");
     }
 
     public void AddscoreMultiplier(int amount)
@@ -51,7 +52,7 @@ public class ScoreManager : MonoBehaviour
             UIManager.Instance.UpdateScore(lastScore);
             MissionManager.Instance.ReportProgress(MissionType.Score, calculatedScore);
             DailyScoreManager.Instance.UpdateHighScore(lastScore);
-            PlayerPrefs.SetInt("highScore", 0);
+            PlayerPrefs.SetInt("highScore", lastScore);
 
         }
 
