@@ -13,11 +13,20 @@ public class DailyScoreManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-        CheckReset();
-        LoadTodayHighScore();
-        LoadClaimedStatus();
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            Debug.Log("DailyScoreManager Created");
+            CheckReset();
+           // LoadTodayHighScore();
+            LoadClaimedStatus();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     public void UpdateHighScore(int score)
@@ -66,10 +75,11 @@ public class DailyScoreManager : MonoBehaviour
         return rewardData.rewardTiers[tierIndex].claimed;
     }
 
-    void LoadTodayHighScore()
-    {
-        todayHighScore = PlayerPrefs.GetInt("DailyHighScore", 0);
-    }
+    //public void LoadTodayHighScore()
+    //{
+    //    todayHighScore = PlayerPrefs.GetInt("DailyHighScore", 0);
+    //    Debug.Log(todayHighScore);
+    //}
 
     void LoadClaimedStatus()
     {
@@ -97,15 +107,22 @@ public class DailyScoreManager : MonoBehaviour
     void CheckReset()
     {
         string lastDate = PlayerPrefs.GetString(LastResetKey, "");
-        if (lastDate != System.DateTime.Now.ToString("yyyyMMdd"))
+        string today = System.DateTime.Now.ToString("yyyyMMdd");
+
+        Debug.Log("LastResetKey = " + lastDate + ", Today = " + today);
+        if (lastDate != today)
         {
+            Debug.Log("Reset");
             foreach (var r in rewardData.rewardTiers)
             {
                 r.claimed = false;
             }
 
-            PlayerPrefs.SetString(LastResetKey, System.DateTime.Now.ToString("yyyyMMdd"));
-            PlayerPrefs.SetInt(LastResetKey, 0); 
+            todayHighScore = 0;
+            PlayerPrefs.SetInt("DailyHighScore", 0);
+
+            PlayerPrefs.SetString(LastResetKey, today);
+            PlayerPrefs.DeleteKey("LastDailyReset");
             PlayerPrefs.Save();
         }
     }

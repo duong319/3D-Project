@@ -10,7 +10,8 @@ public class CurrencyManager : MonoBehaviour
 
     public int Exp { get; private set; }
     public int HeadStart { get; private set; }
-    public int ScoreBooster {  get; private set; }
+    public int ScoreBooster { get; private set; }
+    public int scoreMultiplier;
 
     private void Awake()
     {
@@ -22,6 +23,8 @@ public class CurrencyManager : MonoBehaviour
         Exp = PlayerPrefs.GetInt("Exp", 0);
         HeadStart = PlayerPrefs.GetInt("HeadStart", 0);
         ScoreBooster = PlayerPrefs.GetInt("ScoreBooster", 0);
+        scoreMultiplier = PlayerPrefs.GetInt("scoreMultiplier", 1);
+        AddscoreMultiplier(0);
         ResetProgress();
     }
 
@@ -78,6 +81,12 @@ public class CurrencyManager : MonoBehaviour
     {
         Coins -= amount;
         PlayerPrefs.SetInt("HeadStart", HeadStart);
+    }
+
+    public void AddscoreMultiplier(int amount)
+    {
+        scoreMultiplier += amount;
+        PlayerPrefs.SetInt("scoreMultiplier", scoreMultiplier);
     }
 
     public void ResetProgress()

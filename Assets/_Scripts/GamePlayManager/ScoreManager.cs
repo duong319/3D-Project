@@ -12,14 +12,13 @@ public class ScoreManager : MonoBehaviour
     public int highScore;
     public int totalScore;
 
-    public int scoreMultiplier;
+    
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
      
-        AddscoreMultiplier(0);
-        scoreMultiplier = PlayerPrefs.GetInt("scoreMultiplier");       
+            
 
     }
 
@@ -34,17 +33,13 @@ public class ScoreManager : MonoBehaviour
         highScore = PlayerPrefs.GetInt("highScore");
     }
 
-    public void AddscoreMultiplier(int amount)
-    {
-        scoreMultiplier += amount;
-        PlayerPrefs.SetInt("scoreMultiplier", 1);
-    }
+ 
 
     void UpdateScoreByDistance()
     {
         float distanceZ = player.position.z - startZ;
        
-        int calculatedScore = Mathf.FloorToInt(distanceZ * scoreMultiplier*0.05f);
+        int calculatedScore = Mathf.FloorToInt(distanceZ * CurrencyManager.Instance.scoreMultiplier * 0.05f);
 
         if (calculatedScore > lastScore)
         {
@@ -52,7 +47,11 @@ public class ScoreManager : MonoBehaviour
             UIManager.Instance.UpdateScore(lastScore);
             MissionManager.Instance.ReportProgress(MissionType.Score, calculatedScore);
             DailyScoreManager.Instance.UpdateHighScore(lastScore);
-            PlayerPrefs.SetInt("highScore", lastScore);
+            if (lastScore > highScore)
+            {
+                highScore = lastScore;
+                PlayerPrefs.SetInt("highScore", highScore);
+            }
 
         }
 

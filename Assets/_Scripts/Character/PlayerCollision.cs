@@ -30,7 +30,7 @@ public class PlayerCollision : MonoBehaviour
         
         if (other.CompareTag("Coin"))
         {
-            Debug.Log("Coin!");
+           
             ScoreManager.Instance.AddCoin(1);
             Destroy(other.gameObject);
             MissionManager.Instance.ReportProgress(MissionType.CollectCoin, 1);

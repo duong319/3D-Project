@@ -37,8 +37,8 @@ public class CurrencyUIManager : MonoBehaviour
         coinText.text = CurrencyManager.Instance.Coins.ToString();
         gemText.text = CurrencyManager.Instance.Gems.ToString();
         levelText.text = "Level " + level.ToString();
-        scoreMultiplier.text = ScoreManager.Instance.scoreMultiplier.ToString();
-        scoreMultiplierText.text = ScoreManager.Instance.scoreMultiplier.ToString();
+        scoreMultiplier.text = CurrencyManager.Instance.scoreMultiplier.ToString();
+        scoreMultiplierText.text = CurrencyManager.Instance.scoreMultiplier.ToString();
     }
 
     void LoadLevel()

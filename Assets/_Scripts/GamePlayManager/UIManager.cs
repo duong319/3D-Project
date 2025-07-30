@@ -11,14 +11,16 @@ public class UIManager : MonoBehaviour
     public Text coinText;
     public Text ScoreMultiplerText;
     public TextMeshProUGUI scoreMultiplerTxt;
+    public Text MissionScoreMultipler;
     public GameObject PausePanel;
 
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
-        ScoreMultiplerText.text = ScoreManager.Instance.scoreMultiplier.ToString();
-        scoreMultiplerTxt.text = ScoreManager.Instance.scoreMultiplier.ToString();
+        ScoreMultiplerText.text = CurrencyManager.Instance.scoreMultiplier.ToString();
+        scoreMultiplerTxt.text = CurrencyManager.Instance.scoreMultiplier.ToString();
+        MissionScoreMultipler.text= CurrencyManager.Instance.scoreMultiplier.ToString();
     }
 
     public void UpdateScore(int value)
@@ -35,8 +37,7 @@ public class UIManager : MonoBehaviour
     {
         Time.timeScale = 0f;
         PausePanel.gameObject.SetActive(true);
-        FindFirstObjectByType<MissionPanel>().ShowMissionPanel();
-       
+          
     }
 
     public void Resume()

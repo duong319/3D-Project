@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,18 @@ public class MissionPanel : MonoBehaviour
     public GameObject missionItemPrefab;
 
     private List<MissionItemUI> missionUIs = new List<MissionItemUI>();
+
+
+    private void OnEnable()
+    {
+        
+        StartCoroutine(CheckMissionsRoutine());
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
 
     public void ShowMissionPanel()
     {
@@ -26,12 +39,23 @@ public class MissionPanel : MonoBehaviour
         }
     }
 
-   
+
     public void RefreshMissionProgress()
     {
         foreach (var ui in missionUIs)
         {
             ui.UpdateProgress();
+        }
+    }
+
+    private IEnumerator CheckMissionsRoutine()
+    {
+        ShowMissionPanel(); 
+
+        while (true)
+        {
+            yield return new WaitForSeconds(2f); 
+            ShowMissionPanel(); 
         }
     }
 }

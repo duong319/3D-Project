@@ -15,11 +15,17 @@ public class MissionManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
         //ResetProgress();
+
         LoadMissions();
-        FindFirstObjectByType<MissionPanel>().ShowMissionPanel();
 
     }
 
@@ -72,7 +78,7 @@ public class MissionManager : MonoBehaviour
 
                 if (mission.isCompleted)
                 {
-                    Debug.Log("Mission Completed: " + mission.data.description);
+                   // Debug.Log("Mission Completed: " + mission.data.description);
                 }
             }
         }
@@ -104,7 +110,7 @@ public class MissionManager : MonoBehaviour
 
         CurrencyManager.Instance.AddExp(mission.data.rewardExp);
 
-        Debug.Log("Claimed reward: " + mission.data.rewardExp);
+       // Debug.Log("Claimed reward: " + mission.data.rewardExp);
 
         CheckAllCompleted();
     }
@@ -118,7 +124,10 @@ public class MissionManager : MonoBehaviour
         }
 
         CurrencyManager.Instance.SpendCoins(mission.data.skipCost);
+        mission.currentAmount = mission.data.targetAmount;
         CurrencyManager.Instance.AddExp(mission.data.rewardExp);
+        SaveMissions();
+        CheckAllCompleted();
 
     }
 
@@ -129,7 +138,7 @@ public class MissionManager : MonoBehaviour
             Debug.Log(" All missions completed!");
 
 
-            ScoreManager.Instance.AddscoreMultiplier(1);
+            CurrencyManager.Instance.AddscoreMultiplier(1);
 
             Debug.Log(" Bonus Reward Granted!");
 

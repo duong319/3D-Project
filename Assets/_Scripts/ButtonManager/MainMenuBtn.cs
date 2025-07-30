@@ -14,6 +14,7 @@ public class MainMenuBtn : MonoBehaviour
     public void Mission()
     {
         SceneManager.LoadScene("Missions");
+
     }
 
     public void ShopAndUpgrade()
@@ -50,5 +51,6 @@ public class MainMenuBtn : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
 
 }

@@ -1826,7 +1826,6 @@ GameObject:
   m_Component:
   - component: {fileID: 461235523}
   - component: {fileID: 461235522}
-  - component: {fileID: 461235524}
   m_Layer: 0
   m_Name: _MissionManager
   m_TagString: Untagged
@@ -1864,48 +1863,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &461235524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461235521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c50bee19a2cf0e64b8dc51abd3945ad2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  missionDatas:
-  - {fileID: 11400000, guid: dce186e9e88ec714e84d7e31c4e76038, type: 2}
-  - {fileID: 11400000, guid: c99236a64add910469bf40d26bab4ed3, type: 2}
-  - {fileID: 11400000, guid: c4a7b3b6b62dc3f4dbc9e2437cff68b9, type: 2}
-  - {fileID: 11400000, guid: 942442b2920af8740935df7077115e5d, type: 2}
-  - {fileID: 11400000, guid: d80f089b662e1e543bf10012c7738b89, type: 2}
-  - {fileID: 11400000, guid: 747ba85c4a76053498b28fc047be5d75, type: 2}
-  - {fileID: 11400000, guid: 48f86e8769497c7458521a68fe5eb7de, type: 2}
-  - {fileID: 11400000, guid: 1162eec0435c1ce4dbf9592182acd98f, type: 2}
-  - {fileID: 11400000, guid: 038cba1eccf98c148b79bd2bf5cb32d2, type: 2}
-  currentMissions:
-  - data: {fileID: 11400000, guid: dce186e9e88ec714e84d7e31c4e76038, type: 2}
-    currentAmount: 0
-  - data: {fileID: 11400000, guid: c99236a64add910469bf40d26bab4ed3, type: 2}
-    currentAmount: 0
-  - data: {fileID: 11400000, guid: c4a7b3b6b62dc3f4dbc9e2437cff68b9, type: 2}
-    currentAmount: 0
-  - data: {fileID: 11400000, guid: 942442b2920af8740935df7077115e5d, type: 2}
-    currentAmount: 0
-  - data: {fileID: 11400000, guid: 747ba85c4a76053498b28fc047be5d75, type: 2}
-    currentAmount: 0
-  - data: {fileID: 11400000, guid: d80f089b662e1e543bf10012c7738b89, type: 2}
-    currentAmount: 0
-  - data: {fileID: 11400000, guid: 48f86e8769497c7458521a68fe5eb7de, type: 2}
-    currentAmount: 0
-  - data: {fileID: 11400000, guid: 038cba1eccf98c148b79bd2bf5cb32d2, type: 2}
-    currentAmount: 0
-  - data: {fileID: 11400000, guid: 1162eec0435c1ce4dbf9592182acd98f, type: 2}
-    currentAmount: 0
-  maxMissions: 3
 --- !u!1 &473887443
 GameObject:
   m_ObjectHideFlags: 0
@@ -6193,10 +6150,8 @@ GameObject:
   - component: {fileID: 1783016610}
   - component: {fileID: 1783016609}
   - component: {fileID: 1783016611}
-  - component: {fileID: 1783016612}
-  - component: {fileID: 1783016613}
   m_Layer: 0
-  m_Name: _GameManager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6264,8 +6219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCoins: 0
   player: {fileID: 4947820640487048848}
+  highScore: 0
   totalScore: 0
-  scoreMultiplier: 2
 --- !u!114 &1783016610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6282,6 +6237,7 @@ MonoBehaviour:
   coinText: {fileID: 728406357}
   ScoreMultiplerText: {fileID: 1310868132}
   scoreMultiplerTxt: {fileID: 307231368}
+  MissionScoreMultipler: {fileID: 271240458}
   PausePanel: {fileID: 365716621}
 --- !u!114 &1783016611
 MonoBehaviour:
@@ -6298,32 +6254,6 @@ MonoBehaviour:
   panel: {fileID: 1816650490}
   countdownText: {fileID: 1622576788}
   countdownTime: 5
---- !u!114 &1783016612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783016605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b81f57cbe7cc47418122d5b57b75b1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1783016613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783016605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d567104d186452743bf1c197b32bd713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rewardData: {fileID: 11400000, guid: 1bfa8732418901a499fe9f88dce2aeb8, type: 2}
-  todayHighScore: 0
 --- !u!1 &1816650490
 GameObject:
   m_ObjectHideFlags: 0

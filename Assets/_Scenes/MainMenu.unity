@@ -326,7 +326,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 245699132}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
         m_MethodName: StartBtn
         m_Mode: 1
@@ -565,7 +565,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 245699132}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
         m_MethodName: DailyScore
         m_Mode: 1
@@ -881,6 +881,8 @@ GameObject:
   m_Component:
   - component: {fileID: 245699131}
   - component: {fileID: 245699130}
+  - component: {fileID: 245699132}
+  - component: {fileID: 245699133}
   m_Layer: 0
   m_Name: _UiManager
   m_TagString: Untagged
@@ -920,6 +922,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &245699132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245699129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3877c7f36965448a94c8a483a304dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &245699133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245699129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04211d5832276d243b273040a527f4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCoins: 0
+  player: {fileID: 4359322087594787830}
+  highScore: 0
+  totalScore: 0
 --- !u!1 &269139351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,7 +1140,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 245699132}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
         m_MethodName: PlayerLevel
         m_Mode: 1
@@ -1405,7 +1435,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 500928174}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 245699129}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &500928174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1984,7 +2026,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
         m_MethodName: LeaderBoard
         m_Mode: 1
@@ -2112,9 +2154,8 @@ GameObject:
   m_Component:
   - component: {fileID: 867302075}
   - component: {fileID: 867302074}
-  - component: {fileID: 867302077}
-  - component: {fileID: 867302078}
   - component: {fileID: 867302079}
+  - component: {fileID: 867302080}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -2134,6 +2175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b81f57cbe7cc47418122d5b57b75b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreMultiplier: 0
 --- !u!4 &867302075
 Transform:
   m_ObjectHideFlags: 0
@@ -2149,35 +2191,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &867302077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867302073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e3877c7f36965448a94c8a483a304dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &867302078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867302073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04211d5832276d243b273040a527f4e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentCoins: 0
-  player: {fileID: 4359322087594787830}
-  highScore: 0
-  totalScore: 0
-  scoreMultiplier: 0
 --- !u!114 &867302079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,6 +2205,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewardData: {fileID: 11400000, guid: 1bfa8732418901a499fe9f88dce2aeb8, type: 2}
   todayHighScore: 0
+--- !u!114 &867302080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867302073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50bee19a2cf0e64b8dc51abd3945ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionDatas:
+  - {fileID: 11400000, guid: dce186e9e88ec714e84d7e31c4e76038, type: 2}
+  - {fileID: 11400000, guid: c99236a64add910469bf40d26bab4ed3, type: 2}
+  - {fileID: 11400000, guid: c4a7b3b6b62dc3f4dbc9e2437cff68b9, type: 2}
+  - {fileID: 11400000, guid: 942442b2920af8740935df7077115e5d, type: 2}
+  - {fileID: 11400000, guid: d80f089b662e1e543bf10012c7738b89, type: 2}
+  - {fileID: 11400000, guid: 747ba85c4a76053498b28fc047be5d75, type: 2}
+  - {fileID: 11400000, guid: 48f86e8769497c7458521a68fe5eb7de, type: 2}
+  - {fileID: 11400000, guid: 1162eec0435c1ce4dbf9592182acd98f, type: 2}
+  - {fileID: 11400000, guid: 038cba1eccf98c148b79bd2bf5cb32d2, type: 2}
+  currentMissions:
+  - data: {fileID: 11400000, guid: dce186e9e88ec714e84d7e31c4e76038, type: 2}
+    currentAmount: 0
+  - data: {fileID: 11400000, guid: c99236a64add910469bf40d26bab4ed3, type: 2}
+    currentAmount: 0
+  - data: {fileID: 11400000, guid: c4a7b3b6b62dc3f4dbc9e2437cff68b9, type: 2}
+    currentAmount: 0
+  - data: {fileID: 11400000, guid: 942442b2920af8740935df7077115e5d, type: 2}
+    currentAmount: 0
+  - data: {fileID: 11400000, guid: 747ba85c4a76053498b28fc047be5d75, type: 2}
+    currentAmount: 0
+  - data: {fileID: 11400000, guid: d80f089b662e1e543bf10012c7738b89, type: 2}
+    currentAmount: 0
+  - data: {fileID: 11400000, guid: 48f86e8769497c7458521a68fe5eb7de, type: 2}
+    currentAmount: 0
+  - data: {fileID: 11400000, guid: 038cba1eccf98c148b79bd2bf5cb32d2, type: 2}
+    currentAmount: 0
+  - data: {fileID: 11400000, guid: 1162eec0435c1ce4dbf9592182acd98f, type: 2}
+    currentAmount: 0
+  maxMissions: 3
 --- !u!1 &878769884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,9 +2563,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 245699129}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
-        m_MethodName: Achievement
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2828,7 +2883,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 245699132}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
         m_MethodName: SelectCharacter
         m_Mode: 1
@@ -3001,7 +3056,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 245699132}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
         m_MethodName: LeaderBoard
         m_Mode: 1
@@ -3614,7 +3669,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 245699132}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
         m_MethodName: ShopAndUpgrade
         m_Mode: 1
@@ -3882,7 +3937,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 245699132}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
         m_MethodName: ShopAndUpgrade
         m_Mode: 1
@@ -4347,7 +4402,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 245699132}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
         m_MethodName: ShopAndUpgrade
         m_Mode: 1
@@ -5158,7 +5213,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2044415507}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 245699132}
+        m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
+        m_MethodName: PlayerLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2044415507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5385,7 +5452,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867302077}
+      - m_Target: {fileID: 245699132}
         m_TargetAssemblyTypeName: MainMenuBtn, Assembly-CSharp
         m_MethodName: Mission
         m_Mode: 1

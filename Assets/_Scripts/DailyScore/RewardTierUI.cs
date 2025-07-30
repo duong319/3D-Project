@@ -22,10 +22,11 @@ public class RewardTierUI : MonoBehaviour
     {
       
 
-        float progress = Mathf.Clamp01((float)currentScore / tierData.requiredScore);
-       
+      //  float progress = Mathf.Clamp01((float)currentScore / tierData.requiredScore);
+
 
         bool isClaimed = tierData.claimed;
+        progressSliderClaimed.SetActive(isClaimed);
         claimedMark.SetActive(isClaimed);
         claimButton.gameObject.SetActive(!isClaimed && currentScore >= tierData.requiredScore);
     }

@@ -17,9 +17,12 @@ public class DailyScoreUI : MonoBehaviour
 
     public void UpdateUI()
     {
-        //ProgressBar.value = Mathf.Clamp01((float)DailyScoreManager.Instance.todayHighScore / totalProgress);
+        ProgressBar.value = Mathf.Clamp01((float)DailyScoreManager.Instance.todayHighScore / totalProgress);
+       // DailyScoreManager.Instance.LoadTodayHighScore();
         int currentScore = DailyScoreManager.Instance.todayHighScore;
         highScoreText.text = currentScore.ToString();
+
+
 
         foreach (var tierUI in rewardTierUIs)
         {
