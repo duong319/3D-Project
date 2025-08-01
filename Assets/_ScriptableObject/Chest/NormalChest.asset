@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3a9b75bd38cc14285d5fad2ed482fe, type: 3}
+  m_Name: NormalChest
+  m_EditorClassIdentifier: 
+  chestName: NormalChest
+  rewardCount: 3
+  chestIcon: {fileID: 21300000, guid: 9841fc4dbfb377941a00221639c229f1, type: 2}
+  rewards:
+  - name: Coin
+    type: 0
+    icon: {fileID: 21300000, guid: 0bfa401396395c1429907702195fd1a8, type: 2}
+    minAmount: 200
+    maxAmount: 500
+    chance: 0.25
+  - name: Exp
+    type: 2
+    icon: {fileID: 21300000, guid: fa43e3975a6d76f4aa798afd87ab59a3, type: 2}
+    minAmount: 10
+    maxAmount: 20
+    chance: 0.25
+  - name: HeadStart
+    type: 3
+    icon: {fileID: 21300000, guid: 67c544360199b4a4bb841af947ba2c8f, type: 2}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
+  - name: ScoreBooster
+    type: 4
+    icon: {fileID: 21300000, guid: 28fda915ca695e54c9af27132f7731a4, type: 2}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
+  - name: Exp
+    type: 2
+    icon: {fileID: 21300000, guid: fa43e3975a6d76f4aa798afd87ab59a3, type: 2}
+    minAmount: 30
+    maxAmount: 30
+    chance: 0.07
+  - name: Coin
+    type: 0
+    icon: {fileID: 21300000, guid: 0bfa401396395c1429907702195fd1a8, type: 2}
+    minAmount: 10000
+    maxAmount: 10000
+    chance: 0.01
+  - name: Exp
+    type: 2
+    icon: {fileID: 21300000, guid: fa43e3975a6d76f4aa798afd87ab59a3, type: 2}
+    minAmount: 100
+    maxAmount: 100
+    chance: 0.01
+  - name: Gem
+    type: 1
+    icon: {fileID: 21300000, guid: a2c1f0a5bc8f5884eb499527660796f2, type: 2}
+    minAmount: 5
+    maxAmount: 5
+    chance: 0.01

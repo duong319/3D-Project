@@ -15,43 +15,103 @@ public class ShopAndUpgrades : MonoBehaviour
     public GameObject UpgradeBtnDisable;
     public GameObject BoxesInfoPanel;
 
+    public GameObject VideoChestEnable;
+    public GameObject VideoChestDisable;
+    public GameObject NormalChestEnable;
+    public GameObject NormalChestDisable;
+    public GameObject RareChestEnable;
+    public GameObject RareChestDisable;
+
     [Header("Buttons")]
     public Button StoreEnable;
-    public Button StoreDisable;
     public Button UpgradeEnable;
-    public Button UpgradeDisable;
     public Button BoxesInfoEnable;
     public Button BoxesInfoDisable;
+
+    public Button VideoChestBtn;
+    public Button NormalChestBtn;
+    public Button RareChestBtn;
 
 
     public void Awake()
     {
         StoreEnable.onClick.AddListener(Store);
         UpgradeEnable.onClick.AddListener(Upgrade);
+        BoxesInfoEnable.onClick.AddListener(BoxesInfo);
+        BoxesInfoDisable.onClick.AddListener(BoxesInfoClose);
+        VideoChestBtn.onClick.AddListener(VideoChest);
+        NormalChestBtn.onClick.AddListener(NormalChest);
+        RareChestBtn.onClick.AddListener(RareChest);
 
     }
 
     public void Store()
     {
         Debug.Log("Store");
-        StorePanel.SetActive(true);
-        UpgradePanel.SetActive(false);
-        StoreBtnEnable.SetActive(true);
-        StoreBtnDisable.SetActive(false);
-        UpgradeBtnEnable.SetActive(false);
-        UpgradeBtnDisable.SetActive(true);
+        StorePanel.gameObject.SetActive(true);
+        UpgradePanel.gameObject.SetActive(false);
+        StoreBtnEnable.gameObject.SetActive(true);
+        StoreBtnDisable.gameObject.SetActive(false);
+        UpgradeBtnEnable.gameObject.SetActive(false);
+        UpgradeBtnDisable.gameObject.SetActive(true);
+
     }
 
     public void Upgrade()
     {
         Debug.Log("Upgrade");
-        StorePanel.SetActive(false);
-        UpgradePanel.SetActive(true);
-        UpgradeBtnEnable.SetActive(true);
-        UpgradeBtnDisable.SetActive(false);
-        StoreBtnEnable.SetActive(false);
-        StoreBtnDisable.SetActive(true);
+        StorePanel.gameObject.SetActive(false);
+        UpgradePanel.gameObject.SetActive(true);
+        UpgradeBtnEnable.gameObject.SetActive(true);
+        UpgradeBtnDisable.gameObject.SetActive(false);
+        StoreBtnEnable.gameObject.SetActive(false);
+        StoreBtnDisable.gameObject.SetActive(true);
     }
 
+    public void BoxesInfo()
+    {
+        BoxesInfoPanel.gameObject.SetActive(true);
+    }
+
+    public void BoxesInfoClose()
+    {
+        BoxesInfoPanel.gameObject.SetActive(false);
+    }
+
+    public void VideoChest()
+    {
+        VideoChestEnable.gameObject.SetActive(true);
+        VideoChestDisable.gameObject.SetActive(false);
+
+        NormalChestEnable.gameObject.SetActive(false);
+        NormalChestDisable.gameObject.SetActive(true);
+
+        RareChestEnable.gameObject.SetActive(false);
+        RareChestDisable.gameObject.SetActive(true);
+    }
+
+    public void NormalChest()
+    {
+        VideoChestEnable.gameObject.SetActive(false);
+        VideoChestDisable.gameObject.SetActive(true);
+
+        NormalChestEnable.gameObject.SetActive(true);
+        NormalChestDisable.gameObject.SetActive(false);
+
+        RareChestEnable.gameObject.SetActive(false);
+        RareChestDisable.gameObject.SetActive(true);
+    }
+
+    public void RareChest()
+    {
+        VideoChestEnable.gameObject.SetActive(false);
+        VideoChestDisable.gameObject.SetActive(true);
+
+        NormalChestEnable.gameObject.SetActive(false);
+        NormalChestDisable.gameObject.SetActive(true);
+
+        RareChestEnable.gameObject.SetActive(true);
+        RareChestDisable.gameObject.SetActive(false);
+    }
 
 }

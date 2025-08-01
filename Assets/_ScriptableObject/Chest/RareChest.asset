@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3a9b75bd38cc14285d5fad2ed482fe, type: 3}
+  m_Name: RareChest
+  m_EditorClassIdentifier: 
+  chestName: RareChest
+  rewardCount: 3
+  chestIcon: {fileID: 21300000, guid: ab6821f97f6a91d4da378b589f6fbfce, type: 2}
+  rewards:
+  - name: Coin
+    type: 0
+    icon: {fileID: 21300000, guid: 0bfa401396395c1429907702195fd1a8, type: 2}
+    minAmount: 500
+    maxAmount: 1000
+    chance: 0.1
+  - name: Coin
+    type: 0
+    icon: {fileID: 21300000, guid: 0bfa401396395c1429907702195fd1a8, type: 2}
+    minAmount: 1000
+    maxAmount: 2000
+    chance: 0.2
+  - name: Coin
+    type: 0
+    icon: {fileID: 21300000, guid: 0bfa401396395c1429907702195fd1a8, type: 2}
+    minAmount: 3000
+    maxAmount: 5000
+    chance: 0.15
+  - name: ScoreBooster
+    type: 4
+    icon: {fileID: 21300000, guid: 28fda915ca695e54c9af27132f7731a4, type: 2}
+    minAmount: 1
+    maxAmount: 5
+    chance: 0.11
+  - name: HeadStart
+    type: 3
+    icon: {fileID: 21300000, guid: 67c544360199b4a4bb841af947ba2c8f, type: 2}
+    minAmount: 1
+    maxAmount: 5
+    chance: 0.11
+  - name: Exp
+    type: 2
+    icon: {fileID: 21300000, guid: fa43e3975a6d76f4aa798afd87ab59a3, type: 2}
+    minAmount: 20
+    maxAmount: 40
+    chance: 0.1
+  - name: Exp
+    type: 2
+    icon: {fileID: 21300000, guid: fa43e3975a6d76f4aa798afd87ab59a3, type: 2}
+    minAmount: 50
+    maxAmount: 80
+    chance: 0.2
+  - name: Exp
+    type: 2
+    icon: {fileID: 21300000, guid: fa43e3975a6d76f4aa798afd87ab59a3, type: 2}
+    minAmount: 200
+    maxAmount: 200
+    chance: 0.01
+  - name: Coin
+    type: 0
+    icon: {fileID: 21300000, guid: 0bfa401396395c1429907702195fd1a8, type: 2}
+    minAmount: 100000
+    maxAmount: 100000
+    chance: 0.05
+  - name: Gem
+    type: 1
+    icon: {fileID: 21300000, guid: a2c1f0a5bc8f5884eb499527660796f2, type: 2}
+    minAmount: 100
+    maxAmount: 100
+    chance: 0.05
