@@ -10,7 +10,7 @@ public class TileSpawner : MonoBehaviour
 
     [Range(0f, 1f)] public float obstacleChance = 0.35f;
     [Range(0f, 1f)] public float coinChance = 0.5f;
-    [Range(0f, 1f)] public float powerupChance = 0.01f;
+    [Range(0f, 1f)] public float powerupChance = 0.02f;
 
     void Start()
     {

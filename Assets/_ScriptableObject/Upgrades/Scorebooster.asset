@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32482c10741aabd4c8ae9811f1dba35d, type: 3}
   m_Name: Scorebooster
   m_EditorClassIdentifier: 
+  itemType: 4
   upgradeName: SCORE BOOSTER
   description: Increase your Multiplier for one run
   icon: {fileID: 21300000, guid: 28fda915ca695e54c9af27132f7731a4, type: 2}

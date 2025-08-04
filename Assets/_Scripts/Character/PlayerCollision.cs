@@ -14,9 +14,14 @@ public class PlayerCollision : MonoBehaviour
                 player = GetComponentInParent<PlayerController>();
             }
 
-            if (player != null)
+            if (player != null && player.isShieldAvtivate == false)
             {
                 player.Die();
+            }
+            if (player.isShieldAvtivate == true)
+            {
+                Destroy(hit.gameObject);
+                player.isShieldAvtivate = false;
             }
             else
             {
@@ -38,11 +43,24 @@ public class PlayerCollision : MonoBehaviour
 
         }
 
-        if (other.CompareTag("PowerUp"))
+        if (other.CompareTag("Shield"))
         {
-            //Debug.Log("PowerUp!");
+           
             Destroy(other.gameObject);
+            SpecialItemManager.Instance.UseItem(SpecialItemType.Shield);
 
+        }
+        if (other.CompareTag("Magnet"))
+        {
+            
+            Destroy(other.gameObject);
+            SpecialItemManager.Instance.UseItem(SpecialItemType.Magnet);
+        }
+        if (other.CompareTag("X2"))
+        {
+           
+            Destroy(other.gameObject);
+            SpecialItemManager.Instance.UseItem(SpecialItemType.ScoreMultiplier);
         }
     }
 }

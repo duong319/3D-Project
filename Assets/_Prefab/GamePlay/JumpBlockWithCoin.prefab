@@ -2371,6 +2371,7 @@ GameObject:
   - component: {fileID: 1055964377129454434}
   - component: {fileID: 768009473245133410}
   - component: {fileID: 5632965729328155968}
+  - component: {fileID: 672438223572891701}
   m_Layer: 3
   m_Name: Coin (7)
   m_TagString: Coin
@@ -2466,6 +2467,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &672438223572891701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931761519084271552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2532120309143171852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,6 +2609,7 @@ GameObject:
   - component: {fileID: 4511805729615640424}
   - component: {fileID: 508374395966859276}
   - component: {fileID: 284839015975858226}
+  - component: {fileID: 1364295078396241496}
   m_Layer: 3
   m_Name: Coin (11)
   m_TagString: Coin
@@ -2691,6 +2705,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &1364295078396241496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2708043063307723513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4489969009835410567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2703,6 +2729,7 @@ GameObject:
   - component: {fileID: 8912579428509581450}
   - component: {fileID: 5723263906447198988}
   - component: {fileID: 2777992324433411527}
+  - component: {fileID: 893500419535147991}
   m_Layer: 3
   m_Name: Coin (12)
   m_TagString: Coin
@@ -2798,6 +2825,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &893500419535147991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4489969009835410567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5758343883026831564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2863,6 +2902,7 @@ GameObject:
   - component: {fileID: 893312624905303086}
   - component: {fileID: 1673244917412870408}
   - component: {fileID: 4405436213276272683}
+  - component: {fileID: 7434454582510982285}
   m_Layer: 3
   m_Name: Coin (8)
   m_TagString: Coin
@@ -2958,6 +2998,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &7434454582510982285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5883523698799434098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6142051023545559615
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,6 +3075,7 @@ GameObject:
   - component: {fileID: 261903157888785377}
   - component: {fileID: 5398443026686304138}
   - component: {fileID: 3556825626554903382}
+  - component: {fileID: 2143733560187275756}
   m_Layer: 3
   m_Name: Coin (4)
   m_TagString: Coin
@@ -3118,6 +3171,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &2143733560187275756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6953356788919766416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7773660360843757961
 GameObject:
   m_ObjectHideFlags: 0
@@ -3130,6 +3195,7 @@ GameObject:
   - component: {fileID: 6363364500707147789}
   - component: {fileID: 4612469643976309545}
   - component: {fileID: 3109262189849335677}
+  - component: {fileID: 9158453502913194589}
   m_Layer: 3
   m_Name: Coin (6)
   m_TagString: Coin
@@ -3225,6 +3291,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &9158453502913194589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773660360843757961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7803641272724436584
 GameObject:
   m_ObjectHideFlags: 0
@@ -3237,6 +3315,7 @@ GameObject:
   - component: {fileID: 165033288690222257}
   - component: {fileID: 2457732272302853302}
   - component: {fileID: 3692315371706301662}
+  - component: {fileID: 137031422487895687}
   m_Layer: 3
   m_Name: Coin (9)
   m_TagString: Coin
@@ -3332,6 +3411,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &137031422487895687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803641272724436584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8021483517973396514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3344,6 +3435,7 @@ GameObject:
   - component: {fileID: 1801672671306070481}
   - component: {fileID: 956846681394582271}
   - component: {fileID: 3029711756283376363}
+  - component: {fileID: 5889256730340368569}
   m_Layer: 3
   m_Name: Coin (5)
   m_TagString: Coin
@@ -3439,6 +3531,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &5889256730340368569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8021483517973396514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8414001204364823449
 GameObject:
   m_ObjectHideFlags: 0
@@ -5809,6 +5913,7 @@ GameObject:
   - component: {fileID: 8137590616793551050}
   - component: {fileID: 6115616549682652280}
   - component: {fileID: 2162724323466725146}
+  - component: {fileID: 2053479282048157864}
   m_Layer: 3
   m_Name: Coin (10)
   m_TagString: Coin
@@ -5904,3 +6009,15 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &2053479282048157864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925726757495891548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

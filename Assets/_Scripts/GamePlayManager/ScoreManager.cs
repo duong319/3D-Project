@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
     public int currentCoins = 0;
     public Transform player;
     private float startZ;
-    private int lastScore = 0;
+    public int lastScore = 0;
     public int highScore;
     public int totalScore;
 

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32482c10741aabd4c8ae9811f1dba35d, type: 3}
   m_Name: 2xMultiplier
   m_EditorClassIdentifier: 
+  itemType: 3
   upgradeName: 2X MULTIPLIER
   description: Double score while running
   icon: {fileID: -1352338662, guid: 7f4dd26a4603d364ba7ca304a41a1f9b, type: 3}

@@ -7,7 +7,15 @@ public class PlayerController : MonoBehaviour
     private Vector3 direction;
     public Animator animator;
     private bool isDead = false;
-    
+    public static PlayerController Instance;
+    public GameObject shieldVisual;
+    public GameObject magnetArea;
+    public bool isShieldAvtivate = false;
+    public bool isMagnetAvtivate = false;
+    public bool isHeadStartAvtivate = false;
+    public bool isScoreMultiplierAvtivate = false;
+    public bool isScoreBoosterAvtivate = false;
+
 
     [Header("Movement")]
 
@@ -30,6 +38,11 @@ public class PlayerController : MonoBehaviour
     private float slideTimer = 0f;
     private Vector3 originalCenter;
     private float originalHeight;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
 
     void Start()
@@ -163,6 +176,46 @@ public class PlayerController : MonoBehaviour
         direction = Vector3.zero;
         Debug.Log("Die");
         StartCoroutine(ShowRevivePanel());
+    }
+
+    public void SetShield(bool active)
+    {
+        isShieldAvtivate = active;
+        shieldVisual.SetActive(active);
+       
+    }
+
+    public void SetMagnet(bool active)
+    {
+        isMagnetAvtivate=active;
+        magnetArea.SetActive(active);
+       
+    }
+
+    public void ActivateHeadstart()
+    {
+        isHeadStartAvtivate = true;
+    }
+
+    public void EndHeadstart()
+    {
+        isHeadStartAvtivate=false;
+    }
+
+    public void SetMultiplier(int value)
+    {
+      
+        CurrencyManager.Instance.scoreMultiplier *= value;
+    }
+    public void EndMultiplier(int value)
+    {
+       
+        CurrencyManager.Instance.scoreMultiplier /= value;
+    }
+
+    public void AddMultiplier(int value)
+    {
+        CurrencyManager.Instance.scoreMultiplier += value;
     }
 
     IEnumerator ShowRevivePanel()

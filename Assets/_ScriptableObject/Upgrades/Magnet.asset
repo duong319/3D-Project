@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32482c10741aabd4c8ae9811f1dba35d, type: 3}
   m_Name: Magnet
   m_EditorClassIdentifier: 
+  itemType: 1
   upgradeName: COIN MAGNET
   description: Attracts all nearby coins
   icon: {fileID: 21300000, guid: 4a5498c84c4aff34591193578b13234e, type: 2}

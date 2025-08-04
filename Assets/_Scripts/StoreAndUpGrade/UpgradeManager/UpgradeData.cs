@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "UpgradeData", menuName = "Game/UpgradeData")]
 public class UpgradeData : ScriptableObject
 {
+    public SpecialItemType itemType;
     public string upgradeName;
     public string description;
     public Sprite icon;
@@ -27,5 +28,13 @@ public class UpgradeItem
         if (CanUpgrade)
             level++;
     }
+}
+public enum SpecialItemType
+{
+    Shield,
+    Magnet,
+    Headstart,
+    ScoreMultiplier,
+    ScoreBooster
 }
 

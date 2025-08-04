@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5715272788336753259}
   - component: {fileID: 7831871469629173963}
   - component: {fileID: 219490630681672824}
-  - component: {fileID: 4520918550091332931}
+  - component: {fileID: 5776047409034666184}
   m_Layer: 3
   m_Name: Coin
   m_TagString: Coin
@@ -108,33 +108,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!54 &4520918550091332931
-Rigidbody:
+--- !u!114 &5776047409034666184
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2539786609906359781}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3580623452315920701
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +132,7 @@ GameObject:
   - component: {fileID: 5359413857662819890}
   - component: {fileID: 4439464819660898294}
   - component: {fileID: 4154151767240599501}
-  - component: {fileID: 1225737927979400063}
+  - component: {fileID: 1056474919536727040}
   m_Layer: 3
   m_Name: Coin (5)
   m_TagString: Coin
@@ -243,33 +228,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!54 &1225737927979400063
-Rigidbody:
+--- !u!114 &1056474919536727040
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3580623452315920701}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3881110898235908405
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +252,7 @@ GameObject:
   - component: {fileID: 1628900233978522062}
   - component: {fileID: 3078930742628193637}
   - component: {fileID: 6671714531038358017}
+  - component: {fileID: 1189245673108454299}
   m_Layer: 3
   m_Name: Coin (4)
   m_TagString: Coin
@@ -377,6 +348,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &1189245673108454299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3881110898235908405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8604029265734557107
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +372,7 @@ GameObject:
   - component: {fileID: 873257638753237703}
   - component: {fileID: 6428205644542559835}
   - component: {fileID: 4397279970670448112}
+  - component: {fileID: 5508803014175622717}
   m_Layer: 3
   m_Name: Coin (3)
   m_TagString: Coin
@@ -484,6 +468,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &5508803014175622717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8604029265734557107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9060914883072777377
 GameObject:
   m_ObjectHideFlags: 0

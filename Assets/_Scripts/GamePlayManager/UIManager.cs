@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -13,6 +14,11 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI scoreMultiplerTxt;
     public Text MissionScoreMultipler;
     public GameObject PausePanel;
+    public CoundownText countdownText;
+   
+    
+
+    
 
 
     private void Awake()
@@ -20,9 +26,16 @@ public class UIManager : MonoBehaviour
         if (Instance == null) Instance = this;
         ScoreMultiplerText.text = CurrencyManager.Instance.scoreMultiplier.ToString();
         scoreMultiplerTxt.text = CurrencyManager.Instance.scoreMultiplier.ToString();
-        MissionScoreMultipler.text= CurrencyManager.Instance.scoreMultiplier.ToString();
+        MissionScoreMultipler.text = CurrencyManager.Instance.scoreMultiplier.ToString();
+        countdownText=GetComponent<CoundownText>();
     }
 
+
+    public void UpdateScoreMultiplier()
+    {
+        ScoreMultiplerText.text = CurrencyManager.Instance.scoreMultiplier.ToString();
+        scoreMultiplerTxt.text = CurrencyManager.Instance.scoreMultiplier.ToString();
+    }
     public void UpdateScore(int value)
     {
         scoreText.text = value.ToString("D6");
@@ -42,9 +55,10 @@ public class UIManager : MonoBehaviour
 
     public void Resume()
     {
-        Time.timeScale = 1f;
+        
         PausePanel.gameObject.SetActive(false);
-       
+        countdownText.StartCountdown();
+
     }
 
     public void Setting()
@@ -55,8 +69,9 @@ public class UIManager : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");  
+        SceneManager.LoadScene("MainMenu");
     }
+
 
 
 }

@@ -36,6 +36,9 @@ TagManager:
   - Coin
   - Obstacle
   - PowerUp
+  - Shield
+  - Magnet
+  - X2
   layers:
   - Default
   - TransparentFX
