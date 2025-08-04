@@ -8,9 +8,9 @@ public class MainMenu : MonoBehaviour
 
     
     public string[] clipNames = {
-        "Event_Girl_alert",
-        "Event_Girl_idle1",
-        "Event_Girl_idle2",
+        "Runner_G01_alert",
+        "Runner_G01_idle 1",
+        "Runner_G01_idle 2",
        
     };
 

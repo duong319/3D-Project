@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Store&&Upgrades.unity
     guid: 53f3e9cb56da6d64088dc03fdd600ef3
+  - enabled: 1
+    path: Assets/_Scenes/Characters.unity
+    guid: 32d3aab3aa20fb943a60637ce2d387d4
   m_configObjects: {}

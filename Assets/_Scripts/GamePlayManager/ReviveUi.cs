@@ -42,7 +42,7 @@ public class ReviveUi : MonoBehaviour
     public void HidePanel()
     {
         panel.SetActive(false);
-        
+        currentTime = 0f;
     }
 
     public void OnWatchAdClicked()

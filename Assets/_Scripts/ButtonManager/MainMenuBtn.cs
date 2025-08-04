@@ -24,7 +24,7 @@ public class MainMenuBtn : MonoBehaviour
 
     public void SelectCharacter()
     {
-
+        SceneManager.LoadScene("Characters");
     }
 
     public void LeaderBoard()
