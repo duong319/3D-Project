@@ -10,8 +10,8 @@ public class CurrencyUIManager : MonoBehaviour
     public TextMeshProUGUI scoreMultiplierText;
     public Text scoreMultiplier;
 
-    private int level = 1;
-    private int expThreshold = 50;
+    public int level = 1;
+    private int expThreshold = 100;
 
     private void Start()
     {
@@ -41,7 +41,7 @@ public class CurrencyUIManager : MonoBehaviour
         scoreMultiplierText.text = CurrencyManager.Instance.scoreMultiplier.ToString();
     }
 
-    void LoadLevel()
+    public void LoadLevel()
     {
         level = PlayerPrefs.GetInt("PlayerLevel", 1);
     }

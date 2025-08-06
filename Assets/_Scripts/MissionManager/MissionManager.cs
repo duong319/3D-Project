@@ -108,9 +108,10 @@ public class MissionManager : MonoBehaviour
     {
         if (!mission.isCompleted) return;
 
-        CurrencyManager.Instance.AddExp(mission.data.rewardExp);
+       // CurrencyManager.Instance.AddExp(mission.data.rewardExp);
+        CurrencyManager.Instance.AddExp(75);
 
-       // Debug.Log("Claimed reward: " + mission.data.rewardExp);
+        // Debug.Log("Claimed reward: " + mission.data.rewardExp);
 
         CheckAllCompleted();
     }

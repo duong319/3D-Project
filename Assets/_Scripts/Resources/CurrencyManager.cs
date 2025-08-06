@@ -12,19 +12,22 @@ public class CurrencyManager : MonoBehaviour
     public int HeadStart { get; private set; }
     public int ScoreBooster { get; private set; }
     public int scoreMultiplier;
+    public int PlayerLevel;
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
-
+        
         Coins = PlayerPrefs.GetInt("Coins", 0);
         Gems = PlayerPrefs.GetInt("Gems", 0);
         Exp = PlayerPrefs.GetInt("Exp", 0);
         HeadStart = PlayerPrefs.GetInt("HeadStart", 0);
         ScoreBooster = PlayerPrefs.GetInt("ScoreBooster", 0);
         scoreMultiplier = PlayerPrefs.GetInt("scoreMultiplier", 1);
+        PlayerLevel = FindFirstObjectByType<CurrencyUIManager>().level;
         AddscoreMultiplier(0);
+        Debug.Log(Exp);
         ResetProgress();
     }
 
@@ -57,6 +60,7 @@ public class CurrencyManager : MonoBehaviour
     {
         Exp += amount;
         PlayerPrefs.SetInt("Exp", Exp);
+        
     }
 
     public void AddScoreBooster(int amount)

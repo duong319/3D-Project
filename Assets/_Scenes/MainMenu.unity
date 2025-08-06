@@ -907,6 +907,7 @@ MonoBehaviour:
   levelText: {fileID: 1138359454}
   scoreMultiplierText: {fileID: 979659794}
   scoreMultiplier: {fileID: 1858935375}
+  level: 1
 --- !u!4 &245699131
 Transform:
   m_ObjectHideFlags: 0
@@ -2157,6 +2158,7 @@ GameObject:
   - component: {fileID: 867302074}
   - component: {fileID: 867302079}
   - component: {fileID: 867302080}
+  - component: {fileID: 867302081}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -2177,6 +2179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 0
+  PlayerLevel: 0
 --- !u!4 &867302075
 Transform:
   m_ObjectHideFlags: 0
@@ -2248,6 +2251,20 @@ MonoBehaviour:
   - data: {fileID: 11400000, guid: 1162eec0435c1ce4dbf9592182acd98f, type: 2}
     currentAmount: 0
   maxMissions: 3
+--- !u!114 &867302081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867302073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb7d3f602ffc2b40ad477e9a7f8cc5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardData: {fileID: 11400000, guid: d3b2586053163ec43b8f9155bed61896, type: 2}
+  normalchest: {fileID: 11400000, guid: 970b198906142494b825076a90fee557, type: 2}
 --- !u!1 &878769884
 GameObject:
   m_ObjectHideFlags: 0

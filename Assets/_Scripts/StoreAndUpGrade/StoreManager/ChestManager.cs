@@ -169,7 +169,7 @@ public class ChestManager : MonoBehaviour
         if (CurrencyManager.Instance.Gems >= 10)
         {
             CurrencyManager.Instance.SpendGems(10);
-            OpenChest(normalChestData);
+            OpenChest(rareChestData);
         }
     }
 
