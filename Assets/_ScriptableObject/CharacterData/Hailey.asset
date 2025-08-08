@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04b18bfa68e79264e8118b4c9cbdb85c, type: 3}
+  m_Name: Hailey
+  m_EditorClassIdentifier: 
+  characterName: B.Hailey
+  icon: {fileID: 21300000, guid: 9aeaa8b78a1583f40b9b34e20cf837fe, type: 2}
+  skinIcons: {fileID: 21300000, guid: b25bf42ea8a73f84a8b9eeb8e1c347a7, type: 2}
+  characterPrefab: {fileID: 8797807786812323696, guid: fe089412599cfa34e808fba78ffd665a,
+    type: 3}
+  price: 1000
+  outfitPrice: 1
+  unlockLevel: 4
+  outfitMaterial: {fileID: 2100000, guid: b52f2649a678010409cfdbc620631694, type: 2}

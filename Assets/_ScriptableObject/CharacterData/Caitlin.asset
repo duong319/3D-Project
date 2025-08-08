@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04b18bfa68e79264e8118b4c9cbdb85c, type: 3}
+  m_Name: Caitlin
+  m_EditorClassIdentifier: 
+  characterName: R.Caitlin
+  icon: {fileID: 21300000, guid: a813d5bb6ad04cf43b01b9bece8151cd, type: 2}
+  skinIcons: {fileID: 21300000, guid: 2b624d73e3ef0ad4994fe79a4860dc18, type: 2}
+  characterPrefab: {fileID: 4521034834855062306, guid: 4b5e88616fc4c4d4498cc28b064068be,
+    type: 3}
+  price: 2000
+  outfitPrice: 1
+  unlockLevel: 5
+  outfitMaterial: {fileID: 2100000, guid: 87ff3dcb3a53b4f48bc336b2803aba57, type: 2}
