@@ -5,18 +5,21 @@ public class CharacterUnlockManager : MonoBehaviour
 {
     public CharacterDatabase characterDB;
     private const string SelectedKey = "SelectedCharacter";
+    private const string SelectedOutfitKey = "SelectedCharacterOutfit";
 
 
     public bool IsCharacterUnlocked(CharacterData character)
     {
-        if (character.price == 0) return true;
+        if (character.price == 0) return true; 
         return CurrencyManager.Instance.PlayerLevel >= character.unlockLevel;
+       
     }
 
     public bool IsOwned(CharacterData data)
     {
-        if (data.price == 0) return true;
+        if (data.price == 0) return true; 
         return PlayerPrefs.GetInt(GetOwnKey(data), 0) == 1;
+      
     }
 
     public bool IsOwnedOutfit(CharacterData data)
@@ -53,7 +56,7 @@ public class CharacterUnlockManager : MonoBehaviour
     }
     private string GetOwnOutfitKey(CharacterData data)
     {
-        return $"CharacterOutfitOwned_{data.characterName}";
+        return $"CharacterOutfitOwned_{data.characterOutfitName}";
     }
 
     public void SelectCharacter(CharacterData data)
@@ -61,6 +64,7 @@ public class CharacterUnlockManager : MonoBehaviour
         if (IsOwned(data))
         {
             PlayerPrefs.SetString(SelectedKey, data.characterName);
+            PlayerPrefs.DeleteKey(SelectedOutfitKey);
             PlayerPrefs.Save();
         }
     }
@@ -72,8 +76,31 @@ public class CharacterUnlockManager : MonoBehaviour
 
     public bool IsSelected(CharacterData data)
     {
-        if (data.price == 0) return true;
+        if (data.price == 0 && !IsOutfitSelected(data)) return true;
         return GetSelectedCharacterName() == data.characterName;
+     
+    }
+
+    public void SelectCharacterOutfit(CharacterData data)
+    {
+        if (IsOwned(data)&&IsOwnedOutfit(data))
+        {
+            PlayerPrefs.SetString(SelectedOutfitKey, data.characterOutfitName);
+            PlayerPrefs.DeleteKey(SelectedKey);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public string GetSelectedCharacterOutfit()
+    {
+        return PlayerPrefs.GetString(SelectedOutfitKey, "");
+    }
+
+    public bool IsOutfitSelected(CharacterData data)
+    {
+       
+        return GetSelectedCharacterOutfit() == data.characterOutfitName;
+        
     }
 
 

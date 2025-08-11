@@ -34,7 +34,7 @@ public class MainMenuBtn : MonoBehaviour
 
     public void Achievement()
     {
-        SceneManager.LoadScene("Achievement");
+        SceneManager.LoadScene("Achievements");
     }
 
     public void DailyScore()

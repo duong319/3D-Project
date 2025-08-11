@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Hailey
   m_EditorClassIdentifier: 
   characterName: B.Hailey
+  characterOutfitName: Hailey Outfit
   icon: {fileID: 21300000, guid: 9aeaa8b78a1583f40b9b34e20cf837fe, type: 2}
   skinIcons: {fileID: 21300000, guid: b25bf42ea8a73f84a8b9eeb8e1c347a7, type: 2}
   characterPrefab: {fileID: 8797807786812323696, guid: fe089412599cfa34e808fba78ffd665a,

@@ -4,6 +4,7 @@ using UnityEngine;
 public class CharacterData : ScriptableObject
 {
     public string characterName;
+    public string characterOutfitName;
     public Sprite icon;
     public Sprite skinIcons;
     public GameObject characterPrefab;

@@ -12,19 +12,25 @@ public class UICharacterSlot : MonoBehaviour
     public Button purchaseOutfitButton;
     public Button ViewProgressBtn;
     public Button SelectBtn;
+    public Button SelectOutfitBtn;
     public Button showNormalBtn;
     public Button showOutfitButton;
     public Button viewOutfitBtn;
     public Text priceText;
     public Text SelectText;
+    public Text SelectOutfitText;
     public Text OutfitPriceText;
     public Text ViewOutfitText;
     public GameObject lockedPanel;
     public GameObject lockedOutfitPanel;
+    public GameObject SelectedMark;
+    public GameObject SelectedOutfitMark;
     public Text unlockText;
     public Image SelectBtnImage;
     public Sprite selectSprite;
     public Sprite selectedSprite;
+    public Image SelectOutfitBtnImage;
+
 
     private bool isShowOutfit = false;
     private CharacterData characterData;
@@ -42,80 +48,146 @@ public class UICharacterSlot : MonoBehaviour
 
         charIcon.sprite = data.icon;
         charOutfit.sprite = data.skinIcons;
-        charName.text = data.characterName;
+
 
         bool unlocked = unlockManager.IsCharacterUnlocked(data);
         bool isowned = unlockManager.IsOwned(data);
         bool isSelected = unlockManager.IsSelected(data);
-        bool isownedoutfit=unlockManager.IsOwnedOutfit(data);
+        bool isownedoutfit = unlockManager.IsOwnedOutfit(data);
+        bool isSelectedOutfit = unlockManager.IsOutfitSelected(data);
 
-
-
-
-        if (unlocked && !isowned && !isownedoutfit)
-        {
-            if (isShowOutfit == false)
-            {
-                lockedPanel.SetActive(false);
-                purchaseButton.gameObject.SetActive(true);
-                priceText.text = data.price.ToString();
-                purchaseButton.onClick.RemoveAllListeners();
-                purchaseButton.onClick.AddListener(BuyCharacter);
-            }
-            purchaseButton.gameObject.SetActive(false);
-            purchaseOutfitButton.gameObject.SetActive(true);
-            OutfitPriceText.text = data.outfitPrice.ToString();
-            purchaseOutfitButton.onClick.RemoveAllListeners();
-            purchaseOutfitButton.onClick.AddListener(BuyCharacterOutfit);
-        }
-
-
-
-        else if (!unlocked )
-        {
-            if (isShowOutfit == false)
-            {
-                ViewProgressBtn.gameObject.SetActive(true);
-                SelectBtn.gameObject.SetActive(false);
-                unlockText.text = $"LV.{data.unlockLevel} UNLOCK";
-                lockedPanel.SetActive(true);
-                ViewProgressBtn.onClick.RemoveAllListeners();
-                ViewProgressBtn.onClick.AddListener(ViewProgress);
-            }
-            ViewProgressBtn.gameObject.SetActive(false);
-            SelectBtn.gameObject.SetActive(false);
-            viewOutfitBtn.gameObject.SetActive(true);
-            ViewOutfitText.text = $"Unlock {data.name} First ";
-
-        }
-        else
-        {
-            lockedPanel.SetActive(false);
-            purchaseButton.gameObject.SetActive(false);
-            ViewProgressBtn.gameObject.SetActive(false);
-            SelectBtn.gameObject.SetActive(true);
-            SelectText.text = isSelected ? "Selected" : "Select";
-            SelectBtnImage.sprite = isSelected ? selectedSprite : selectSprite;
-            unlockText.text = "";
-            SelectBtn.onClick.RemoveAllListeners();
-            SelectBtn.onClick.AddListener(SelectCharacter);
-        }
+        lockedPanel.SetActive(!unlocked);
+        lockedOutfitPanel.SetActive(!isownedoutfit);
         showOutfitButton.onClick.RemoveAllListeners();
         showOutfitButton.onClick.AddListener(ShowOutfit);
         showNormalBtn.onClick.RemoveAllListeners();
         showNormalBtn.onClick.AddListener(PreviewCharacter);
 
+        ViewProgressBtn.gameObject.SetActive(isShowOutfit);
+        SelectOutfitBtn.gameObject.SetActive(isShowOutfit);
+        SelectBtn.gameObject.SetActive(!isShowOutfit);
+        viewOutfitBtn.gameObject.SetActive(isShowOutfit);
+        SelectedMark.gameObject.SetActive(isSelected);
+        SelectedOutfitMark.gameObject.SetActive(isSelectedOutfit);
+
+      
+
+        if (!isShowOutfit)
+        {
+            Debug.Log(isSelected);
+            charName.text = data.characterName;
+            ViewProgressBtn.gameObject.SetActive(!unlocked);
+            SelectBtn.gameObject.SetActive(isowned);
+            SelectText.text = isSelected ? "Selected" : "Select";
+            SelectBtnImage.sprite = isSelected ? selectedSprite : selectSprite;
+
+
+
+            purchaseOutfitButton.gameObject.SetActive(false);
+
+            if (!unlocked)
+            {
+                ViewProgressBtn.onClick.RemoveAllListeners();
+                ViewProgressBtn.onClick.AddListener(ViewProgress);
+                unlockText.text = $"LV.{data.unlockLevel} UNLOCK";
+
+            }
+            else if (unlocked)
+            {
+                unlockText.text = $" ";
+                purchaseButton.gameObject.SetActive(!isowned);
+
+                if (isowned)
+                {
+
+                    SelectBtn.onClick.RemoveAllListeners();
+                    SelectBtn.onClick.AddListener(SelectCharacter);
+
+
+                    if (isSelected)
+                    {
+
+
+                    }
+                    else if (!isSelected)
+                    {
+
+                      
+                    }
+
+                }
+                else if (!isowned)
+                {
+
+                    priceText.text = data.price.ToString();
+                    purchaseButton.onClick.RemoveAllListeners();
+                    purchaseButton.onClick.AddListener(BuyCharacter);
+                }
+            }
+
+        }
+        else if (isShowOutfit)
+        {
+            Debug.Log(isSelectedOutfit);
+            charName.text = data.characterOutfitName;
+            viewOutfitBtn.gameObject.SetActive(!unlocked);
+            ViewProgressBtn.gameObject.SetActive(!unlocked);
+
+            SelectOutfitBtn.gameObject.SetActive(isownedoutfit);
+            SelectOutfitText.text = isSelectedOutfit ? "Selected" : "Select";
+            SelectOutfitBtnImage.sprite = isSelectedOutfit ? selectedSprite : selectSprite;
+
+
+            purchaseButton.gameObject.SetActive(false);
+
+
+            if (!unlocked)
+            {
+                ViewOutfitText.text = $"Unlock {data.name} First ";
+            }
+            else if (unlocked)
+            {
+
+                purchaseOutfitButton.gameObject.SetActive(!isownedoutfit);
+                if (!isownedoutfit)
+                {
+                    purchaseOutfitButton.onClick.RemoveAllListeners();
+                    purchaseOutfitButton.onClick.AddListener(BuyCharacterOutfit);
+                    OutfitPriceText.text = data.outfitPrice.ToString();
+                }
+                else if (isownedoutfit)
+                {
+
+                    SelectOutfitBtn.onClick.RemoveAllListeners();
+                    SelectOutfitBtn.onClick.AddListener(SelectCharacterOutfit);
+
+                    if (!isSelectedOutfit)
+                    {
+                       
+                    }
+                    else if (isSelectedOutfit)
+                    {
+
+
+                    }
+
+                }
+
+            }
+        }
 
     }
 
     void ShowOutfit()
     {
-        isShowOutfit = true;
+   
+
         if (characterData != null && previewManager != null)
         {
+            isShowOutfit = true;
             previewManager.ShowOutfit(characterData);
             Debug.Log($"Show outfit: {characterData.characterName}");
-
+            Init(characterData, unlockManager, previewManager);
         }
     }
 
@@ -136,7 +208,7 @@ public class UICharacterSlot : MonoBehaviour
     }
     void BuyCharacterOutfit()
     {
-        if (unlockManager.IsCharacterUnlocked(characterData) && unlockManager.IsOwned(characterData)&&!unlockManager.IsOwnedOutfit(characterData))
+        if (unlockManager.IsCharacterUnlocked(characterData) && unlockManager.IsOwned(characterData) && !unlockManager.IsOwnedOutfit(characterData))
         {
 
             unlockManager.BuyCharacterOutfit(characterData);
@@ -152,10 +224,21 @@ public class UICharacterSlot : MonoBehaviour
 
     void SelectCharacter()
     {
-        if (unlockManager.IsOwned(characterData))
-        {
+        if (unlockManager.IsOwned(characterData)&&!unlockManager.IsSelected(characterData))
+        {         
             unlockManager.SelectCharacter(characterData);
             Debug.Log($"Selected: {characterData.characterName}");
+            Init(characterData, unlockManager, previewManager);
+        }
+    }
+
+    void SelectCharacterOutfit()
+    {
+        if (unlockManager.IsOwnedOutfit(characterData)&&!unlockManager.IsOutfitSelected(characterData))
+        {      
+            unlockManager.SelectCharacterOutfit(characterData);
+            Debug.Log($"Selected: {characterData.characterName} Outfit");
+            Init(characterData, unlockManager, previewManager);
         }
     }
 
@@ -166,13 +249,16 @@ public class UICharacterSlot : MonoBehaviour
 
     public void PreviewCharacter()
     {
-        isShowOutfit = false;
-        if (characterData != null)
-        {     
+        
+
+        if (characterData != null && previewManager != null)
+        {
+            isShowOutfit = false;
             previewManager.ShowCharacter(characterData);
             Debug.Log(characterData.characterName);
+            Init(characterData, unlockManager, previewManager);
         }
-       
+
 
     }
 

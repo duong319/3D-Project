@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Leslie
   m_EditorClassIdentifier: 
   characterName: G.Leslie
+  characterOutfitName: Leslie Outfit
   icon: {fileID: 21300000, guid: adbe76c977fbd8941a97f6095f5f904f, type: 2}
   skinIcons: {fileID: 21300000, guid: cebaa9bafc1bea14198661cbb5632915, type: 2}
   characterPrefab: {fileID: 4171802656228355337, guid: 7dfdd04673052534395f33f31ede3749,

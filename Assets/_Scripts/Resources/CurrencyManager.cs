@@ -28,7 +28,7 @@ public class CurrencyManager : MonoBehaviour
         PlayerLevel = FindFirstObjectByType<CurrencyUIManager>().level;
         AddscoreMultiplier(0);
         Debug.Log(Exp);
-        ResetProgress();
+       // ResetProgress();
     }
 
     public void AddCoins(int amount)

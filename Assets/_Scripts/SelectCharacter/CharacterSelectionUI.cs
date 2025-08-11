@@ -44,6 +44,7 @@ public class CharacterSelectionUI : MonoBehaviour
         if (character != null)
         {
             PopulateCharacter(character);
+
         }
     }
 }
