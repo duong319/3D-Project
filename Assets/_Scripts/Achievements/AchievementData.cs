@@ -3,10 +3,12 @@ using UnityEngine;
 public enum AchievementType
 {
     CollectCoins,
-    RunDistance,
+    SpendGem,
     PickupItem,
     PlayCount,
     WatchAd,
+    Jump,
+    Openbox,
 }
 
 [CreateAssetMenu(fileName = "AchievementData", menuName = "Game/Achievement")]

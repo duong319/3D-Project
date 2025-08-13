@@ -144,7 +144,7 @@ public class PlayerController : MonoBehaviour
         controller.Move(move * Time.deltaTime);
         direction.y = jumpForce;
         MissionManager.Instance.ReportProgress(MissionType.Jump, 1);
-
+        AchievementManager.Instance.AddProgress(AchievementType.Jump, 1);
     }
 
     private void StartSlide()
@@ -176,6 +176,7 @@ public class PlayerController : MonoBehaviour
         direction = Vector3.zero;
         Debug.Log("Die");
         StartCoroutine(ShowRevivePanel());
+        AchievementManager.Instance.AddProgress(AchievementType.PlayCount, 1);
     }
 
     public void SetShield(bool active)

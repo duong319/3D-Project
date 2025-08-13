@@ -33,7 +33,8 @@ public class ChestManager : MonoBehaviour
             GrantReward(reward);
         }
 
-        chestOpenPanel.ShowChestOpenAnimation(rewards,chest);
+        chestOpenPanel.ShowChestOpenAnimation(rewards, chest);
+        AchievementManager.Instance.AddProgress(AchievementType.Openbox, 1);
     }
 
     List<Reward> RollRewards(ChestData chest)

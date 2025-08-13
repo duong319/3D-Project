@@ -54,6 +54,7 @@ public class CurrencyManager : MonoBehaviour
     {
         Gems -= amount;
         PlayerPrefs.SetInt("Gems", Gems);
+        AchievementManager.Instance.AddProgress(AchievementType.SpendGem, amount);
     }
 
     public void AddExp(int amount)

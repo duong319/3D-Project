@@ -40,7 +40,7 @@ public class PlayerCollision : MonoBehaviour
             Destroy(other.gameObject);
             MissionManager.Instance.ReportProgress(MissionType.CollectCoin, 1);
             CurrencyManager.Instance.AddCoins(1);
-
+            AchievementManager.Instance.AddProgress(AchievementType.CollectCoins,1);
         }
 
         if (other.CompareTag("Shield"))
@@ -48,19 +48,21 @@ public class PlayerCollision : MonoBehaviour
            
             Destroy(other.gameObject);
             SpecialItemManager.Instance.UseItem(SpecialItemType.Shield);
-
+            AchievementManager.Instance.AddProgress(AchievementType.PickupItem, 1);
         }
         if (other.CompareTag("Magnet"))
         {
             
             Destroy(other.gameObject);
             SpecialItemManager.Instance.UseItem(SpecialItemType.Magnet);
+            AchievementManager.Instance.AddProgress(AchievementType.PickupItem, 1);
         }
         if (other.CompareTag("X2"))
         {
            
             Destroy(other.gameObject);
             SpecialItemManager.Instance.UseItem(SpecialItemType.ScoreMultiplier);
+            AchievementManager.Instance.AddProgress(AchievementType.PickupItem, 1);
         }
     }
 }

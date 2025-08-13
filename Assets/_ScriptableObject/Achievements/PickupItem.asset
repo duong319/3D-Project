@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   title: The Collector
-  description: Pick up 3 Powerups.
-  icon: {fileID: 21300000, guid: 399c3cae001680b4fac5d0df41ea97ea, type: 2}
+  description: Pick up 5 Powerups.
+  icon: {fileID: 21300000, guid: cd855394c0fa93044ac7b14a7a13ee83, type: 2}
   type: 2
-  targetValue: 3
-  rewardAmount: 2
+  targetValue: 5
+  rewardAmount: 3
