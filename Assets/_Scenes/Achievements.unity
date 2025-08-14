@@ -5069,7 +5069,6 @@ GameObject:
   m_Component:
   - component: {fileID: 602607260}
   - component: {fileID: 602607259}
-  - component: {fileID: 602607261}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5104,28 +5103,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &602607261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 602607258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 650db414a9ddf0044a1dbbe7b976bf9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  achievements:
-  - {fileID: 11400000, guid: 88bf077f028a11c4797996cfc5ce09c5, type: 2}
-  - {fileID: 11400000, guid: 7a3d802c2d3e1cf4f95394bf6a3a0332, type: 2}
-  - {fileID: 11400000, guid: 7b91c6d23eb96654caa686cdf79672db, type: 2}
-  - {fileID: 11400000, guid: 507bdb0d2b8f70c49b9cb1cb2d17bd76, type: 2}
-  - {fileID: 11400000, guid: 2a36cb659a484e84f967d1262eda3b49, type: 2}
-  - {fileID: 11400000, guid: f1a66731ee2cf5245a8de6d85e63f722, type: 2}
-  - {fileID: 11400000, guid: e66107cde778a6243be8cbf42d2f976f, type: 2}
-  - {fileID: 11400000, guid: f9ac90c4a7a5ce94891d60d90db6bbd8, type: 2}
-  - {fileID: 11400000, guid: 11362263bf7514e4bace4fc66752136c, type: 2}
 --- !u!1 &608345091
 GameObject:
   m_ObjectHideFlags: 0
