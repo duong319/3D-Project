@@ -19,16 +19,16 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement")]
 
-    public float laneDistance = 3f;
+    public float laneDistance = 20f;
     private int currentLane = 1;
-    public float forwardSpeed = 10f;
+    public float forwardSpeed = 20f;
 
-    public float laneSwitchSpeed = 50f;
+    public float laneSwitchSpeed = 10f;
 
     [Header("Jump")]
-    public float jumpForce = 8f;
-    public float gravity = -20f;
-    public float downForce = -50f;
+    public float jumpForce = 14f;
+    public float gravity = -40f;
+    public float downForce = -10f;
 
 
 

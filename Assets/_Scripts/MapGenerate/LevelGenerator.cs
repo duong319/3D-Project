@@ -5,7 +5,7 @@ public class LevelGenerator : MonoBehaviour
 {
     public Transform player;
     public GameObject[] tilePrefabs;     
-    public float tileLength = 20f;        
+    public float tileLength = 400f;        
     public int tilesOnScreen = 5;
 
     public float spawnZ = 0f;
@@ -25,7 +25,7 @@ public class LevelGenerator : MonoBehaviour
 
     void Update()
     {
-        if (player.position.z - 900f > spawnZ - tilesOnScreen * tileLength)
+        if (player.position.z - 1500f > spawnZ - tilesOnScreen * tileLength)
         {
             SpawnTile();
             DeleteOldestTile();
