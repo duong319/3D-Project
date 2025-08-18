@@ -110508,6 +110508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2349756599630647407}
   - component: {fileID: 4540608995117989365}
+  - component: {fileID: -8847852802891931105}
   m_Layer: 0
   m_Name: B.Hailey
   m_TagString: Untagged
@@ -110564,6 +110565,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-8847852802891931105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8797807786812323696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92e8cd0af38c864b9860d891708cc63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8844983649120562656
 GameObject:
   m_ObjectHideFlags: 0

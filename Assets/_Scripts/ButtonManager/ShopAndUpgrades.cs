@@ -47,6 +47,7 @@ public class ShopAndUpgrades : MonoBehaviour
 
     public void Store()
     {
+        AudioManager.Instance.Play("Btn");
         Debug.Log("Store");
         StorePanel.gameObject.SetActive(true);
         UpgradePanel.gameObject.SetActive(false);
@@ -59,6 +60,7 @@ public class ShopAndUpgrades : MonoBehaviour
 
     public void Upgrade()
     {
+        AudioManager.Instance.Play("Btn");
         Debug.Log("Upgrade");
         StorePanel.gameObject.SetActive(false);
         UpgradePanel.gameObject.SetActive(true);
@@ -70,16 +72,19 @@ public class ShopAndUpgrades : MonoBehaviour
 
     public void BoxesInfo()
     {
+        AudioManager.Instance.Play("Btn");
         BoxesInfoPanel.gameObject.SetActive(true);
     }
 
     public void BoxesInfoClose()
     {
+        AudioManager.Instance.Play("Close");
         BoxesInfoPanel.gameObject.SetActive(false);
     }
 
     public void VideoChest()
     {
+        AudioManager.Instance.Play("Btn");
         VideoChestEnable.gameObject.SetActive(true);
         VideoChestDisable.gameObject.SetActive(false);
 
@@ -92,6 +97,7 @@ public class ShopAndUpgrades : MonoBehaviour
 
     public void NormalChest()
     {
+        AudioManager.Instance.Play("Btn");
         VideoChestEnable.gameObject.SetActive(false);
         VideoChestDisable.gameObject.SetActive(true);
 
@@ -104,6 +110,7 @@ public class ShopAndUpgrades : MonoBehaviour
 
     public void RareChest()
     {
+        AudioManager.Instance.Play("Btn");
         VideoChestEnable.gameObject.SetActive(false);
         VideoChestDisable.gameObject.SetActive(true);
 

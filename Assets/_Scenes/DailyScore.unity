@@ -3916,6 +3916,7 @@ MonoBehaviour:
   - {fileID: 720579063}
   - {fileID: 776047648}
   totalProgress: 80000
+  resetTimerText: {fileID: 1271568394}
 --- !u!4 &991680281
 Transform:
   m_ObjectHideFlags: 0
@@ -3945,9 +3946,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCoins: 0
   player: {fileID: 991680281}
+  lastScore: 0
   highScore: 0
   totalScore: 0
-  scoreMultiplier: 0
 --- !u!114 &991680283
 MonoBehaviour:
   m_ObjectHideFlags: 0

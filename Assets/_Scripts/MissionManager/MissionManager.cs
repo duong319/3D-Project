@@ -108,8 +108,9 @@ public class MissionManager : MonoBehaviour
     {
         if (!mission.isCompleted) return;
 
-       // CurrencyManager.Instance.AddExp(mission.data.rewardExp);
+        // CurrencyManager.Instance.AddExp(mission.data.rewardExp);
         CurrencyManager.Instance.AddExp(75);
+        CurrencyManager.Instance.AddTotalExp(75);
 
         // Debug.Log("Claimed reward: " + mission.data.rewardExp);
 
@@ -126,7 +127,7 @@ public class MissionManager : MonoBehaviour
 
         CurrencyManager.Instance.SpendCoins(mission.data.skipCost);
         mission.currentAmount = mission.data.targetAmount;
-        CurrencyManager.Instance.AddExp(mission.data.rewardExp);
+      
         SaveMissions();
         CheckAllCompleted();
 

@@ -48,6 +48,7 @@ public class UIManager : MonoBehaviour
 
     public void Pause()
     {
+        AudioManager.Instance.Play("Btn");
         Time.timeScale = 0f;
         PausePanel.gameObject.SetActive(true);
           
@@ -55,19 +56,15 @@ public class UIManager : MonoBehaviour
 
     public void Resume()
     {
-        
+        AudioManager.Instance.Play("Btn");
         PausePanel.gameObject.SetActive(false);
         countdownText.StartCountdown();
 
     }
 
-    public void Setting()
-    {
-
-    }
-
     public void MainMenu()
     {
+        AudioManager.Instance.Play("Close");      
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }

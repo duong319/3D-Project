@@ -35,6 +35,25 @@ public class CharacterSelectionUI : MonoBehaviour
         {
             PopulateCharacter(database.characters[index]);
             Debug.Log(index);
+            if (index == 0)
+            {
+                AudioManager.Instance.Play("G.Leslie");
+                AudioManager.Instance.Stop("B.Hailey");
+                AudioManager.Instance.Stop("R.Caitlin");
+            }
+            else if (index == 1)
+            {
+                AudioManager.Instance.Play("B.Hailey");
+                AudioManager.Instance.Stop("G.Leslie");
+                AudioManager.Instance.Stop("R.Caitlin");
+            }
+            else if (index == 2)
+            {
+                AudioManager.Instance.Play("R.Caitlin");
+                AudioManager.Instance.Stop("G.Leslie");
+                AudioManager.Instance.Stop("B.Hailey");
+            }
+
         }
     }
 

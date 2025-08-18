@@ -55,12 +55,14 @@ public class MissionItemUI : MonoBehaviour
     
     public void OnClaim()
     {
+        AudioManager.Instance.Play("Claim");
         MissionManager.Instance.ClaimReward(mission);
         Debug.Log("claim");
     }
 
    public void OnSkip()
     {
+        AudioManager.Instance.Play("Btn");
         if (CurrencyManager.Instance.Coins < mission.data.skipCost) return;
         MissionManager.Instance.SkipMission(mission);
         progressSlide.SetActive(false);

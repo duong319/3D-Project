@@ -59969,6 +59969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8953187180326750446}
   - component: {fileID: 2562552223774082560}
+  - component: {fileID: 1543391639106648993}
   m_Layer: 0
   m_Name: R.Caitlin
   m_TagString: Untagged
@@ -60025,6 +60026,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1543391639106648993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521034834855062306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92e8cd0af38c864b9860d891708cc63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4557737991930530748
 GameObject:
   m_ObjectHideFlags: 0

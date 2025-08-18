@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
+   
     private Vector3 direction;
     public Animator animator;
     private bool isDead = false;
@@ -42,6 +43,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        AudioManager.Instance.Play("GamePlayBG");
     }
 
 
@@ -128,14 +130,14 @@ public class PlayerController : MonoBehaviour
 
     private void MoveLane(int direction)
     {
+        AudioManager.Instance.Play("Swipe");
         currentLane += direction;
         currentLane = Mathf.Clamp(currentLane, 0, 2);
-
     }
 
     private void Jump()
     {
-
+        AudioManager.Instance.Play("Swipe");
         int rand = Random.Range(0, 2);
         string jumpState = rand == 0 ? "Jump1" : "Jump2";
 
@@ -149,6 +151,7 @@ public class PlayerController : MonoBehaviour
 
     private void StartSlide()
     {
+        AudioManager.Instance.Play("Swipe");
         int rand = Random.Range(0, 2);
         string slideState = rand == 0 ? "Slide1" : "Slide2";
 
@@ -170,13 +173,15 @@ public class PlayerController : MonoBehaviour
     {
         if (isDead) return;
         isDead = true;
-
+        AudioManager.Instance.Play("Dead");
+        AudioManager.Instance.Stop("GamePlayBG");
         animator.SetTrigger("Die");
         forwardSpeed = 0f;
         direction = Vector3.zero;
         Debug.Log("Die");
         StartCoroutine(ShowRevivePanel());
         AchievementManager.Instance.AddProgress(AchievementType.PlayCount, 1);
+        
     }
 
     public void SetShield(bool active)
@@ -223,7 +228,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         FindFirstObjectByType<ReviveUi>().ShowPanel();
-        
+       
 
     }
 

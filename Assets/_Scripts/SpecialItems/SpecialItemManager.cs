@@ -48,18 +48,24 @@ public class SpecialItemManager : MonoBehaviour
 
     IEnumerator ActivateShield(float duration)
     {
+        AudioManager.Instance.Play("Shield");
         Debug.Log("Shield");
         PlayerController.Instance.SetShield(true);
         yield return new WaitForSeconds(duration);
         PlayerController.Instance.SetShield(false);
+        AudioManager.Instance.Stop("Shield");
+        AudioManager.Instance.Play("ShieldEnd");
     }
 
     IEnumerator ActivateMagnet(float duration)
     {
+        AudioManager.Instance.Play("Magnet");
         Debug.Log("magnet");
         PlayerController.Instance.SetMagnet(true);
         yield return new WaitForSeconds(duration);
         PlayerController.Instance.SetMagnet(false);
+        AudioManager.Instance.Stop("Magnet");
+        AudioManager.Instance.Play("MagnetEnd");
     }
 
     IEnumerator ActivateHeadstart(float duration)
@@ -72,11 +78,14 @@ public class SpecialItemManager : MonoBehaviour
 
     IEnumerator ActivateScoreMultiplier(float duration)
     {
+        AudioManager.Instance.Play("X2");
         PlayerController.Instance.SetMultiplier(2);
         UIManager.Instance.UpdateScoreMultiplier();
         yield return new WaitForSeconds(duration);
         PlayerController.Instance.EndMultiplier(2);
         UIManager.Instance.UpdateScoreMultiplier();
+        AudioManager.Instance.Stop("X2");
+        AudioManager.Instance.Play("X2End");
     }
 
     #endregion

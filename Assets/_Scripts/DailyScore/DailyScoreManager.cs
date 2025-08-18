@@ -7,6 +7,7 @@ public class DailyScoreManager : MonoBehaviour
 
     public DailyScoreRewardData rewardData;
     public int todayHighScore;
+    
 
     private const string LastResetKey = "LastDailyReset";
     private const string ClaimedKeyPrefix = "DailyScore_Claimed_";
@@ -19,8 +20,9 @@ public class DailyScoreManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             Debug.Log("DailyScoreManager Created");
             CheckReset();
-           // LoadTodayHighScore();
             LoadClaimedStatus();
+            todayHighScore = PlayerPrefs.GetInt("DailyHighScore", 0);
+            Debug.Log(todayHighScore);
         }
         else
         {
@@ -31,7 +33,7 @@ public class DailyScoreManager : MonoBehaviour
 
     public void UpdateHighScore(int score)
     {
-        
+
         if (score > todayHighScore)
         {
             todayHighScore = score;
@@ -74,12 +76,6 @@ public class DailyScoreManager : MonoBehaviour
     {
         return rewardData.rewardTiers[tierIndex].claimed;
     }
-
-    //public void LoadTodayHighScore()
-    //{
-    //    todayHighScore = PlayerPrefs.GetInt("DailyHighScore", 0);
-    //    Debug.Log(todayHighScore);
-    //}
 
     void LoadClaimedStatus()
     {
@@ -125,5 +121,35 @@ public class DailyScoreManager : MonoBehaviour
             PlayerPrefs.DeleteKey("LastDailyReset");
             PlayerPrefs.Save();
         }
+    }
+
+    public DailyScoreRewardData.RewardTier GetNextTier()
+    {
+        foreach (var tier in rewardData.rewardTiers)
+        {
+            if (!tier.claimed)
+            {
+                return tier;
+            }
+        }
+        return null; 
+    }
+
+    public int GetRemainingScore()
+    {
+        var nextTier = GetNextTier();
+        if (nextTier == null) return 0;
+        return Mathf.Max(0, nextTier.requiredScore - ScoreManager.Instance.lastScore);
+    }
+
+    public System.TimeSpan GetTimeUntilReset()
+    {
+       
+        System.DateTime now = System.DateTime.Now;
+
+       
+        System.DateTime nextReset = now.Date.AddDays(1);
+
+        return nextReset - now; 
     }
 }

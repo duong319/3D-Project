@@ -17,9 +17,7 @@ public class ScoreManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null) Instance = this;
-     
-            
-
+                
     }
 
     void Start()
@@ -31,9 +29,10 @@ public class ScoreManager : MonoBehaviour
     {
         UpdateScoreByDistance();
         highScore = PlayerPrefs.GetInt("highScore");
+        totalScore = PlayerPrefs.GetInt("totalScore");
     }
 
- 
+
 
     void UpdateScoreByDistance()
     {
@@ -45,13 +44,15 @@ public class ScoreManager : MonoBehaviour
         {
             lastScore = calculatedScore;
             UIManager.Instance.UpdateScore(lastScore);
-            MissionManager.Instance.ReportProgress(MissionType.Score, calculatedScore);
-            DailyScoreManager.Instance.UpdateHighScore(lastScore);
+            MissionManager.Instance.ReportProgress(MissionType.Score, totalScore);
+            DailyScoreManager.Instance.UpdateHighScore(highScore);
+            totalScore += lastScore;
             if (lastScore > highScore)
             {
                 highScore = lastScore;
                 PlayerPrefs.SetInt("highScore", highScore);
             }
+            PlayerPrefs.SetInt("totalScore",totalScore);
 
         }
 

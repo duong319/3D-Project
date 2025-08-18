@@ -28,6 +28,7 @@ public class ChestManager : MonoBehaviour
     public void OpenChest(ChestData chest)
     {
         List<Reward> rewards = RollRewards(chest);
+        AudioManager.Instance.Play("ChestOpen");
         foreach (var reward in rewards)
         {
             GrantReward(reward);
@@ -98,7 +99,7 @@ public class ChestManager : MonoBehaviour
                 CurrencyManager.Instance.AddScoreBooster(amount);
                 break;
         }
-
+        AudioManager.Instance.Play("Claim");
         Debug.Log($"Granted: {reward.name} x{amount}");
     }
     #endregion
@@ -142,6 +143,7 @@ public class ChestManager : MonoBehaviour
 
     public void OnClick_OpenVideoChest()
     {
+        AudioManager.Instance.Play("Btn");
         Debug.Log("Normal");
         if (IsVideoChestAvailableToday())
         {
@@ -156,6 +158,7 @@ public class ChestManager : MonoBehaviour
 
     public void OnClick_OpenNormalChest()
     {
+        AudioManager.Instance.Play("Btn");
         Debug.Log("Normal");
         if (CurrencyManager.Instance.Coins >= 1000)
         {
@@ -166,6 +169,7 @@ public class ChestManager : MonoBehaviour
 
     public void OnClick_OpenRareChest()
     {
+        AudioManager.Instance.Play("Btn");
         Debug.Log("rare");
         if (CurrencyManager.Instance.Gems >= 10)
         {

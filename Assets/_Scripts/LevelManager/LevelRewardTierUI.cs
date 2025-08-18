@@ -27,6 +27,7 @@ public class LevelRewardTierUI : MonoBehaviour
 
     void ClaimReward()
     {
+        AudioManager.Instance.Play("Claim");
         DailyScoreManager.Instance.ClaimReward(tierIndex);
         UpdateTier(DailyScoreManager.Instance.todayHighScore);
     }

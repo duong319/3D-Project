@@ -35,7 +35,7 @@ public class PlayerCollision : MonoBehaviour
         
         if (other.CompareTag("Coin"))
         {
-           
+            AudioManager.Instance.Play("Coin");
             ScoreManager.Instance.AddCoin(1);
             Destroy(other.gameObject);
             MissionManager.Instance.ReportProgress(MissionType.CollectCoin, 1);
@@ -45,21 +45,21 @@ public class PlayerCollision : MonoBehaviour
 
         if (other.CompareTag("Shield"))
         {
-           
+            AudioManager.Instance.Play("PickUp");
             Destroy(other.gameObject);
             SpecialItemManager.Instance.UseItem(SpecialItemType.Shield);
             AchievementManager.Instance.AddProgress(AchievementType.PickupItem, 1);
         }
         if (other.CompareTag("Magnet"))
         {
-            
+            AudioManager.Instance.Play("PickUp");
             Destroy(other.gameObject);
             SpecialItemManager.Instance.UseItem(SpecialItemType.Magnet);
             AchievementManager.Instance.AddProgress(AchievementType.PickupItem, 1);
         }
         if (other.CompareTag("X2"))
         {
-           
+            AudioManager.Instance.Play("PickUp");
             Destroy(other.gameObject);
             SpecialItemManager.Instance.UseItem(SpecialItemType.ScoreMultiplier);
             AchievementManager.Instance.AddProgress(AchievementType.PickupItem, 1);

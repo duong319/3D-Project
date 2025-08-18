@@ -254,6 +254,8 @@ MonoBehaviour:
   levelText: {fileID: 831664554}
   scoreMultiplierText: {fileID: 381820989}
   scoreMultiplier: {fileID: 1174154603}
+  highScore: {fileID: 381820989}
+  level: 1
 --- !u!4 &199408175
 Transform:
   m_ObjectHideFlags: 0
@@ -283,6 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCoins: 0
   player: {fileID: 199408175}
+  lastScore: 0
   highScore: 0
   totalScore: 0
 --- !u!114 &199408177

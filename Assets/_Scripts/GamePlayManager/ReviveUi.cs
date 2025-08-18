@@ -18,6 +18,7 @@ public class ReviveUi : MonoBehaviour
 
     IEnumerator Countdown()
     {
+        AudioManager.Instance.Play("SaveMe");
         while (currentTime >=0)
         {
             countdownText.text = Mathf.Ceil(currentTime).ToString();
@@ -43,18 +44,19 @@ public class ReviveUi : MonoBehaviour
     {
         panel.SetActive(false);
         currentTime = 0f;
+        AudioManager.Instance.Stop("SaveMe");
+        AudioManager.Instance.Play("GamePlayBG");
     }
 
     public void OnWatchAdClicked()
-    {
-        
+    {    
         Debug.Log("Watch Ad Clicked");
         HidePanel();
     }
 
     public void OnCloseClicked()
     {
-        HidePanel();
-       
+        AudioManager.Instance.Play("Btn");
+        HidePanel();      
     }
 }

@@ -30996,6 +30996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6467031587950236675}
   - component: {fileID: 4014755633450604768}
+  - component: {fileID: -1476714275779514131}
   m_Layer: 0
   m_Name: G.Leslie
   m_TagString: Untagged
@@ -31047,6 +31048,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-1476714275779514131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4171802656228355337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92e8cd0af38c864b9860d891708cc63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4423863948961900968
 GameObject:
   m_ObjectHideFlags: 0

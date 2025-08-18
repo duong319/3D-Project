@@ -63,15 +63,18 @@ public class AchievementUI : MonoBehaviour
     {
         AchievementManager.Instance.ClaimReward(data);
         UpdateUI();
+        AudioManager.Instance.Play("Claim");
     }
 
     private void Detail()
     {
-        DetailPanel.gameObject.SetActive(true);
+        AudioManager.Instance.Play("Btn");
+        DetailPanel.gameObject.SetActive(true);     
     }
 
     private void Close()
     {
-        DetailPanel.gameObject.SetActive (false);
+        AudioManager.Instance.Play("Close");
+        DetailPanel.gameObject.SetActive(false);      
     }
 }

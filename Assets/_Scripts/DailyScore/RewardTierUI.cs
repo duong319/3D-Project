@@ -19,12 +19,7 @@ public class RewardTierUI : MonoBehaviour
     }
 
     public void UpdateTier(int currentScore)
-    {
-      
-
-      //  float progress = Mathf.Clamp01((float)currentScore / tierData.requiredScore);
-
-
+    {     
         bool isClaimed = tierData.claimed;
         progressSliderClaimed.SetActive(isClaimed);
         claimedMark.SetActive(isClaimed);
@@ -33,6 +28,7 @@ public class RewardTierUI : MonoBehaviour
 
     void ClaimReward()
     {
+        AudioManager.Instance.Play("Claim");
         DailyScoreManager.Instance.ClaimReward(tierIndex);
         UpdateTier(DailyScoreManager.Instance.todayHighScore);
     }

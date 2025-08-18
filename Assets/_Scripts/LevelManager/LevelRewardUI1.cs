@@ -10,19 +10,23 @@ public class LevelRewardUI1 : MonoBehaviour
     public List<LevelRewardTierUI> LevelrewardTierUIs;
     public float totalProgress = 700f;
 
-    private void OnEnable()
+    private void Awake()
     {
         UpdateUI();
+        Debug.Log(ProgressBar.value);
+        Debug.Log(totalProgress);
+        Debug.Log(CurrencyManager.Instance.totalExp);
     }
 
     public void UpdateUI()
     {
-        ProgressBar.value = Mathf.Clamp01((float)CurrencyManager.Instance.Exp / totalProgress);
-       
-        int currentExp = CurrencyManager.Instance.Exp;
-       
+        // ProgressBar.value = Mathf.Clamp01((float)CurrencyManager.Instance.totalExp / totalProgress);
+        ProgressBar.minValue = 0;
+        ProgressBar.maxValue = totalProgress;
+        ProgressBar.value = CurrencyManager.Instance.totalExp;  
 
-
+        int currentExp = CurrencyManager.Instance.totalExp;
+       
 
         foreach (var tierUI in LevelrewardTierUIs)
         {

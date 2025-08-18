@@ -9,6 +9,7 @@ public class CurrencyUIManager : MonoBehaviour
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI scoreMultiplierText;
     public Text scoreMultiplier;
+    public TextMeshProUGUI highScore;
 
     public int level = 1;
     private int expThreshold = 100;
@@ -39,6 +40,7 @@ public class CurrencyUIManager : MonoBehaviour
         levelText.text = "Level " + level.ToString();
         scoreMultiplier.text = CurrencyManager.Instance.scoreMultiplier.ToString();
         scoreMultiplierText.text = CurrencyManager.Instance.scoreMultiplier.ToString();
+        highScore.text=ScoreManager.Instance.highScore.ToString();
     }
 
     public void LoadLevel()

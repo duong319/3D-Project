@@ -70,7 +70,7 @@ public class UICharacterSlot : MonoBehaviour
         SelectedMark.gameObject.SetActive(isSelected);
         SelectedOutfitMark.gameObject.SetActive(isSelectedOutfit);
 
-      
+
 
         if (!isShowOutfit)
         {
@@ -103,18 +103,6 @@ public class UICharacterSlot : MonoBehaviour
                     SelectBtn.onClick.RemoveAllListeners();
                     SelectBtn.onClick.AddListener(SelectCharacter);
 
-
-                    if (isSelected)
-                    {
-
-
-                    }
-                    else if (!isSelected)
-                    {
-
-                      
-                    }
-
                 }
                 else if (!isowned)
                 {
@@ -137,7 +125,6 @@ public class UICharacterSlot : MonoBehaviour
             SelectOutfitText.text = isSelectedOutfit ? "Selected" : "Select";
             SelectOutfitBtnImage.sprite = isSelectedOutfit ? selectedSprite : selectSprite;
 
-
             purchaseButton.gameObject.SetActive(false);
 
 
@@ -157,20 +144,8 @@ public class UICharacterSlot : MonoBehaviour
                 }
                 else if (isownedoutfit)
                 {
-
                     SelectOutfitBtn.onClick.RemoveAllListeners();
                     SelectOutfitBtn.onClick.AddListener(SelectCharacterOutfit);
-
-                    if (!isSelectedOutfit)
-                    {
-                       
-                    }
-                    else if (isSelectedOutfit)
-                    {
-
-
-                    }
-
                 }
 
             }
@@ -180,7 +155,7 @@ public class UICharacterSlot : MonoBehaviour
 
     void ShowOutfit()
     {
-   
+
 
         if (characterData != null && previewManager != null)
         {
@@ -188,6 +163,7 @@ public class UICharacterSlot : MonoBehaviour
             previewManager.ShowOutfit(characterData);
             Debug.Log($"Show outfit: {characterData.characterName}");
             Init(characterData, unlockManager, previewManager);
+            
         }
     }
 
@@ -224,8 +200,8 @@ public class UICharacterSlot : MonoBehaviour
 
     void SelectCharacter()
     {
-        if (unlockManager.IsOwned(characterData)&&!unlockManager.IsSelected(characterData))
-        {         
+        if (unlockManager.IsOwned(characterData) && !unlockManager.IsSelected(characterData))
+        {
             unlockManager.SelectCharacter(characterData);
             Debug.Log($"Selected: {characterData.characterName}");
             Init(characterData, unlockManager, previewManager);
@@ -234,8 +210,8 @@ public class UICharacterSlot : MonoBehaviour
 
     void SelectCharacterOutfit()
     {
-        if (unlockManager.IsOwnedOutfit(characterData)&&!unlockManager.IsOutfitSelected(characterData))
-        {      
+        if (unlockManager.IsOwnedOutfit(characterData) && !unlockManager.IsOutfitSelected(characterData))
+        {
             unlockManager.SelectCharacterOutfit(characterData);
             Debug.Log($"Selected: {characterData.characterName} Outfit");
             Init(characterData, unlockManager, previewManager);
@@ -249,7 +225,7 @@ public class UICharacterSlot : MonoBehaviour
 
     public void PreviewCharacter()
     {
-        
+
 
         if (characterData != null && previewManager != null)
         {
@@ -257,6 +233,7 @@ public class UICharacterSlot : MonoBehaviour
             previewManager.ShowCharacter(characterData);
             Debug.Log(characterData.characterName);
             Init(characterData, unlockManager, previewManager);
+            AudioManager.Instance.Play(characterData.characterName);
         }
 
 
