@@ -16,26 +16,27 @@ public class LevelRewardManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            CheckAndGiveRewards();
+            //CheckAndGiveRewards();
+            ResetAllClaims();
         }
         else
         {
             Destroy(gameObject);
         }
 
-
     }
   
 
  
-
-    private void CheckAndGiveRewards()
+    public void CheckAndGiveRewards()
     {
+      
         foreach (var tier in rewardData.LevelrewardTiers)
         {
            
             if (CurrencyManager.Instance.PlayerLevel >= tier.requiredLevel && !IsRewardClaimed(tier.requiredLevel))
             {
+                Debug.Log("check");
                 GiveReward(tier);
                 MarkRewardClaimed(tier.requiredLevel);
             }
@@ -70,10 +71,13 @@ public class LevelRewardManager : MonoBehaviour
     {
         PlayerPrefs.SetInt(ClaimedKey + level, 1);
         PlayerPrefs.Save();
+        var tier = rewardData.LevelrewardTiers.Find(t => t.requiredLevel == level);
+        if (tier != null) tier.claimed = true;
     }
 
     public void ResetAllClaims() 
     {
+        Debug.Log("Reset");
         foreach (var tier in rewardData.LevelrewardTiers)
         {
             PlayerPrefs.DeleteKey(ClaimedKey + tier.requiredLevel);

@@ -19,7 +19,12 @@ public class CountryFlagManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        else
+        {
+            Destroy(gameObject);
+            Debug.Log("Destroy");
+        }
+
 
         flagDict = new Dictionary<string, Sprite>();
         foreach (var cf in countryFlags)

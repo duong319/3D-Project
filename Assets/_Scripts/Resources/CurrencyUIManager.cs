@@ -7,7 +7,7 @@ public class CurrencyUIManager : MonoBehaviour
     public TextMeshProUGUI coinText;
     public TextMeshProUGUI gemText;
     public TextMeshProUGUI levelText;
-    public TextMeshProUGUI scoreMultiplierText;
+  
     public Text scoreMultiplier;
     public TextMeshProUGUI highScore;
 
@@ -39,7 +39,7 @@ public class CurrencyUIManager : MonoBehaviour
         gemText.text = CurrencyManager.Instance.Gems.ToString();
         levelText.text = "Level " + level.ToString();
         scoreMultiplier.text = CurrencyManager.Instance.scoreMultiplier.ToString();
-        scoreMultiplierText.text = CurrencyManager.Instance.scoreMultiplier.ToString();
+     
         highScore.text=ScoreManager.Instance.highScore.ToString();
     }
 

@@ -16,6 +16,7 @@ public class RewardTierUI : MonoBehaviour
     private void Start()
     {
         claimButton.onClick.AddListener(ClaimReward);
+       
     }
 
     public void UpdateTier(int currentScore)

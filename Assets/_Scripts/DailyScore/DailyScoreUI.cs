@@ -14,6 +14,7 @@ public class DailyScoreUI : MonoBehaviour
     private void OnEnable()
     {
         UpdateUI();
+        
     }
 
     public void UpdateUI()

@@ -74,19 +74,33 @@ public class PlayfabLeaderboard : MonoBehaviour
     {
         foreach (Transform child in contentParent)
         {
-            Destroy(child.gameObject);
-        
+            Destroy(child.gameObject);   
         }
 
+        int total = result.Leaderboard.Count;
+        int done = 0;
 
+        var entries = new LeaderboardRowUI[result.Leaderboard.Count];
 
         foreach (var entry in result.Leaderboard)
         {
+            
             GetPlayerCountry(entry.PlayFabId, (countryCode) =>
             {
                 var row = Instantiate(rowPrefab, contentParent);
                 row.SetData(entry.Position + 1, entry.DisplayName, entry.StatValue, countryCode);
-               
+
+                entries[entry.Position] = row;
+
+                done++;
+
+                if (done == total)
+                {
+                    for (int i = 0; i < entries.Length; i++)
+                    {
+                        entries[i].transform.SetSiblingIndex(i);
+                    }
+                }
 
             });
 

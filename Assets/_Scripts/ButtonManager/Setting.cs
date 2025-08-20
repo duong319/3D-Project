@@ -8,10 +8,13 @@ public class Setting : MonoBehaviour
 {
     public GameObject SettingPanel;
     [SerializeField] private Text playerIdText;
+    [SerializeField] private Button enableMusic;
+    [SerializeField] private Button disableMusic;
 
     private void Start()
     {
-       
+        enableMusic.onClick.AddListener(OnToggleSound);
+        disableMusic.onClick.AddListener(OnToggleSound);
         StartCoroutine(WaitForPlayerId());
     }
     public void SettingEnable()
@@ -32,6 +35,15 @@ public class Setting : MonoBehaviour
 
         playerIdText.text = PlayFabLogin.Instance.playerId;
     }
+
+    public void OnToggleSound()
+    {
+        var ismute = AudioManager.Instance.IsMuted();
+        AudioManager.Instance.ToggleMute();
+        enableMusic.gameObject.SetActive(ismute);
+        disableMusic.gameObject.SetActive(!ismute);
+    }
+
 
 
 }

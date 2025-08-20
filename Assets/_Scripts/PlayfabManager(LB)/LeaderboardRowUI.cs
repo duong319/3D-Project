@@ -11,6 +11,8 @@ public class LeaderboardRowUI : MonoBehaviour
     public Image RankIcon;
     public Image rewardIconImage;
     private RewardData rewardData;
+    [SerializeField] private RewardInfoPanel rewardInfoPanel;
+
 
 
     public void SetData(int rank, string name, int score, string countryCode)
@@ -49,20 +51,15 @@ public class LeaderboardRowUI : MonoBehaviour
             rewardIconImage.sprite = rewardData.rewardIcon;
             rewardIconImage.gameObject.SetActive(true);
 
-           
+
             rewardIconImage.GetComponent<Button>().onClick.AddListener(() =>
             {
-                RewardInfoPanel panel = FindObjectOfType<RewardInfoPanel>();
-                if (panel != null)
-                    panel.ShowReward(rewardData);
-               
+
+                rewardInfoPanel.ShowReward(rewardData);
+
             });
+
         }
-     
-
-
-
-
 
     }
 }

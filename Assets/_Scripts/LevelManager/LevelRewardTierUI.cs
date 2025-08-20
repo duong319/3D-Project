@@ -17,18 +17,20 @@ public class LevelRewardTierUI : MonoBehaviour
         claimButton.onClick.AddListener(ClaimReward);
     }
 
-    public void UpdateTier(int currentExp)
+    public void UpdateTier(int currentLevel)
     {
         bool isClaimed = tierData.claimed;
         progressSliderClaimed.SetActive(isClaimed);
         claimedMark.SetActive(isClaimed);
-        claimButton.gameObject.SetActive(!isClaimed && currentExp >= tierData.requiredLevel);
+        claimButton.gameObject.SetActive(!isClaimed && currentLevel >= tierData.requiredLevel);
+        Debug.Log(isClaimed);
     }
 
     void ClaimReward()
-    {
+    {    
         AudioManager.Instance.Play("Claim");
-        DailyScoreManager.Instance.ClaimReward(tierIndex);
-        UpdateTier(DailyScoreManager.Instance.todayHighScore);
+        LevelRewardManager.Instance.CheckAndGiveRewards();
+        UpdateTier(CurrencyManager.Instance.PlayerLevel);
+        Debug.Log("Claim");
     }
 }

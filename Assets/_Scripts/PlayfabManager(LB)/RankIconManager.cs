@@ -18,7 +18,12 @@ public class RankIconManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        else
+        {
+            Destroy(gameObject);
+            Debug.Log("destroy");
+        }
+
 
         rankDict = new Dictionary<int, Sprite>();
         foreach (var r in rankIcons)

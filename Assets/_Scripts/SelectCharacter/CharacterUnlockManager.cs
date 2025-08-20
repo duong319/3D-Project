@@ -76,7 +76,7 @@ public class CharacterUnlockManager : MonoBehaviour
 
     public bool IsSelected(CharacterData data)
     {
-        if (data.price == 0 && !IsOutfitSelected(data)) return true;
+        if (data.price == 0 && !IsOutfitSelected(data)&&GetSelectedCharacterName()== "G.Leslie") return true;
         return GetSelectedCharacterName() == data.characterName;
      
     }

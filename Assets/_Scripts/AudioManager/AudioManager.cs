@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
 
     public List<Sound> sounds;
     private Dictionary<string, AudioSource> soundDictionary = new Dictionary<string, AudioSource>();
-
+    private bool isMuted = false;
     private void Awake()
     {
 
@@ -38,6 +38,8 @@ public class AudioManager : MonoBehaviour
             source.loop = s.loop;
             soundDictionary[s.name] = source;
         }
+        isMuted = PlayerPrefs.GetInt("AudioMuted", 0) == 1;
+        ApplyMuteState();
     }
 
     public void Start()
@@ -71,5 +73,24 @@ public class AudioManager : MonoBehaviour
         {
             soundDictionary[name].volume = volume;
         }
+    }
+    public void ToggleMute()
+    {
+        isMuted = !isMuted;
+        PlayerPrefs.SetInt("AudioMuted", isMuted ? 1 : 0);
+        ApplyMuteState();
+    }
+
+    private void ApplyMuteState()
+    {
+        foreach (var source in soundDictionary.Values)
+        {
+            source.mute = isMuted;
+        }
+    }
+
+    public bool IsMuted()
+    {
+        return isMuted;
     }
 }

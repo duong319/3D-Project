@@ -23,13 +23,14 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         startZ = player.position.z;
+        highScore = PlayerPrefs.GetInt("highScore", 0);
     }
 
     void Update()
     {
         UpdateScoreByDistance();
-        highScore = PlayerPrefs.GetInt("highScore");
-        totalScore = PlayerPrefs.GetInt("totalScore");
+       
+        totalScore = PlayerPrefs.GetInt("totalScore",0);
     }
 
 
@@ -45,7 +46,7 @@ public class ScoreManager : MonoBehaviour
             lastScore = calculatedScore;
             UIManager.Instance.UpdateScore(lastScore);
             MissionManager.Instance.ReportProgress(MissionType.Score, totalScore);
-            DailyScoreManager.Instance.UpdateHighScore(highScore);
+            DailyScoreManager.Instance.UpdateHighScore(lastScore);
             totalScore += lastScore;
             if (lastScore > highScore)
             {

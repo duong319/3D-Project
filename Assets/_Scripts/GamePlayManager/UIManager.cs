@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
     public Text scoreText;
     public Text coinText;
     public Text ScoreMultiplerText;
-    public TextMeshProUGUI scoreMultiplerTxt;
+   
     public Text MissionScoreMultipler;
     public GameObject PausePanel;
     public CoundownText countdownText;
@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         ScoreMultiplerText.text = CurrencyManager.Instance.scoreMultiplier.ToString();
-        scoreMultiplerTxt.text = CurrencyManager.Instance.scoreMultiplier.ToString();
+      
         MissionScoreMultipler.text = CurrencyManager.Instance.scoreMultiplier.ToString();
         countdownText=GetComponent<CoundownText>();
     }
@@ -34,7 +34,7 @@ public class UIManager : MonoBehaviour
     public void UpdateScoreMultiplier()
     {
         ScoreMultiplerText.text = CurrencyManager.Instance.scoreMultiplier.ToString();
-        scoreMultiplerTxt.text = CurrencyManager.Instance.scoreMultiplier.ToString();
+       
     }
     public void UpdateScore(int value)
     {

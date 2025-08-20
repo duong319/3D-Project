@@ -609,6 +609,8 @@ GameObject:
   - component: {fileID: 649301702}
   - component: {fileID: 649301703}
   - component: {fileID: 649301704}
+  - component: {fileID: 649301706}
+  - component: {fileID: 649301705}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -692,16 +694,16 @@ MonoBehaviour:
   rewards:
   - rank: 1
     rewardIcon: {fileID: 21300000, guid: adfa6521afb8efe4b99dd8f55d83dc38, type: 2}
-    coin: 0
+    coin: 500
   - rank: 2
     rewardIcon: {fileID: 21300000, guid: 92b9b9549ccce5042ba9e17c215d8a88, type: 2}
-    coin: 0
+    coin: 400
   - rank: 3
     rewardIcon: {fileID: 21300000, guid: be26e1e5f637513479cd902a126ef8fc, type: 2}
-    coin: 0
+    coin: 300
   - rank: 4
     rewardIcon: {fileID: 21300000, guid: 1069ab1c560751443b65b33f8f202330, type: 2}
-    coin: 0
+    coin: 200
 --- !u!114 &649301704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,6 +719,40 @@ MonoBehaviour:
   timerText: {fileID: 1791378032}
   resetDay: 1
   resetHourUTC: 0
+--- !u!114 &649301705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649301697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09874d4f1a3cdb64ab93c6e7570ed0d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rankIcons:
+  - rank: 1
+    rankSprite: {fileID: 21300000, guid: fdacfed6ee02cf542914523ab11c094c, type: 2}
+  - rank: 2
+    rankSprite: {fileID: 21300000, guid: 6f200110a715681478411b024e532674, type: 2}
+  - rank: 3
+    rankSprite: {fileID: 21300000, guid: 211dcfd16bf273342a2d4d67c6054b82, type: 2}
+--- !u!114 &649301706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649301697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504e9ffb4cf70274580dffe21c82304c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countryFlags:
+  - countryCode: VN
+    flagSprite: {fileID: 21300000, guid: 0b5ab55c332ccc44481ba622884eca3c, type: 2}
 --- !u!1 &663284628
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +765,7 @@ GameObject:
   - component: {fileID: 663284631}
   - component: {fileID: 663284630}
   - component: {fileID: 663284632}
+  - component: {fileID: 663284633}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -819,6 +856,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &663284633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663284628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 0
 --- !u!1 &774946824
 GameObject:
   m_ObjectHideFlags: 0

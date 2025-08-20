@@ -100,7 +100,7 @@ public class DailyScoreManager : MonoBehaviour
     }
 
 
-    void CheckReset()
+    public void CheckReset()
     {
         string lastDate = PlayerPrefs.GetString(LastResetKey, "");
         string today = System.DateTime.Now.ToString("yyyyMMdd");

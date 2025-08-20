@@ -19,7 +19,7 @@ public class CurrencyManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
-        
+        FindFirstObjectByType<CurrencyUIManager>().LoadLevel();
         Coins = PlayerPrefs.GetInt("Coins", 0);
         Gems = PlayerPrefs.GetInt("Gems", 0);
         Exp = PlayerPrefs.GetInt("Exp", 0);

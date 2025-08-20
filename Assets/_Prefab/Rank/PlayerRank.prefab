@@ -187,7 +187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24, y: 219}
+  m_AnchoredPosition: {x: 24, y: 74}
   m_SizeDelta: {x: 340.3135, y: 110.6806}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1533105910604815465
@@ -315,10 +315,7 @@ GameObject:
   - component: {fileID: 8293877769062876955}
   - component: {fileID: 518076169724577527}
   - component: {fileID: 3642475494712761660}
-  - component: {fileID: 4027720749111698583}
   - component: {fileID: -5938550778227124423}
-  - component: {fileID: 4337113830345857012}
-  - component: {fileID: -4022367235067341880}
   m_Layer: 5
   m_Name: PlayerRank
   m_TagString: Untagged
@@ -405,21 +402,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 3, y: 3}
   m_UseGraphicAlpha: 1
---- !u!114 &4027720749111698583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905935952782478694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 504e9ffb4cf70274580dffe21c82304c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countryFlags:
-  - countryCode: VN
-    flagSprite: {fileID: 21300000, guid: 0b5ab55c332ccc44481ba622884eca3c, type: 2}
 --- !u!114 &-5938550778227124423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,39 +420,7 @@ MonoBehaviour:
   countryFlagImage: {fileID: 4178042492472362837}
   RankIcon: {fileID: 2548877510951808031}
   rewardIconImage: {fileID: 6208069656583815426}
---- !u!114 &4337113830345857012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905935952782478694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09874d4f1a3cdb64ab93c6e7570ed0d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rankIcons:
-  - rank: 1
-    rankSprite: {fileID: 21300000, guid: fdacfed6ee02cf542914523ab11c094c, type: 2}
-  - rank: 2
-    rankSprite: {fileID: 21300000, guid: ec356ca51e5c35f458efb9603de306fc, type: 2}
-  - rank: 3
-    rankSprite: {fileID: 21300000, guid: 211dcfd16bf273342a2d4d67c6054b82, type: 2}
---- !u!114 &-4022367235067341880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905935952782478694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02da2c132e337f44681188626eb3c71e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rewardText: {fileID: 2312134691463787488}
-  panel: {fileID: 641582437645770754}
+  rewardInfoPanel: {fileID: 8120926578788882389}
 --- !u!1 &1302056735321975308
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,6 +662,7 @@ GameObject:
   - component: {fileID: 4487581027694121383}
   - component: {fileID: 6208069656583815426}
   - component: {fileID: 8896843296518416823}
+  - component: {fileID: 8120926578788882389}
   m_Layer: 5
   m_Name: Rewardicon
   m_TagString: Untagged
@@ -821,6 +772,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8120926578788882389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5814048464665554401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02da2c132e337f44681188626eb3c71e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardText: {fileID: 2312134691463787488}
+  panel: {fileID: 641582437645770754}
 --- !u!1 &6058803754372933664
 GameObject:
   m_ObjectHideFlags: 0
