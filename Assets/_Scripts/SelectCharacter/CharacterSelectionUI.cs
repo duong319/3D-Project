@@ -34,7 +34,7 @@ public class CharacterSelectionUI : MonoBehaviour
         if (index >= 0 && index < database.characters.Count)
         {
             PopulateCharacter(database.characters[index]);
-            Debug.Log(index);
+            
             if (index == 0)
             {
                 AudioManager.Instance.Play("G.Leslie");

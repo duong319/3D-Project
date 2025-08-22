@@ -64,6 +64,7 @@ public class WeeklyLeaderboardTimer : MonoBehaviour
                 RewardManager.Instance.GiveReward(rank);
 
             }
+            ScoreManager.Instance.ResetHighScore();
         });
     }
 

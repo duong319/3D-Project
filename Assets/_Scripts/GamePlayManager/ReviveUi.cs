@@ -49,9 +49,11 @@ public class ReviveUi : MonoBehaviour
     }
 
     public void OnWatchAdClicked()
-    {    
+    {
         Debug.Log("Watch Ad Clicked");
+        RewardedAdsButton.Instance.LoadAd(Rewardtype.None);
         HidePanel();
+
     }
 
     public void OnCloseClicked()

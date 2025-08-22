@@ -28,8 +28,7 @@ public class CurrencyManager : MonoBehaviour
         ScoreBooster = PlayerPrefs.GetInt("ScoreBooster", 0);
         scoreMultiplier = PlayerPrefs.GetInt("scoreMultiplier", 1);
         PlayerLevel = FindFirstObjectByType<CurrencyUIManager>().level;
-        AddscoreMultiplier(0);
-        Debug.Log(totalExp);
+        AddscoreMultiplier(0);     
        // ResetProgress();
     }
 

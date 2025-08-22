@@ -17,12 +17,10 @@ public class DailyScoreManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
-            Debug.Log("DailyScoreManager Created");
-            CheckReset();
+            DontDestroyOnLoad(gameObject);                  
             LoadClaimedStatus();
-            todayHighScore = PlayerPrefs.GetInt("DailyHighScore", 0);
-            Debug.Log(todayHighScore);
+            CheckReset();
+            todayHighScore = PlayerPrefs.GetInt("DailyHighScore", 0);         
         }
         else
         {

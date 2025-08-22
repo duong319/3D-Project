@@ -228,8 +228,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         FindFirstObjectByType<ReviveUi>().ShowPanel();
-       
-
+      
     }
 
 

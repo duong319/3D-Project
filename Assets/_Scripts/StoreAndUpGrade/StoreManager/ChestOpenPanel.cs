@@ -17,12 +17,11 @@ public class ChestOpenPanel : MonoBehaviour
 
     public void ShowChestOpenAnimation(List<Reward> rewards, ChestData chestData)
     {
+        Debug.Log("show");
         chestIconImage.sprite = chestData.chestIcon;
         panel.SetActive(true);
         ClearRewards();
-      //  chestAnimator.Play("Open");
-        
-
+       
         StartCoroutine(ShowRewardSequence(rewards));
     }
 

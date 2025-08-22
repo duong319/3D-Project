@@ -51,7 +51,7 @@ public class AchievementManager : MonoBehaviour
         if (!claimed.Contains(a.id) && GetProgress(a.id) >= a.targetValue)
         {
             claimed.Add(a.id);
-           
+            CurrencyManager.Instance.AddGems(a.rewardAmount);
             Debug.Log($"Claimed {a.rewardAmount} coins from {a.title}");
             SaveData();
         }

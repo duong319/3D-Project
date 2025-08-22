@@ -73,8 +73,7 @@ public class UICharacterSlot : MonoBehaviour
 
 
         if (!isShowOutfit)
-        {
-            Debug.Log(isSelected);
+        {       
             charName.text = data.characterName;
             ViewProgressBtn.gameObject.SetActive(!unlocked);
             SelectBtn.gameObject.SetActive(isowned);
@@ -230,8 +229,7 @@ public class UICharacterSlot : MonoBehaviour
         if (characterData != null && previewManager != null)
         {
             isShowOutfit = false;
-            previewManager.ShowCharacter(characterData);
-            Debug.Log(characterData.characterName);
+            previewManager.ShowCharacter(characterData);   
             Init(characterData, unlockManager, previewManager);
             AudioManager.Instance.Play(characterData.characterName);
         }

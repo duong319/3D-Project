@@ -23082,7 +23082,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 189617817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 668737028}
+        m_TargetAssemblyTypeName: RewardedAdsButton, Assembly-CSharp
+        m_MethodName: FreeCoin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &189617816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74554,6 +74566,7 @@ GameObject:
   - component: {fileID: 668737022}
   - component: {fileID: 668737021}
   - component: {fileID: 668737027}
+  - component: {fileID: 668737028}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -74702,6 +74715,20 @@ MonoBehaviour:
   - {fileID: 970569834}
   - {fileID: 986470791}
   - {fileID: 1617476761}
+--- !u!114 &668737028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668737019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cb3572399381f443803737235894194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &670052170
 GameObject:
   m_ObjectHideFlags: 0

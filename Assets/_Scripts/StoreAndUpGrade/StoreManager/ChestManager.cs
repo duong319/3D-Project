@@ -112,13 +112,23 @@ public class ChestManager : MonoBehaviour
 
     public void ClaimVideoChestToday()
     {
-        if (!IsVideoChestAvailableToday()) return;
+        if (!IsVideoChestAvailableToday())
+        {
+            RewardedAdsButton.Instance.LoadAd(Rewardtype.None);
+            RewardedAdsButton.Instance.onAdCompleted = () =>
+            {
+                OpenChest(videoChestData);
+            };
+        }
 
-        OpenChest(videoChestData);
-        FreeBtn.gameObject.SetActive(false);
-        WatchAdBtn.gameObject.SetActive(true);
-        lastVideoChestDay = DateTime.Today;
-        SaveVideoChestDay();
+        else if (IsVideoChestAvailableToday())
+        {
+            OpenChest(videoChestData);
+            FreeBtn.gameObject.SetActive(false);
+            WatchAdBtn.gameObject.SetActive(true);
+            lastVideoChestDay = DateTime.Today;
+            SaveVideoChestDay();
+        }
     }
 
     void SaveVideoChestDay()
@@ -131,6 +141,8 @@ public class ChestManager : MonoBehaviour
         if (PlayerPrefs.HasKey("LastVideoChestDay"))
         {
             lastVideoChestDay = DateTime.Parse(PlayerPrefs.GetString("LastVideoChestDay"));
+            FreeBtn.gameObject.SetActive(false);
+            WatchAdBtn.gameObject.SetActive(true);
         }
         else
         {
@@ -145,24 +157,16 @@ public class ChestManager : MonoBehaviour
     {
         AudioManager.Instance.Play("Btn");
         Debug.Log("Normal");
-        if (IsVideoChestAvailableToday())
-        {
-            // TODO: Call AD
-            ClaimVideoChestToday();
-        }
-        else
-        {
-            Debug.Log("Already claimed today's Video Chest!");
-        }
+        ClaimVideoChestToday();
     }
 
     public void OnClick_OpenNormalChest()
     {
         AudioManager.Instance.Play("Btn");
         Debug.Log("Normal");
-        if (CurrencyManager.Instance.Coins >= 1000)
+        if (CurrencyManager.Instance.Coins >= 100)
         {
-            CurrencyManager.Instance.SpendCoins(1000);
+            CurrencyManager.Instance.SpendCoins(100);
             OpenChest(normalChestData);
         }
     }
@@ -171,9 +175,9 @@ public class ChestManager : MonoBehaviour
     {
         AudioManager.Instance.Play("Btn");
         Debug.Log("rare");
-        if (CurrencyManager.Instance.Gems >= 10)
+        if (CurrencyManager.Instance.Gems >= 1)
         {
-            CurrencyManager.Instance.SpendGems(10);
+            CurrencyManager.Instance.SpendGems(1);
             OpenChest(rareChestData);
         }
     }

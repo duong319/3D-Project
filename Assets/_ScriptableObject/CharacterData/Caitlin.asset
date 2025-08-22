@@ -18,7 +18,7 @@ MonoBehaviour:
   skinIcons: {fileID: 21300000, guid: 2b624d73e3ef0ad4994fe79a4860dc18, type: 2}
   characterPrefab: {fileID: 4521034834855062306, guid: 4b5e88616fc4c4d4498cc28b064068be,
     type: 3}
-  price: 2000
+  price: 20
   outfitPrice: 1
   unlockLevel: 5
   outfitMaterial: {fileID: 2100000, guid: 87ff3dcb3a53b4f48bc336b2803aba57, type: 2}
