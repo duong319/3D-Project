@@ -6,9 +6,11 @@ public class SpecialItemUI : MonoBehaviour
     public Image iconImage;
     public Image durationBar;
 
+
     private float duration;
     private float timer;
     private bool isActive;
+
 
     public void Activate(Sprite icon, float itemDuration)
     {
@@ -18,6 +20,10 @@ public class SpecialItemUI : MonoBehaviour
         timer = duration;
         isActive = true;
         gameObject.SetActive(true);
+    }
+    public void OnDestroy()
+    {
+        gameObject.SetActive(false);
     }
 
     private void Update()

@@ -8,15 +8,14 @@ public class CharacterSelectionUI : MonoBehaviour
     public UICharacterSlot slotPrefab;
     public Transform contentPanel;
     public CharacterPreviewManager previewManager;
+    public GameObject[] SelectedMark;
 
     void Start()
     {
-      
         if (database.characters.Count > 0)
         {
             ShowCharacterByIndex(0);
         }
-        
     }
 
     void PopulateCharacter(CharacterData character)
@@ -34,7 +33,7 @@ public class CharacterSelectionUI : MonoBehaviour
         if (index >= 0 && index < database.characters.Count)
         {
             PopulateCharacter(database.characters[index]);
-            
+
             if (index == 0)
             {
                 AudioManager.Instance.Play("G.Leslie");
@@ -53,7 +52,17 @@ public class CharacterSelectionUI : MonoBehaviour
                 AudioManager.Instance.Stop("G.Leslie");
                 AudioManager.Instance.Stop("B.Hailey");
             }
-
+            for (int i = 0; i <= SelectedMark.Length - 1; i++)
+            {
+                if (i == index)
+                {
+                    SelectedMark[i].gameObject.SetActive(true);
+                }
+                else
+                {
+                    SelectedMark[i].gameObject.SetActive(false);
+                }
+            }
         }
     }
 

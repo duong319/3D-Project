@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System.Collections;
 
 public class MissionManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class MissionManager : MonoBehaviour
     public List<Mission> currentMissions = new List<Mission>();
 
     public int maxMissions = 3;
+    public bool isRewardClaim = false;
 
     private const string SaveKey = "MissionProgress";
 
@@ -20,13 +22,9 @@ public class MissionManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        //ResetProgress();
-
         LoadMissions();
-
     }
 
     void LoadMissions()
@@ -53,7 +51,6 @@ public class MissionManager : MonoBehaviour
         }
         else
         {
-            
             var shuffled = new List<MissionData>(missionDatas);
             shuffled.Sort((a, b) => Random.Range(-1, 2));
 
@@ -75,11 +72,6 @@ public class MissionManager : MonoBehaviour
             if (mission.data.missionType == type && !mission.isCompleted)
             {
                 mission.currentAmount += amount;
-
-                if (mission.isCompleted)
-                {
-                   // Debug.Log("Mission Completed: " + mission.data.description);
-                }
             }
         }
 
@@ -107,13 +99,8 @@ public class MissionManager : MonoBehaviour
     public void ClaimReward(Mission mission)
     {
         if (!mission.isCompleted) return;
-
-        // CurrencyManager.Instance.AddExp(mission.data.rewardExp);
         CurrencyManager.Instance.AddExp(75);
         CurrencyManager.Instance.AddTotalExp(75);
-
-        // Debug.Log("Claimed reward: " + mission.data.rewardExp);
-
         CheckAllCompleted();
     }
 
@@ -127,52 +114,36 @@ public class MissionManager : MonoBehaviour
 
         CurrencyManager.Instance.SpendCoins(mission.data.skipCost);
         mission.currentAmount = mission.data.targetAmount;
-      
         SaveMissions();
         CheckAllCompleted();
-
     }
 
     void CheckAllCompleted()
     {
         if (currentMissions.All(m => m.isCompleted))
         {
-            Debug.Log(" All missions completed!");
-
-
             CurrencyManager.Instance.AddscoreMultiplier(1);
-
-            Debug.Log(" Bonus Reward Granted!");
-
-
             GenerateNewMissions();
-
-
             SaveMissions();
-
-
             FindFirstObjectByType<MissionPanel>().ShowMissionPanel();
+            StartCoroutine(ResetClaim());
         }
     }
 
     void GenerateNewMissions()
     {
-      
         var oldMissionIDs = currentMissions.Select(m => m.data.name).ToHashSet();
 
-        
         var available = missionDatas.Where(m => !oldMissionIDs.Contains(m.name)).ToList();
 
-        
+
         if (available.Count < maxMissions)
         {
             available = new List<MissionData>(missionDatas);
         }
 
-        
         available.Sort((a, b) => Random.Range(-1, 2));
 
-        
         currentMissions.Clear();
 
         for (int i = 0; i < maxMissions && i < available.Count; i++)
@@ -183,15 +154,14 @@ public class MissionManager : MonoBehaviour
                 currentAmount = 0
             });
         }
-
-        Debug.Log(" New missions generated!");
     }
 
-
-
-
-
-
+    private IEnumerator ResetClaim()
+    {
+        isRewardClaim = true;
+        yield return new WaitForSeconds(1.9f);
+        isRewardClaim = false;
+    }
 
     public void ResetProgress()
     {

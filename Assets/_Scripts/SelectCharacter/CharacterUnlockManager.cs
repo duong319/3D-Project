@@ -10,16 +10,14 @@ public class CharacterUnlockManager : MonoBehaviour
 
     public bool IsCharacterUnlocked(CharacterData character)
     {
-        if (character.price == 0) return true; 
+        if (character.price == 0) return true;
         return CurrencyManager.Instance.PlayerLevel >= character.unlockLevel;
-       
     }
 
     public bool IsOwned(CharacterData data)
     {
-        if (data.price == 0) return true; 
+        if (data.price == 0) return true;
         return PlayerPrefs.GetInt(GetOwnKey(data), 0) == 1;
-      
     }
 
     public bool IsOwnedOutfit(CharacterData data)
@@ -47,7 +45,6 @@ public class CharacterUnlockManager : MonoBehaviour
             PlayerPrefs.SetInt(GetOwnOutfitKey(data), 1);
             PlayerPrefs.Save();
         }
-
     }
 
     private string GetOwnKey(CharacterData data)
@@ -76,14 +73,13 @@ public class CharacterUnlockManager : MonoBehaviour
 
     public bool IsSelected(CharacterData data)
     {
-        if (data.price == 0 && !IsOutfitSelected(data)&&GetSelectedCharacterName()== "G.Leslie") return true;
+        if (data.price == 0 && !IsOutfitSelected(data) && GetSelectedCharacterName() == "G.Leslie") return true;
         return GetSelectedCharacterName() == data.characterName;
-     
     }
 
     public void SelectCharacterOutfit(CharacterData data)
     {
-        if (IsOwned(data)&&IsOwnedOutfit(data))
+        if (IsOwned(data) && IsOwnedOutfit(data))
         {
             PlayerPrefs.SetString(SelectedOutfitKey, data.characterOutfitName);
             PlayerPrefs.DeleteKey(SelectedKey);
@@ -98,14 +94,8 @@ public class CharacterUnlockManager : MonoBehaviour
 
     public bool IsOutfitSelected(CharacterData data)
     {
-       
         return GetSelectedCharacterOutfit() == data.characterOutfitName;
-        
     }
-
-
-
-
 
 
     public void ResetAll()

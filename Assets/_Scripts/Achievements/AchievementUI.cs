@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+
+using System.Collections;
 
 public class AchievementUI : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class AchievementUI : MonoBehaviour
     public GameObject DetailPanel;
     public Button closeBtn;
     public Text RewardAmount;
+    public GameObject ClaimPanel;
 
     private void Start()
     {
@@ -42,7 +44,7 @@ public class AchievementUI : MonoBehaviour
         Icon.sprite = data.icon;
         titleText.text = data.title;
         descText.text = data.description;
-        RewardAmount.text=data.rewardAmount.ToString();
+        RewardAmount.text = data.rewardAmount.ToString();
 
         int current = AchievementManager.Instance.GetProgress(data.id);
         progressBar.maxValue = data.targetValue;
@@ -64,17 +66,25 @@ public class AchievementUI : MonoBehaviour
         AchievementManager.Instance.ClaimReward(data);
         UpdateUI();
         AudioManager.Instance.Play("Claim");
+        StartCoroutine(Claimpanel());
     }
 
     private void Detail()
     {
         AudioManager.Instance.Play("Btn");
-        DetailPanel.gameObject.SetActive(true);     
+        DetailPanel.gameObject.SetActive(true);
     }
 
     private void Close()
     {
         AudioManager.Instance.Play("Close");
-        DetailPanel.gameObject.SetActive(false);      
+        DetailPanel.gameObject.SetActive(false);
+    }
+
+    private IEnumerator Claimpanel()
+    {
+        ClaimPanel.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        ClaimPanel.gameObject.SetActive(false);
     }
 }

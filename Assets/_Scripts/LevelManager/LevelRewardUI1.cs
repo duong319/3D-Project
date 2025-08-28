@@ -1,4 +1,4 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,12 +13,10 @@ public class LevelRewardUI1 : MonoBehaviour
     private void Awake()
     {
         UpdateUI();
-
     }
 
     public void UpdateUI()
-    {
-        // ProgressBar.value = Mathf.Clamp01((float)CurrencyManager.Instance.totalExp / totalProgress);
+    {     
         ProgressBar.minValue = 0;
         ProgressBar.maxValue = totalProgress;
         ProgressBar.value = CurrencyManager.Instance.totalExp;  

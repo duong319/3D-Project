@@ -11,8 +11,7 @@ public class ScoreManager : MonoBehaviour
     public int lastScore = 0;
     public int highScore;
     public int totalScore;
-
-
+    private int baseScore = 0;
 
     private void Awake()
     {
@@ -28,8 +27,8 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
-        UpdateScoreByDistance();
-
+        UpdateScoreByDistance();    
+        highScore = PlayerPrefs.GetInt("highScore", highScore);
         totalScore = PlayerPrefs.GetInt("totalScore", 0);
     }
 
@@ -37,24 +36,29 @@ public class ScoreManager : MonoBehaviour
 
     void UpdateScoreByDistance()
     {
+
         float distanceZ = player.position.z - startZ;
 
-        int calculatedScore = Mathf.FloorToInt(distanceZ * CurrencyManager.Instance.scoreMultiplier * 0.05f);
+        int newBaseScore = Mathf.FloorToInt(distanceZ * 0.05f);
 
-        if (calculatedScore > lastScore)
+        if (newBaseScore > baseScore)
         {
-            lastScore = calculatedScore;
+            int gained = newBaseScore - baseScore;
+            baseScore = newBaseScore;
+
+            int gainedWithMultiplier = gained * CurrencyManager.Instance.scoreMultiplier;
+            lastScore += gainedWithMultiplier;
             UIManager.Instance.UpdateScore(lastScore);
-            MissionManager.Instance.ReportProgress(MissionType.Score, totalScore);
+            MissionManager.Instance.ReportProgress(MissionType.Score, lastScore);
             DailyScoreManager.Instance.UpdateHighScore(lastScore);
-            totalScore += lastScore;
             if (lastScore > highScore)
             {
                 highScore = lastScore;
                 PlayerPrefs.SetInt("highScore", highScore);
+                PlayerPrefs.Save();
             }
+            totalScore = PlayerPrefs.GetInt("totalScore", 0) + gainedWithMultiplier;
             PlayerPrefs.SetInt("totalScore", totalScore);
-
         }
 
     }

@@ -14,13 +14,13 @@ public class DailyScoreUI : MonoBehaviour
     private void OnEnable()
     {
         UpdateUI();
-        
+
     }
 
     public void UpdateUI()
     {
         ProgressBar.value = Mathf.Clamp01((float)DailyScoreManager.Instance.todayHighScore / totalProgress);
-       
+
         int currentScore = DailyScoreManager.Instance.todayHighScore;
         highScoreText.text = currentScore.ToString();
 

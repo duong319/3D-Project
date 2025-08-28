@@ -17,4 +17,4 @@ MonoBehaviour:
   missionType: 3
   targetAmount: 1000
   rewardExp: 25
-  skipCost: 1700
+  skipCost: 300

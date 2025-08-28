@@ -6,13 +6,13 @@ public class MissionPanel : MonoBehaviour
 {
     public Transform contentRoot;
     public GameObject missionItemPrefab;
+    public GameObject missionCompletePanel;
 
     private List<MissionItemUI> missionUIs = new List<MissionItemUI>();
 
 
     private void OnEnable()
-    {
-        
+    {      
         StartCoroutine(CheckMissionsRoutine());
     }
 
@@ -21,14 +21,17 @@ public class MissionPanel : MonoBehaviour
         StopAllCoroutines();
     }
 
+    private void Update()
+    {
+      missionCompletePanel.gameObject.SetActive(MissionManager.Instance.isRewardClaim);
+    }
+
     public void ShowMissionPanel()
     {
-
         foreach (Transform child in contentRoot)
         {
             Destroy(child.gameObject);
         }
-
 
         foreach (var mission in MissionManager.Instance.currentMissions)
         {

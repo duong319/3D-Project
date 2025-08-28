@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections.Generic;
+
 
 public class LevelRewardManager : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class LevelRewardManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
             //CheckAndGiveRewards();
-            ResetAllClaims();
+            // ResetAllClaims();
         }
         else
         {
@@ -25,15 +25,26 @@ public class LevelRewardManager : MonoBehaviour
         }
 
     }
-  
-
- 
-    public void CheckAndGiveRewards()
+    private void Start()
     {
-      
+        LoadClaimedStatus();
+    }
+
+    private void LoadClaimedStatus()
+    {
         foreach (var tier in rewardData.LevelrewardTiers)
         {
-           
+            tier.claimed = PlayerPrefs.GetInt(ClaimedKey + tier.requiredLevel, 0) == 1;
+        }
+    }
+
+
+    public void CheckAndGiveRewards()
+    {
+
+        foreach (var tier in rewardData.LevelrewardTiers)
+        {
+
             if (CurrencyManager.Instance.PlayerLevel >= tier.requiredLevel && !IsRewardClaimed(tier.requiredLevel))
             {
                 Debug.Log("check");
@@ -48,16 +59,15 @@ public class LevelRewardManager : MonoBehaviour
         Debug.Log($"Reward for level {tier.requiredLevel}: {tier.rewardQuality} (+{tier.Reward})");
         CurrencyManager.Instance.AddscoreMultiplier(tier.Reward);
         switch (tier.rewardQuality)
-        {       
+        {
             case LevelRewardData.RewardQuality.Box:
 
-                // Inventory.Instance.AddBox(tier.Reward);
                 ChestManager.Instance.OpenChest(normalchest);
                 break;
 
             case LevelRewardData.RewardQuality.CharacterUnlock:
+
                 
-               // CharacterManager.Instance.UnlockCharacter(tier.Reward);
                 break;
         }
     }
@@ -74,8 +84,15 @@ public class LevelRewardManager : MonoBehaviour
         var tier = rewardData.LevelrewardTiers.Find(t => t.requiredLevel == level);
         if (tier != null) tier.claimed = true;
     }
+    public void RefreshAllUI()
+    {
+        foreach (var tierUI in FindObjectsOfType<LevelRewardTierUI>())
+        {
+            tierUI.UpdateTier(CurrencyManager.Instance.PlayerLevel);
+        }
+    }
 
-    public void ResetAllClaims() 
+    public void ResetAllClaims()
     {
         Debug.Log("Reset");
         foreach (var tier in rewardData.LevelrewardTiers)

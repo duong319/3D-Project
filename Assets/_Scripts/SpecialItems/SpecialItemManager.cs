@@ -1,15 +1,25 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+
 
 public class SpecialItemManager : MonoBehaviour
 {
     public static SpecialItemManager Instance;
     public SpecialItemUI specialItemUI;
+    [SerializeField] private Button HeadStart;
+    [SerializeField] private Button ScoreBooster;
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+        HeadStart.onClick.RemoveAllListeners();
+        HeadStart.onClick.AddListener(UseHeadStart);
+        ScoreBooster.onClick.RemoveAllListeners();
+        ScoreBooster.onClick.AddListener(UseScoreBooster);
+        StartCoroutine(DisableItem());
+
     }
 
     public void UseItem(SpecialItemType itemType)
@@ -38,11 +48,37 @@ public class SpecialItemManager : MonoBehaviour
             case SpecialItemType.ScoreMultiplier:
                 StartCoroutine(ActivateScoreMultiplier(duration));
                 break;
-            case SpecialItemType.ScoreBooster:
-                PlayerController.Instance.AddMultiplier(((int)duration-1)); 
-                break;
+
         }
     }
+
+    public void UseHeadStart()
+    {
+        if (CurrencyManager.Instance.HeadStart <= 0) return;
+        CurrencyManager.Instance.SpendHeadStart(1);
+        UseItem(SpecialItemType.Headstart);
+        HeadStart.gameObject.SetActive(false);
+        ScoreBooster.gameObject.SetActive(false);
+    }
+
+    public void UseScoreBooster()
+    {
+        if (CurrencyManager.Instance.ScoreBooster <= 0) return;
+        CurrencyManager.Instance.SpendScoreBooster(1);
+        int level = UpgradeManager.Instance.GetLevel(SpecialItemType.ScoreBooster);
+        float duration = UpgradeManager.Instance.GetDuration(SpecialItemType.ScoreBooster);
+        if (level == 0)
+        {
+            duration = 6f;
+
+        }
+        PlayerController.Instance.AddMultiplier(((int)duration - 1));
+        UIManager.Instance.UpdateScoreMultiplier();
+        HeadStart.gameObject.SetActive(false);
+        ScoreBooster.gameObject.SetActive(false);
+    }
+
+
 
     #region Item Effects
 
@@ -71,21 +107,28 @@ public class SpecialItemManager : MonoBehaviour
     IEnumerator ActivateHeadstart(float duration)
     {
         Debug.Log("headStart");
-        PlayerController.Instance.ActivateHeadstart(); 
+        PlayerController.Instance.ActivateHeadstart();
         yield return new WaitForSeconds(duration);
-        PlayerController.Instance.EndHeadstart(); 
+        PlayerController.Instance.EndHeadstart();
     }
 
     IEnumerator ActivateScoreMultiplier(float duration)
     {
-        AudioManager.Instance.Play("X2");
+        AudioManager.Instance.Play("X2");    
         PlayerController.Instance.SetMultiplier(2);
         UIManager.Instance.UpdateScoreMultiplier();
         yield return new WaitForSeconds(duration);
         PlayerController.Instance.EndMultiplier(2);
-        UIManager.Instance.UpdateScoreMultiplier();
+        UIManager.Instance.UpdateScoreMultiplier();      
         AudioManager.Instance.Stop("X2");
         AudioManager.Instance.Play("X2End");
+    }
+
+    IEnumerator DisableItem()
+    {
+        yield return new WaitForSeconds(5f);
+        HeadStart.gameObject.SetActive(false);
+        ScoreBooster.gameObject.SetActive(false);
     }
 
     #endregion

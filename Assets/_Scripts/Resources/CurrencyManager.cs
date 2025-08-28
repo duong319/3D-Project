@@ -1,4 +1,4 @@
-using System.Threading;
+
 using UnityEngine;
 
 public class CurrencyManager : MonoBehaviour
@@ -28,8 +28,8 @@ public class CurrencyManager : MonoBehaviour
         ScoreBooster = PlayerPrefs.GetInt("ScoreBooster", 0);
         scoreMultiplier = PlayerPrefs.GetInt("scoreMultiplier", 1);
         PlayerLevel = FindFirstObjectByType<CurrencyUIManager>().level;
-        AddscoreMultiplier(0);     
-       // ResetProgress();
+        AddscoreMultiplier(0);
+        // ResetProgress();
     }
 
     public void AddCoins(int amount)
@@ -71,25 +71,25 @@ public class CurrencyManager : MonoBehaviour
 
     public void AddScoreBooster(int amount)
     {
-        Coins += amount;
+        ScoreBooster += amount;
         PlayerPrefs.SetInt("ScoreBooster", ScoreBooster);
     }
 
     public void SpendScoreBooster(int amount)
     {
-        Coins -= amount;
+        ScoreBooster -= amount;
         PlayerPrefs.SetInt("ScoreBooster", ScoreBooster);
     }
 
     public void AddHeadStart(int amount)
     {
-        Coins += amount;
+        HeadStart += amount;
         PlayerPrefs.SetInt("HeadStart", HeadStart);
     }
 
     public void SpendHeadStart(int amount)
     {
-        Coins -= amount;
+        HeadStart -= amount;
         PlayerPrefs.SetInt("HeadStart", HeadStart);
     }
 

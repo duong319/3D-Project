@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-
+    private int playerHealth = 4;
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
+
+        PlayerController player = GetComponent<PlayerController>();
         if (hit.gameObject.CompareTag("Obstacle"))
         {
-             
-            PlayerController player = GetComponent<PlayerController>();
             if (player == null)
             {
                 player = GetComponentInParent<PlayerController>();
@@ -18,14 +18,39 @@ public class PlayerCollision : MonoBehaviour
             {
                 player.Die();
             }
-            if (player.isShieldAvtivate == true)
+           else if (player.isShieldAvtivate == true)
             {
+                AudioManager.Instance.Stop("Shield");
+                AudioManager.Instance.Play("ShieldEnd");
                 Destroy(hit.gameObject);
-                player.isShieldAvtivate = false;
+                player.SetShield(false);
+                FindFirstObjectByType<SpecialItemUI>().OnDestroy();
             }
             else
             {
                 Debug.LogWarning("PlayerController!");
+            }
+        }
+        else if (hit.gameObject.CompareTag("SideObstacle"))
+        {   
+            if (player == null)
+            {
+                player = GetComponentInParent<PlayerController>();
+            }
+            if (player != null && player.isShieldAvtivate == false)
+            {
+                player.isHurt = true;
+                player.KnockBack();         
+                playerHealth -= 1;
+                Debug.Log(playerHealth);
+                if (playerHealth <= 0)
+                    player.Die();
+             
+            }
+           else if (player.isShieldAvtivate == true)
+            {
+                Destroy(hit.gameObject);
+                player.isShieldAvtivate = false;
             }
         }
     }

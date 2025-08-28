@@ -38,7 +38,7 @@ public class CharacterSpawner : MonoBehaviour
 
                 break;
             }
-            
+
         }
 
     }

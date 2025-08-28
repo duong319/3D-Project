@@ -39,6 +39,7 @@ TagManager:
   - Shield
   - Magnet
   - X2
+  - SideObstacle
   layers:
   - Default
   - TransparentFX

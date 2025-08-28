@@ -6,7 +6,7 @@ public class RewardTierUI : MonoBehaviour
 {
     public int tierIndex;
 
-  
+
     public GameObject progressSliderClaimed;
     public Button claimButton;
     public GameObject claimedMark;
@@ -16,11 +16,11 @@ public class RewardTierUI : MonoBehaviour
     private void Start()
     {
         claimButton.onClick.AddListener(ClaimReward);
-       
+
     }
 
     public void UpdateTier(int currentScore)
-    {     
+    {
         bool isClaimed = tierData.claimed;
         progressSliderClaimed.SetActive(isClaimed);
         claimedMark.SetActive(isClaimed);

@@ -9,7 +9,10 @@ public class SingleUse : MonoBehaviour
     public Text HeadStartOwned;
     public Text ScoreBoosterOwned;
 
-
+    private void Update()
+    {
+        ShowSingleUse();
+    }
     public void ShowSingleUse()
     {
         HeadStartOwned.text = CurrencyManager.Instance.HeadStart.ToString();

@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,6 +30,7 @@ public class LevelRewardTierUI : MonoBehaviour
         AudioManager.Instance.Play("Claim");
         LevelRewardManager.Instance.CheckAndGiveRewards();
         UpdateTier(CurrencyManager.Instance.PlayerLevel);
+        LevelRewardManager.Instance.RefreshAllUI();
         Debug.Log("Claim");
     }
 }

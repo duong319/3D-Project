@@ -1,5 +1,4 @@
 using UnityEngine;
-using TMPro;
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.UI;

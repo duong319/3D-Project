@@ -7,7 +7,7 @@ public class DailyScoreManager : MonoBehaviour
 
     public DailyScoreRewardData rewardData;
     public int todayHighScore;
-    
+
 
     private const string LastResetKey = "LastDailyReset";
     private const string ClaimedKeyPrefix = "DailyScore_Claimed_";
@@ -17,10 +17,10 @@ public class DailyScoreManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);                  
+            DontDestroyOnLoad(gameObject);
             LoadClaimedStatus();
             CheckReset();
-            todayHighScore = PlayerPrefs.GetInt("DailyHighScore", 0);         
+            todayHighScore = PlayerPrefs.GetInt("DailyHighScore", 0);
         }
         else
         {
@@ -114,9 +114,7 @@ public class DailyScoreManager : MonoBehaviour
 
             todayHighScore = 0;
             PlayerPrefs.SetInt("DailyHighScore", 0);
-
-            PlayerPrefs.SetString(LastResetKey, today);
-            PlayerPrefs.DeleteKey("LastDailyReset");
+            PlayerPrefs.SetString(LastResetKey, today);       
             PlayerPrefs.Save();
         }
     }
@@ -130,7 +128,7 @@ public class DailyScoreManager : MonoBehaviour
                 return tier;
             }
         }
-        return null; 
+        return null;
     }
 
     public int GetRemainingScore()
@@ -142,12 +140,12 @@ public class DailyScoreManager : MonoBehaviour
 
     public System.TimeSpan GetTimeUntilReset()
     {
-       
+
         System.DateTime now = System.DateTime.Now;
 
-       
+
         System.DateTime nextReset = now.Date.AddDays(1);
 
-        return nextReset - now; 
+        return nextReset - now;
     }
 }
