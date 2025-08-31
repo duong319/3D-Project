@@ -1,4 +1,4 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,7 +23,6 @@ public class RankIconManager : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("destroy");
         }
-
 
         rankDict = new Dictionary<int, Sprite>();
         foreach (var r in rankIcons)

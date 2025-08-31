@@ -69,7 +69,6 @@ public class PlayerController : MonoBehaviour
         if (isDead) return;
         float targetX = (currentLane - 1) * laneDistance;
         float deltaX = targetX - transform.position.x;
-
         Vector3 moveVector = new Vector3(deltaX, direction.y, forwardSpeed);
         controller.Move(moveVector * Time.deltaTime * laneSwitchSpeed);
 
@@ -88,7 +87,6 @@ public class PlayerController : MonoBehaviour
             isSwipeLeft = false;
             animator.SetTrigger("HeadStartRight");
             MoveLane(1);
-
         }
 
         if (SwipeManager.swipeLeft)
@@ -96,12 +94,9 @@ public class PlayerController : MonoBehaviour
 
             if (controller.isGrounded && !isHeadStartAvtivate)
             {
-
                 int rand = Random.Range(0, 2);
                 string dogeState = rand == 0 ? "DodgeLeft1" : "DodgeLeft2";
-
                 animator.SetTrigger(dogeState);
-
             }
             isSwipeLeft = true;
             isSwipeRight = false;
@@ -123,26 +118,21 @@ public class PlayerController : MonoBehaviour
             {
                 Vector3 Down = new Vector3(currentLane, downForce, forwardSpeed);
                 controller.Move(Down * Time.deltaTime);
-                direction.y = downForce;
-                Debug.Log("down");
+                direction.y = downForce;             
                 animator.SetTrigger("Landing");
             }
         }
 
-
         if (isHeadStartAvtivate)
         {
             direction.y = 0;
-
         }
         else
         {
-
             if (controller.isGrounded)
                 direction.y = -2f;
             else
                 direction.y += gravity * Time.deltaTime;
-
         }
 
 
@@ -167,36 +157,30 @@ public class PlayerController : MonoBehaviour
         AudioManager.Instance.Play("Swipe");
         currentLane += direction;
         currentLane = Mathf.Clamp(currentLane, 0, 2);
-
     }
     public void KnockBack()
     {
         AudioManager.Instance.Play("KnockBack");
         if (isSwipeRight == true)
-        {
-            Debug.Log("right");
+        {   
             animator.SetTrigger("SideObstacleRight");
             currentLane -= 1;
             isSwipeRight = false;
             currentLane = Mathf.Clamp(currentLane, 0, 2);
         }
         else if (isSwipeLeft == true)
-        {
-            Debug.Log("left");
+        {      
             animator.SetTrigger("SideObstacleLeft");
             currentLane += 1;
             isSwipeLeft = false;
             currentLane = Mathf.Clamp(currentLane, 0, 2);
         }
         StartCoroutine(SpeedDown());
-      
         isHurt = false;
-
     }
 
     private void Jump()
     {
-
         AudioManager.Instance.Play("Swipe");
         int rand = Random.Range(0, 2);
         string jumpState = rand == 0 ? "Jump1" : "Jump2";
@@ -211,11 +195,9 @@ public class PlayerController : MonoBehaviour
 
     private void StartSlide()
     {
-
         AudioManager.Instance.Play("Swipe");
         int rand = Random.Range(0, 2);
         string slideState = rand == 0 ? "Slide1" : "Slide2";
-
         animator.SetTrigger(slideState);
         isSliding = true;
         slideTimer = slideDuration;
@@ -242,7 +224,6 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(ShowRevivePanel());
         AchievementManager.Instance.AddProgress(AchievementType.PlayCount, 1);
         PlayfabLeaderboard.Instance.SendScore(ScoreManager.Instance.highScore);
-
     }
 
     public void Revive()
@@ -250,7 +231,6 @@ public class PlayerController : MonoBehaviour
         if (!isDead) return;
 
         isDead = false;
-
         animator.SetTrigger("Revive");
         AudioManager.Instance.Play("GamePlayBG");
         forwardSpeed = Mathf.Max(forwardSpeed * 0.7f, 20f);
@@ -258,22 +238,19 @@ public class PlayerController : MonoBehaviour
         direction.y = jumpForce;
         animator.ResetTrigger("Die");
         animator.Play("Run2", 0, 0f);
-        StartCoroutine(ImmuneTime());
-        Debug.Log("Player Revived");
+        StartCoroutine(ImmuneTime());    
     }
 
     public void SetShield(bool active)
     {
         isShieldAvtivate = active;
         shieldVisual.SetActive(active);
-
     }
 
     public void SetMagnet(bool active)
     {
         isMagnetAvtivate = active;
         magnetArea.SetActive(active);
-
     }
 
     public void ActivateHeadstart()
@@ -298,18 +275,15 @@ public class PlayerController : MonoBehaviour
 
     public void SetMultiplier(int value)
     {
-
         CurrencyManager.Instance.scoreMultiplier *= value;
     }
     public void EndMultiplier(int value)
     {
-
         CurrencyManager.Instance.scoreMultiplier /= value;
     }
 
     public void AddMultiplier(int value)
     {
-
         CurrencyManager.Instance.scoreMultiplier += value;
     }
 
@@ -317,7 +291,6 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         FindFirstObjectByType<ReviveUi>().ShowPanel();
-
     }
 
     public IEnumerator ImmuneTime()
@@ -336,8 +309,6 @@ public class PlayerController : MonoBehaviour
             direction.y = 0f;
             yield return null;
         }
-
-
         transform.position = new Vector3(transform.position.x, headstartHeight, transform.position.z);
     }
 

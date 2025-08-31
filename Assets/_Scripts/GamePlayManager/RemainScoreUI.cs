@@ -1,5 +1,4 @@
 using UnityEngine;
-
 using UnityEngine.UI;
 
 public class RemainScoreUI : MonoBehaviour
@@ -15,7 +14,6 @@ public class RemainScoreUI : MonoBehaviour
     {
         var manager = DailyScoreManager.Instance;
         if (manager == null) return;
-
         int remain = manager.GetRemainingScore();
         var nextTier = manager.GetNextTier();
 

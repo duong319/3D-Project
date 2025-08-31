@@ -7,7 +7,6 @@ public class CurrencyUIManager : MonoBehaviour
     public TextMeshProUGUI coinText;
     public TextMeshProUGUI gemText;
     public TextMeshProUGUI levelText;
-  
     public Text scoreMultiplier;
     public TextMeshProUGUI highScore;
 
@@ -22,14 +21,12 @@ public class CurrencyUIManager : MonoBehaviour
 
     private void Update()
     {
-       
         if (CurrencyManager.Instance.Exp >= expThreshold)
         {
             CurrencyManager.Instance.AddExp(-expThreshold);
             level++;
             PlayerPrefs.SetInt("PlayerLevel", level);
         }
-
         UpdateUI();
     }
 
@@ -39,8 +36,7 @@ public class CurrencyUIManager : MonoBehaviour
         gemText.text = CurrencyManager.Instance.Gems.ToString();
         levelText.text = "Level " + level.ToString();
         scoreMultiplier.text = CurrencyManager.Instance.scoreMultiplier.ToString();
-     
-        highScore.text=ScoreManager.Instance.highScore.ToString();
+        highScore.text = ScoreManager.Instance.highScore.ToString();
     }
 
     public void LoadLevel()

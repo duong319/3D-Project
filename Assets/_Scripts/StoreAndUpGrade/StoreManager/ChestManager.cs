@@ -21,7 +21,7 @@ public class ChestManager : MonoBehaviour
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
         LoadVideoChestDay();
-        chestOpenPanel=GetComponent<ChestOpenPanel>();
+        chestOpenPanel = GetComponent<ChestOpenPanel>();
     }
 
     #region Open Chest
@@ -46,7 +46,7 @@ public class ChestManager : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             Reward reward = RollReward(chest, results);
-           
+
             results.Add(reward);
         }
 
@@ -73,10 +73,9 @@ public class ChestManager : MonoBehaviour
                 return reward;
         }
 
-      
+
         return chest.rewards.Find(r => !exclude.Contains(r));
     }
-
 
     void GrantReward(Reward reward)
     {
@@ -91,6 +90,7 @@ public class ChestManager : MonoBehaviour
                 break;
             case RewardType.Exp:
                 CurrencyManager.Instance.AddExp(amount);
+                CurrencyManager.Instance.AddTotalExp(amount);
                 break;
             case RewardType.HeadStart:
                 CurrencyManager.Instance.AddHeadStart(amount);
@@ -130,7 +130,6 @@ public class ChestManager : MonoBehaviour
             SaveVideoChestDay();
         }
     }
-
     void SaveVideoChestDay()
     {
         PlayerPrefs.SetString("LastVideoChestDay", lastVideoChestDay.ToString("yyyy-MM-dd"));

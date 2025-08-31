@@ -4,14 +4,13 @@ using System.Collections.Generic;
 [System.Serializable]
 public class CountryFlag
 {
-    public string countryCode; 
+    public string countryCode;
     public Sprite flagSprite;
 }
 
 public class CountryFlagManager : MonoBehaviour
 {
     public static CountryFlagManager Instance;
-   
 
     public List<CountryFlag> countryFlags = new List<CountryFlag>();
     private Dictionary<string, Sprite> flagDict;
@@ -24,7 +23,6 @@ public class CountryFlagManager : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("Destroy");
         }
-
 
         flagDict = new Dictionary<string, Sprite>();
         foreach (var cf in countryFlags)

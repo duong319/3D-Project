@@ -74,7 +74,6 @@ public class MissionManager : MonoBehaviour
                 mission.currentAmount += amount;
             }
         }
-
         SaveMissions();
     }
 
@@ -111,11 +110,12 @@ public class MissionManager : MonoBehaviour
             Debug.Log("not enough coin");
             return;
         }
-
         CurrencyManager.Instance.SpendCoins(mission.data.skipCost);
         mission.currentAmount = mission.data.targetAmount;
+        CurrencyManager.Instance.AddExp(mission.data.rewardExp);
+        CurrencyManager.Instance.AddTotalExp(mission.data.rewardExp);
         SaveMissions();
-        CheckAllCompleted();
+        CheckAllCompleted();    
     }
 
     void CheckAllCompleted()
@@ -135,7 +135,6 @@ public class MissionManager : MonoBehaviour
         var oldMissionIDs = currentMissions.Select(m => m.data.name).ToHashSet();
 
         var available = missionDatas.Where(m => !oldMissionIDs.Contains(m.name)).ToList();
-
 
         if (available.Count < maxMissions)
         {

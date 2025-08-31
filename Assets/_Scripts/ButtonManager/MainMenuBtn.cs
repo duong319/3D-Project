@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenuBtn : MonoBehaviour
 {
-
     public void StartBtn()
     {
         SceneManager.LoadScene("GamePlay");
@@ -60,8 +58,5 @@ public class MainMenuBtn : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         AudioManager.Instance.Play("Close");
         AudioManager.Instance.Play("MenuBG");
-
     }
-
-
 }

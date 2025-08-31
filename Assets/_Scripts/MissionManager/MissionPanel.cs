@@ -10,9 +10,8 @@ public class MissionPanel : MonoBehaviour
 
     private List<MissionItemUI> missionUIs = new List<MissionItemUI>();
 
-
     private void OnEnable()
-    {      
+    {
         StartCoroutine(CheckMissionsRoutine());
     }
 
@@ -23,7 +22,7 @@ public class MissionPanel : MonoBehaviour
 
     private void Update()
     {
-      missionCompletePanel.gameObject.SetActive(MissionManager.Instance.isRewardClaim);
+        missionCompletePanel.gameObject.SetActive(MissionManager.Instance.isRewardClaim);
     }
 
     public void ShowMissionPanel()
@@ -42,7 +41,6 @@ public class MissionPanel : MonoBehaviour
         }
     }
 
-
     public void RefreshMissionProgress()
     {
         foreach (var ui in missionUIs)
@@ -53,12 +51,12 @@ public class MissionPanel : MonoBehaviour
 
     private IEnumerator CheckMissionsRoutine()
     {
-        ShowMissionPanel(); 
+        ShowMissionPanel();
 
         while (true)
         {
-            yield return new WaitForSeconds(2f); 
-            ShowMissionPanel(); 
+            yield return new WaitForSeconds(2f);
+            ShowMissionPanel();
         }
     }
 }

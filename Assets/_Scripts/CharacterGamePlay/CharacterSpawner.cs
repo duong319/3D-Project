@@ -7,19 +7,17 @@ public class CharacterSpawner : MonoBehaviour
 
     private void Start()
     {
-        string charKey = PlayerPrefs.GetString("SelectedCharacter", "G.Leslie");
+        string charKey = PlayerPrefs.GetString("SpawnKey", "G.Leslie");
         string outfitKey = PlayerPrefs.GetString("SelectedCharacterOutfit", "");
-
 
         foreach (var c in characters) c.SetActive(false);
 
-
         for (int i = 0; i < characters.Length; i++)
         {
+            Debug.Log(charKey);
             if (characters[i].name == charKey)
             {
                 characters[i].SetActive(true);
-
 
                 if (!string.IsNullOrEmpty(outfitKey))
                 {
@@ -35,11 +33,8 @@ public class CharacterSpawner : MonoBehaviour
                         }
                     }
                 }
-
                 break;
             }
-
         }
-
     }
 }

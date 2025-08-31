@@ -6,7 +6,6 @@ public class CharacterPreviewManager : MonoBehaviour
     private GameObject currentPreview;
     private SkinnedMeshRenderer characterRenderer;
 
-
     public void ShowCharacter(CharacterData data)
     {
         if (currentPreview != null)
@@ -19,9 +18,8 @@ public class CharacterPreviewManager : MonoBehaviour
 
     public void ShowOutfit(CharacterData data)
     {
-        if (characterRenderer != null && data != null && data.outfitMaterial != null )
+        if (characterRenderer != null && data != null && data.outfitMaterial != null)
         {
-           
             characterRenderer.material = data.outfitMaterial;
         }
     }

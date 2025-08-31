@@ -16,15 +16,15 @@ MonoBehaviour:
   - requiredLevel: 2
     Reward: 1
     rewardQuality: 0
-    claimed: 0
+    claimed: 1
   - requiredLevel: 3
     Reward: 1
     rewardQuality: 1
-    claimed: 0
+    claimed: 1
   - requiredLevel: 4
     Reward: 1
     rewardQuality: 2
-    claimed: 0
+    claimed: 1
   - requiredLevel: 5
     Reward: 1
     rewardQuality: 2

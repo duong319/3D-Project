@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class ChestOpenPanel : MonoBehaviour
 {
     public GameObject panel;
-   // public Animator chestAnimator;
     public Transform rewardParent;
     public GameObject rewardItemPrefab;
     public Button continueBtn;
@@ -21,13 +20,12 @@ public class ChestOpenPanel : MonoBehaviour
         chestIconImage.sprite = chestData.chestIcon;
         panel.SetActive(true);
         ClearRewards();
-       
         StartCoroutine(ShowRewardSequence(rewards));
     }
 
     IEnumerator ShowRewardSequence(List<Reward> rewards)
     {
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(1f);
 
         foreach (var reward in rewards)
         {
@@ -39,14 +37,12 @@ public class ChestOpenPanel : MonoBehaviour
 
             yield return new WaitForSeconds(delayBetweenRewards);
         }
-
         continueBtn.interactable = true;
     }
 
     public void OnClickSkip()
     {
         StopAllCoroutines();
-        
     }
 
     public void OnClickContinue()

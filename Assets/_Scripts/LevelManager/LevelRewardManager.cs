@@ -1,6 +1,4 @@
 using UnityEngine;
-
-
 public class LevelRewardManager : MonoBehaviour
 {
     public static LevelRewardManager Instance;
@@ -16,14 +14,11 @@ public class LevelRewardManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            //CheckAndGiveRewards();
-            // ResetAllClaims();
         }
         else
         {
             Destroy(gameObject);
         }
-
     }
     private void Start()
     {
@@ -39,22 +34,7 @@ public class LevelRewardManager : MonoBehaviour
     }
 
 
-    public void CheckAndGiveRewards()
-    {
-
-        foreach (var tier in rewardData.LevelrewardTiers)
-        {
-
-            if (CurrencyManager.Instance.PlayerLevel >= tier.requiredLevel && !IsRewardClaimed(tier.requiredLevel))
-            {
-                Debug.Log("check");
-                GiveReward(tier);
-                MarkRewardClaimed(tier.requiredLevel);
-            }
-        }
-    }
-
-    private void GiveReward(LevelRewardData.LevelRewardTier tier)
+    public void GiveReward(LevelRewardData.LevelRewardTier tier)
     {
         Debug.Log($"Reward for level {tier.requiredLevel}: {tier.rewardQuality} (+{tier.Reward})");
         CurrencyManager.Instance.AddscoreMultiplier(tier.Reward);
@@ -66,18 +46,12 @@ public class LevelRewardManager : MonoBehaviour
                 break;
 
             case LevelRewardData.RewardQuality.CharacterUnlock:
-
-                
                 break;
         }
     }
 
-    private bool IsRewardClaimed(int level)
-    {
-        return PlayerPrefs.GetInt(ClaimedKey + level, 0) == 1;
-    }
 
-    private void MarkRewardClaimed(int level)
+    public void MarkRewardClaimed(int level)
     {
         PlayerPrefs.SetInt(ClaimedKey + level, 1);
         PlayerPrefs.Save();

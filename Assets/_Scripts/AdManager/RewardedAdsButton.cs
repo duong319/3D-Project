@@ -1,5 +1,4 @@
 using UnityEngine;
-
 using UnityEngine.Advertisements;
 using System.Security.Cryptography;
 using System.Collections;
@@ -9,7 +8,6 @@ public enum Rewardtype
 {
     None,
     FreeCoins,
-
 }
 
 public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
@@ -20,7 +18,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     string _adUnitId = null; // This will remain null for unsupported platforms
     public Action onAdCompleted;
     private Rewardtype currentReward = Rewardtype.None;
-    
+
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -38,7 +36,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     // Call this public method when you want to get an ad ready to show.
     public void LoadAd(Rewardtype rewardType)
     {
-       
+
         // IMPORTANT! Only load content AFTER initialization (in this example, initialization is handled in a different script).
         currentReward = rewardType;
         Debug.Log("Loading Ad: " + _adUnitId);
@@ -65,11 +63,8 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
     public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState)
     {
-       
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
-           
-           
             Debug.Log("Unity Ads Rewarded Ad Completed");
             switch (currentReward)
             {
@@ -83,26 +78,20 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
                     onAdCompleted = null;
                     Debug.Log("Chest");
                     break;
-
-
             }
-
         }
         currentReward = Rewardtype.None;
-       
     }
 
-    // Implement Load and Show Listener error callbacks:
+    
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
     {
-        Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");
-        // Use the error details to determine whether to try to load another ad.
+        Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");   
     }
 
     public void OnUnityAdsShowFailure(string adUnitId, UnityAdsShowError error, string message)
     {
-        Debug.Log($"Error showing Ad Unit {adUnitId}: {error.ToString()} - {message}");
-        // Use the error details to determine whether to try to load another ad.
+        Debug.Log($"Error showing Ad Unit {adUnitId}: {error.ToString()} - {message}");    
     }
 
     public void OnUnityAdsShowStart(string adUnitId) { }
@@ -112,6 +101,4 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     {
         LoadAd(Rewardtype.FreeCoins);
     }
-
-   
 }

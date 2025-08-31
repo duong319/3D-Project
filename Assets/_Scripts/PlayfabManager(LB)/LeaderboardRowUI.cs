@@ -1,5 +1,4 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 
 public class LeaderboardRowUI : MonoBehaviour
@@ -13,14 +12,11 @@ public class LeaderboardRowUI : MonoBehaviour
     private RewardData rewardData;
     [SerializeField] private RewardInfoPanel rewardInfoPanel;
 
-
-
     public void SetData(int rank, string name, int score, string countryCode)
     {
         rankText.text = rank.ToString();
         nameText.text = string.IsNullOrEmpty(name) ? "Guest" : name;
         scoreText.text = score.ToString();
-
 
         Sprite flag = CountryFlagManager.Instance.GetFlagSprite(countryCode);
         Sprite rankicon = RankIconManager.Instance.GetRankSprite(rank);
@@ -51,15 +47,10 @@ public class LeaderboardRowUI : MonoBehaviour
             rewardIconImage.sprite = rewardData.rewardIcon;
             rewardIconImage.gameObject.SetActive(true);
 
-
             rewardIconImage.GetComponent<Button>().onClick.AddListener(() =>
             {
-
                 rewardInfoPanel.ShowReward(rewardData);
-
             });
-
         }
-
     }
 }

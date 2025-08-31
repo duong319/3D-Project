@@ -1,5 +1,4 @@
 
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,7 +25,6 @@ public class ShopAndUpgrades : MonoBehaviour
     public Button UpgradeEnable;
     public Button BoxesInfoEnable;
     public Button BoxesInfoDisable;
-
     public Button VideoChestBtn;
     public Button NormalChestBtn;
     public Button RareChestBtn;
@@ -41,7 +39,6 @@ public class ShopAndUpgrades : MonoBehaviour
         VideoChestBtn.onClick.AddListener(VideoChest);
         NormalChestBtn.onClick.AddListener(NormalChest);
         RareChestBtn.onClick.AddListener(RareChest);
-
     }
 
     public void Store()
@@ -119,5 +116,4 @@ public class ShopAndUpgrades : MonoBehaviour
         RareChestEnable.gameObject.SetActive(true);
         RareChestDisable.gameObject.SetActive(false);
     }
-
 }

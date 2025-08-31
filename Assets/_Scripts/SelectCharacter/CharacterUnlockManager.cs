@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.TextCore.Text;
+
 
 public class CharacterUnlockManager : MonoBehaviour
 {
@@ -61,6 +61,7 @@ public class CharacterUnlockManager : MonoBehaviour
         if (IsOwned(data))
         {
             PlayerPrefs.SetString(SelectedKey, data.characterName);
+            PlayerPrefs.SetString("SpawnKey", data.characterName);
             PlayerPrefs.DeleteKey(SelectedOutfitKey);
             PlayerPrefs.Save();
         }
@@ -82,6 +83,7 @@ public class CharacterUnlockManager : MonoBehaviour
         if (IsOwned(data) && IsOwnedOutfit(data))
         {
             PlayerPrefs.SetString(SelectedOutfitKey, data.characterOutfitName);
+            PlayerPrefs.SetString("SpawnKey", data.characterName);
             PlayerPrefs.DeleteKey(SelectedKey);
             PlayerPrefs.Save();
         }

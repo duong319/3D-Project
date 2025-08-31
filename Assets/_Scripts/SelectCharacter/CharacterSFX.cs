@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class CharacterSFX : MonoBehaviour
@@ -16,7 +15,7 @@ public class CharacterSFX : MonoBehaviour
     {
         AudioManager.Instance.Play("R.Caitlin");
     }
-    
+
     public void PlayCelebrate()
     {
         AudioManager.Instance.Play("LeslieEnd");

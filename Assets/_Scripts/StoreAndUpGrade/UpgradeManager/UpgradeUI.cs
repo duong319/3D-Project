@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+
 
 public class UpgradeUI : MonoBehaviour
 {
@@ -15,14 +15,12 @@ public class UpgradeUI : MonoBehaviour
     public RectTransform durationTxt;
     public Transform[] levelbars;
 
-
     public Image[] levelBars;
     private UpgradeItem upgradeItem;
 
     public void Setup(UpgradeItem item, int index, System.Action<int> onUpgradeClick)
     {
         upgradeItem = item;
-
         iconImage.sprite = item.data.icon;
         nameText.text = item.data.upgradeName.ToUpper();
         descText.text = item.data.description;
@@ -51,17 +49,12 @@ public class UpgradeUI : MonoBehaviour
         {
             levelBars[i].enabled = i < maxLevel;
             levelBars[i].sprite = (i < currentLevel) ? activateProgress : Progress;
-
         }
         if (currentLevel <= 0 || currentLevel > levelBars.Length)
             return;
 
-       
-        durationTxt.SetParent(levelbars[currentLevel - 1], false); 
+        durationTxt.SetParent(levelbars[currentLevel - 1], false);
 
-        
         durationTxt.anchoredPosition = Vector2.zero;
-
-
     }
 }

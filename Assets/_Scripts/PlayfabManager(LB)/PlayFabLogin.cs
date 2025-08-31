@@ -107,7 +107,6 @@ public class PlayFabLogin : MonoBehaviour
         }
     }
 
-
     public void GetLeaderboardAroundPlayer(System.Action<List<PlayerLeaderboardEntry>> onResult)
     {
         var request = new GetLeaderboardAroundPlayerRequest

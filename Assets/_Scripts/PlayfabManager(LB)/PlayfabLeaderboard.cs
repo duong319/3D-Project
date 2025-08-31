@@ -2,10 +2,7 @@
 using PlayFab;
 using PlayFab.ClientModels;
 using System.Collections.Generic;
-
-
 using System.Linq;
-
 using System;
 
 public class PlayfabLeaderboard : MonoBehaviour
@@ -16,8 +13,6 @@ public class PlayfabLeaderboard : MonoBehaviour
 
     public LeaderboardRowUI rowPrefab;
     public Transform contentParent;
-
-
 
     private void Awake()
     {
@@ -31,7 +26,6 @@ public class PlayfabLeaderboard : MonoBehaviour
         Debug.Log("Send LB");
         if (!PlayFabLogin.Instance.isLoggedIn)
         {
-           
             return;
         }
 
@@ -46,7 +40,6 @@ public class PlayfabLeaderboard : MonoBehaviour
         PlayFabClientAPI.UpdatePlayerStatistics(request,
             result =>
             {
-              
                 GetLeaderboard();
             },
             error => Debug.LogError("Update fail " + error.GenerateErrorReport())
@@ -65,13 +58,11 @@ public class PlayfabLeaderboard : MonoBehaviour
         PlayFabClientAPI.GetLeaderboard(request, OnLeaderboardSuccess, OnLeaderboardError);
     }
 
-
-
     private void OnLeaderboardSuccess(GetLeaderboardResult result)
     {
         foreach (Transform child in contentParent)
         {
-            Destroy(child.gameObject);   
+            Destroy(child.gameObject);
         }
 
         int total = result.Leaderboard.Count;
@@ -81,7 +72,6 @@ public class PlayfabLeaderboard : MonoBehaviour
 
         foreach (var entry in result.Leaderboard)
         {
-            
             GetPlayerCountry(entry.PlayFabId, (countryCode) =>
             {
                 var row = Instantiate(rowPrefab, contentParent);
@@ -98,13 +88,9 @@ public class PlayfabLeaderboard : MonoBehaviour
                         entries[i].transform.SetSiblingIndex(i);
                     }
                 }
-
             });
-
         }
-
     }
-
 
     private void GetPlayerCountry(string playFabId, System.Action<string> callback)
     {
@@ -118,11 +104,11 @@ public class PlayfabLeaderboard : MonoBehaviour
         }, (result) =>
         {
             var countryCode = result.PlayerProfile?.Locations?.FirstOrDefault()?.CountryCode?.ToString();
-           
+
             callback?.Invoke(countryCode ?? "");
         }, (error) =>
         {
-           
+
             callback?.Invoke("");
         });
     }
@@ -136,7 +122,7 @@ public class PlayfabLeaderboard : MonoBehaviour
         var request = new GetLeaderboardAroundPlayerRequest
         {
             StatisticName = leaderboardName,
-            MaxResultsCount = 1 
+            MaxResultsCount = 1
         };
 
         PlayFabClientAPI.GetLeaderboardAroundPlayer(request,
@@ -145,27 +131,16 @@ public class PlayfabLeaderboard : MonoBehaviour
                 if (result.Leaderboard != null && result.Leaderboard.Count > 0)
                 {
                     int rank = result.Leaderboard[0].Position + 1;
-                   
                     onRankReceived?.Invoke(rank);
                 }
                 else
                 {
-                   
                     onRankReceived?.Invoke(-1);
                 }
             },
             error =>
             {
-               
                 onRankReceived?.Invoke(-1);
             });
     }
-
-
-
-
-
-
-
-
 }

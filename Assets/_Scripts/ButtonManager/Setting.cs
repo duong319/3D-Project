@@ -1,6 +1,4 @@
 using System.Collections;
-
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +8,7 @@ public class Setting : MonoBehaviour
     [SerializeField] private Text playerIdText;
     [SerializeField] private Button enableMusic;
     [SerializeField] private Button disableMusic;
+    [SerializeField] private Text StatusText;
 
     private void Start()
     {
@@ -42,8 +41,6 @@ public class Setting : MonoBehaviour
         AudioManager.Instance.ToggleMute();
         enableMusic.gameObject.SetActive(ismute);
         disableMusic.gameObject.SetActive(!ismute);
+        StatusText.text = ismute ? "On" : "Off";
     }
-
-
-
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     public Transform player;
-    public GameObject[] tilePrefabs;     
-    public float tileLength = 400f;        
+    public GameObject[] tilePrefabs;
+    public float tileLength = 400f;
     public int tilesOnScreen = 5;
 
     public float spawnZ = 0f;
@@ -17,9 +17,9 @@ public class LevelGenerator : MonoBehaviour
         for (int i = 0; i < tilesOnScreen; i++)
         {
             if (i < 2)
-                SpawnTile(0); 
+                SpawnTile(0);
             else
-                SpawnTile();  
+                SpawnTile();
         }
     }
 

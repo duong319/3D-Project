@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class DailyScoreManager : MonoBehaviour
@@ -7,7 +7,6 @@ public class DailyScoreManager : MonoBehaviour
 
     public DailyScoreRewardData rewardData;
     public int todayHighScore;
-
 
     private const string LastResetKey = "LastDailyReset";
     private const string ClaimedKeyPrefix = "DailyScore_Claimed_";
@@ -26,7 +25,6 @@ public class DailyScoreManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
     }
 
     public void UpdateHighScore(int score)
@@ -48,9 +46,7 @@ public class DailyScoreManager : MonoBehaviour
             return;
         }
 
-
         CurrencyManager.Instance.AddCoins(tier.coins);
-
 
         switch (tier.specialItemType)
         {
@@ -60,13 +56,10 @@ public class DailyScoreManager : MonoBehaviour
             case DailyScoreRewardData.SpecialItemType.ScoreBooster:
                 CurrencyManager.Instance.AddScoreBooster(tier.SpecialItems);
                 break;
-
         }
-
         tier.claimed = true;
         PlayerPrefs.SetInt(ClaimedKeyPrefix + tierIndex, 1);
         PlayerPrefs.Save();
-
         Debug.Log("Claimed " + tierIndex);
     }
 
@@ -93,7 +86,6 @@ public class DailyScoreManager : MonoBehaviour
             rewardData.rewardTiers[i].claimed = false;
             PlayerPrefs.DeleteKey(ClaimedKeyPrefix + i);
         }
-
         PlayerPrefs.Save();
     }
 
@@ -111,10 +103,9 @@ public class DailyScoreManager : MonoBehaviour
             {
                 r.claimed = false;
             }
-
             todayHighScore = 0;
             PlayerPrefs.SetInt("DailyHighScore", 0);
-            PlayerPrefs.SetString(LastResetKey, today);       
+            PlayerPrefs.SetString(LastResetKey, today);
             PlayerPrefs.Save();
         }
     }
@@ -140,9 +131,7 @@ public class DailyScoreManager : MonoBehaviour
 
     public System.TimeSpan GetTimeUntilReset()
     {
-
         System.DateTime now = System.DateTime.Now;
-
 
         System.DateTime nextReset = now.Date.AddDays(1);
 

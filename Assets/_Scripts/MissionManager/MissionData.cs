@@ -17,7 +17,7 @@ public enum MissionType
     Jump,
     CollectCoin,
     RunDistance,
-    Score,  
+    Score,
 }
 
 [System.Serializable]

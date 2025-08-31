@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+
 using UnityEngine.SceneManagement;
 
 public class UICharacterSlot : MonoBehaviour
@@ -38,8 +38,6 @@ public class UICharacterSlot : MonoBehaviour
     private CharacterPreviewManager previewManager;
 
 
-
-
     public void Init(CharacterData data, CharacterUnlockManager manager, CharacterPreviewManager preview)
     {
         characterData = data;
@@ -48,7 +46,6 @@ public class UICharacterSlot : MonoBehaviour
 
         charIcon.sprite = data.icon;
         charOutfit.sprite = data.skinIcons;
-
 
         bool unlocked = unlockManager.IsCharacterUnlocked(data);
         bool isowned = unlockManager.IsOwned(data);
@@ -73,14 +70,12 @@ public class UICharacterSlot : MonoBehaviour
 
 
         if (!isShowOutfit)
-        {       
+        {
             charName.text = data.characterName;
             ViewProgressBtn.gameObject.SetActive(!unlocked);
             SelectBtn.gameObject.SetActive(isowned);
             SelectText.text = isSelected ? "Selected" : "Select";
             SelectBtnImage.sprite = isSelected ? selectedSprite : selectSprite;
-
-
 
             purchaseOutfitButton.gameObject.SetActive(false);
 
@@ -89,7 +84,6 @@ public class UICharacterSlot : MonoBehaviour
                 ViewProgressBtn.onClick.RemoveAllListeners();
                 ViewProgressBtn.onClick.AddListener(ViewProgress);
                 unlockText.text = $"LV.{data.unlockLevel} UNLOCK";
-
             }
             else if (unlocked)
             {
@@ -98,14 +92,12 @@ public class UICharacterSlot : MonoBehaviour
 
                 if (isowned)
                 {
-
                     SelectBtn.onClick.RemoveAllListeners();
                     SelectBtn.onClick.AddListener(SelectCharacter);
 
                 }
                 else if (!isowned)
                 {
-
                     priceText.text = data.price.ToString();
                     purchaseButton.onClick.RemoveAllListeners();
                     purchaseButton.onClick.AddListener(BuyCharacter);
@@ -115,7 +107,6 @@ public class UICharacterSlot : MonoBehaviour
         }
         else if (isShowOutfit)
         {
-            Debug.Log(isSelectedOutfit);
             charName.text = data.characterOutfitName;
             viewOutfitBtn.gameObject.SetActive(!unlocked);
             ViewProgressBtn.gameObject.SetActive(!unlocked);
@@ -125,7 +116,6 @@ public class UICharacterSlot : MonoBehaviour
             SelectOutfitBtnImage.sprite = isSelectedOutfit ? selectedSprite : selectSprite;
 
             purchaseButton.gameObject.SetActive(false);
-
 
             if (!unlocked)
             {
@@ -146,31 +136,26 @@ public class UICharacterSlot : MonoBehaviour
                     SelectOutfitBtn.onClick.RemoveAllListeners();
                     SelectOutfitBtn.onClick.AddListener(SelectCharacterOutfit);
                 }
-
             }
         }
-
     }
 
     void ShowOutfit()
     {
-
-
         if (characterData != null && previewManager != null)
         {
             isShowOutfit = true;
             previewManager.ShowOutfit(characterData);
             Debug.Log($"Show outfit: {characterData.characterName}");
             Init(characterData, unlockManager, previewManager);
-            
         }
     }
 
     void BuyCharacter()
     {
-        if (unlockManager.IsCharacterUnlocked(characterData) && !unlockManager.IsOwned(characterData))
+        if (unlockManager.IsCharacterUnlocked(characterData) && !unlockManager.IsOwned(characterData) && CurrencyManager.Instance.Coins >= characterData.price)
         {
-
+            CurrencyManager.Instance.SpendCoins(characterData.price);
             unlockManager.BuyCharacter(characterData);
             Init(characterData, unlockManager, previewManager);
             Debug.Log($"buy: {characterData.characterName}");
@@ -179,13 +164,12 @@ public class UICharacterSlot : MonoBehaviour
         {
             Debug.LogWarning("locked");
         }
-
     }
     void BuyCharacterOutfit()
     {
-        if (unlockManager.IsCharacterUnlocked(characterData) && unlockManager.IsOwned(characterData) && !unlockManager.IsOwnedOutfit(characterData))
+        if (unlockManager.IsCharacterUnlocked(characterData) && unlockManager.IsOwned(characterData) && !unlockManager.IsOwnedOutfit(characterData) && CurrencyManager.Instance.Gems >= characterData.outfitPrice)
         {
-
+            CurrencyManager.Instance.SpendGems(characterData.outfitPrice);
             unlockManager.BuyCharacterOutfit(characterData);
             Init(characterData, unlockManager, previewManager);
             Debug.Log($"buy: {characterData.characterName}");
@@ -194,7 +178,6 @@ public class UICharacterSlot : MonoBehaviour
         {
             Debug.LogWarning("locked");
         }
-
     }
 
     void SelectCharacter()
@@ -224,18 +207,12 @@ public class UICharacterSlot : MonoBehaviour
 
     public void PreviewCharacter()
     {
-
-
         if (characterData != null && previewManager != null)
         {
             isShowOutfit = false;
-            previewManager.ShowCharacter(characterData);   
+            previewManager.ShowCharacter(characterData);
             Init(characterData, unlockManager, previewManager);
             AudioManager.Instance.Play(characterData.characterName);
         }
-
-
     }
-
-
 }

@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 public class IntroVideo : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
-    public string nextSceneName = "MainMenu"; 
-
+    public string nextSceneName = "MainMenu";
     void Start()
     {
         videoPlayer.loopPointReached += OnVideoFinished;
@@ -24,7 +23,6 @@ public class IntroVideo : MonoBehaviour
             SceneManager.LoadScene(nextSceneName);
         }
 
-       
         if (Input.GetMouseButtonDown(0))
         {
             SceneManager.LoadScene(nextSceneName);

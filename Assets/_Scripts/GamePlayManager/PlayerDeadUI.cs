@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,24 +19,18 @@ public class PlayerDeadUI : MonoBehaviour
         Animator = GetComponent<Animator>();
     }
 
-    public void WatchAd()
-    {
-        //AD
-    }
-
     public void Continue()
     {
         Animator.SetTrigger("Continue");
         characterAnimator.SetBool("Continue", true);
         RankPanel.gameObject.SetActive(true);
         StartCoroutine(CharActivate());
-
     }
 
     IEnumerator CharActivate()
     {
         yield return new WaitForSeconds(0.5f);
         char1.gameObject.SetActive(false);
-        char2.gameObject.SetActive(true) ;
+        char2.gameObject.SetActive(true);
     }
 }

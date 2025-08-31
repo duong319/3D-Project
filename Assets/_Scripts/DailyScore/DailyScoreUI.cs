@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using System.Collections.Generic;
 
 public class DailyScoreUI : MonoBehaviour
@@ -14,7 +13,6 @@ public class DailyScoreUI : MonoBehaviour
     private void OnEnable()
     {
         UpdateUI();
-
     }
 
     public void UpdateUI()
@@ -23,8 +21,6 @@ public class DailyScoreUI : MonoBehaviour
 
         int currentScore = DailyScoreManager.Instance.todayHighScore;
         highScoreText.text = currentScore.ToString();
-
-
 
         foreach (var tierUI in rewardTierUIs)
         {

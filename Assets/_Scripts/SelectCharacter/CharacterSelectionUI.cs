@@ -65,7 +65,6 @@ public class CharacterSelectionUI : MonoBehaviour
             }
         }
     }
-
     public void ShowCharacterByName(string characterName)
     {
         var character = database.characters.Find(c => c.characterName == characterName);

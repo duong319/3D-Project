@@ -6,16 +6,13 @@ public class RewardData
 {
     public int rank;
     public Sprite rewardIcon;
-
     public int coin;
-  
-
 }
 
 public class RewardManager : MonoBehaviour
 {
     public static RewardManager Instance;
-   
+
     public List<RewardData> rewards = new List<RewardData>();
     private Dictionary<int, RewardData> rewardDict;
 
@@ -34,7 +31,7 @@ public class RewardManager : MonoBehaviour
 
     public RewardData GetReward(int rank)
     {
-        if (rewardDict.ContainsKey(rank)&&rank<=3)
+        if (rewardDict.ContainsKey(rank) && rank <= 3)
             return rewardDict[rank];
         return rewardDict[4];
     }

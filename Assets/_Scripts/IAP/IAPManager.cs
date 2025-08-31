@@ -1,10 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class IAPManager : MonoBehaviour
 {
-
     public static IAPManager Instance;
     [SerializeField] private GameObject PurchaseFailed;
     private void Awake()
@@ -24,7 +23,7 @@ public class IAPManager : MonoBehaviour
 
     public void OnPurchaseFailed()
     {
-       StartCoroutine(purchaseFailedPanel());   
+        StartCoroutine(purchaseFailedPanel());
     }
 
     private IEnumerator purchaseFailedPanel()

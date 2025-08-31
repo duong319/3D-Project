@@ -1,11 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class RewardTierUI : MonoBehaviour
 {
     public int tierIndex;
-
 
     public GameObject progressSliderClaimed;
     public Button claimButton;
@@ -16,7 +14,6 @@ public class RewardTierUI : MonoBehaviour
     private void Start()
     {
         claimButton.onClick.AddListener(ClaimReward);
-
     }
 
     public void UpdateTier(int currentScore)

@@ -8,13 +8,11 @@ public class ChangeNameUI : MonoBehaviour
     [SerializeField] private InputField nameInput;
     [SerializeField] private GameObject panel;
     [SerializeField] private Text currentNameText;
-   
 
     private const string PlayerNameKey = "PlayerName";
 
     private void Start()
     {
-
         if (PlayerPrefs.HasKey(PlayerNameKey))
         {
             string savedName = PlayerPrefs.GetString(PlayerNameKey);
@@ -22,14 +20,11 @@ public class ChangeNameUI : MonoBehaviour
         }
         else
         {
-
             string guestName = "Guest" + Random.Range(1, 100);
             currentNameText.text = guestName;
 
-
             PlayerPrefs.SetString(PlayerNameKey, guestName);
             PlayerPrefs.Save();
-
 
             var request = new UpdateUserTitleDisplayNameRequest
             {
@@ -41,7 +36,6 @@ public class ChangeNameUI : MonoBehaviour
                 error => { Debug.LogWarning(error.GenerateErrorReport()); }
             );
         }
-     
     }
 
     public void OpenPanel()
@@ -64,7 +58,6 @@ public class ChangeNameUI : MonoBehaviour
 
         if (string.IsNullOrEmpty(newName))
         {
-           
             return;
         }
 
@@ -75,8 +68,7 @@ public class ChangeNameUI : MonoBehaviour
 
         PlayFabClientAPI.UpdateUserTitleDisplayName(request,
             result =>
-            {
-                Debug.Log("PlayerName " + result.DisplayName);
+            {    
                 currentNameText.text = result.DisplayName;
                 PlayerPrefs.SetString(PlayerNameKey, result.DisplayName);
                 PlayerPrefs.Save();
@@ -84,7 +76,7 @@ public class ChangeNameUI : MonoBehaviour
             },
             error =>
             {
-                Debug.LogError( error.GenerateErrorReport());
+                Debug.LogError(error.GenerateErrorReport());
             });
     }
 }

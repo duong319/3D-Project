@@ -26,9 +26,14 @@ public class LevelRewardTierUI : MonoBehaviour
     }
 
     void ClaimReward()
-    {    
+    {
         AudioManager.Instance.Play("Claim");
-        LevelRewardManager.Instance.CheckAndGiveRewards();
+        var tier = LevelRewardManager.Instance.rewardData.LevelrewardTiers[tierIndex];
+        if (!tier.claimed && CurrencyManager.Instance.PlayerLevel >= tier.requiredLevel)
+        {
+            LevelRewardManager.Instance.GiveReward(tier);
+            LevelRewardManager.Instance.MarkRewardClaimed(tier.requiredLevel);
+        }
         UpdateTier(CurrencyManager.Instance.PlayerLevel);
         LevelRewardManager.Instance.RefreshAllUI();
         Debug.Log("Claim");

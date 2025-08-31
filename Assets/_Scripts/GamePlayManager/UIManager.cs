@@ -1,7 +1,5 @@
 using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
-using TMPro;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -13,12 +11,9 @@ public class UIManager : MonoBehaviour
     public Text ScoreMultiplerText;
     public Text HeadStart;
     public Text ScoreBooster;
-
     public Text MissionScoreMultipler;
     public GameObject PausePanel;
     public CoundownText countdownText;
-
-
 
     private void Awake()
     {
@@ -30,11 +25,9 @@ public class UIManager : MonoBehaviour
         countdownText = GetComponent<CoundownText>();
     }
 
-
     public void UpdateScoreMultiplier()
     {
         ScoreMultiplerText.text = CurrencyManager.Instance.scoreMultiplier.ToString();
-
     }
     public void UpdateScore(int value)
     {
@@ -51,7 +44,6 @@ public class UIManager : MonoBehaviour
         AudioManager.Instance.Play("Btn");
         Time.timeScale = 0f;
         PausePanel.gameObject.SetActive(true);
-
     }
 
     public void Resume()
@@ -59,15 +51,14 @@ public class UIManager : MonoBehaviour
         AudioManager.Instance.Play("Btn");
         PausePanel.gameObject.SetActive(false);
         countdownText.StartCountdown();
-
     }
 
     public void MainMenu()
     {
         AudioManager.Instance.Play("Close");
+        AudioManager.Instance.Play("MenuBG");
+        AudioManager.Instance.Stop("GamePlayBG");
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
-
-
 }

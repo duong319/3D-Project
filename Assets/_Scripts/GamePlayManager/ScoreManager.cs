@@ -4,7 +4,6 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
 
-
     public int currentCoins = 0;
     public Transform player;
     private float startZ;
@@ -16,7 +15,6 @@ public class ScoreManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null) Instance = this;
-
     }
 
     void Start()
@@ -27,7 +25,7 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
-        UpdateScoreByDistance();    
+        UpdateScoreByDistance();
         highScore = PlayerPrefs.GetInt("highScore", highScore);
         totalScore = PlayerPrefs.GetInt("totalScore", 0);
     }
@@ -36,7 +34,6 @@ public class ScoreManager : MonoBehaviour
 
     void UpdateScoreByDistance()
     {
-
         float distanceZ = player.position.z - startZ;
 
         int newBaseScore = Mathf.FloorToInt(distanceZ * 0.05f);
@@ -60,7 +57,6 @@ public class ScoreManager : MonoBehaviour
             totalScore = PlayerPrefs.GetInt("totalScore", 0) + gainedWithMultiplier;
             PlayerPrefs.SetInt("totalScore", totalScore);
         }
-
     }
 
     public void AddCoin(int amount)

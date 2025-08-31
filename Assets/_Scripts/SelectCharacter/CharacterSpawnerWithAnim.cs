@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class CharacterSpawnerWithAnim : MonoBehaviour
@@ -10,22 +9,23 @@ public class CharacterSpawnerWithAnim : MonoBehaviour
 
     private void Start()
     {
-        string charKey = PlayerPrefs.GetString("SelectedCharacter", "G.Leslie");
+        string charKey = PlayerPrefs.GetString("SpawnKey", "G.Leslie");
         string outfitKey = PlayerPrefs.GetString("SelectedCharacterOutfit", "");
-        animator=GetComponent<Animator>();
+        animator = GetComponent<Animator>();
 
         foreach (var c in characters) c.SetActive(false);
-
 
         for (int i = 0; i < characters.Length; i++)
         {
             if (characters[i].name == charKey)
             {
                 characters[i].SetActive(true);
-                animator.SetBool(charKey,true);
+                animator.SetBool(charKey, true);
 
                 if (!string.IsNullOrEmpty(outfitKey))
                 {
+                    Debug.Log(charKey);
+                    Debug.Log(outfitKey);
                     foreach (Transform child in characters[i].transform)
                     {
                         if (child.name == outfitKey)
@@ -38,11 +38,8 @@ public class CharacterSpawnerWithAnim : MonoBehaviour
                         }
                     }
                 }
-
                 break;
             }
-
         }
-
     }
 }
