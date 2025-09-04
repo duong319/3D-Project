@@ -99,12 +99,7 @@ public class DailyScoreManager : MonoBehaviour
         if (lastDate != today)
         {
             Debug.Log("Reset");
-            foreach (var r in rewardData.rewardTiers)
-            {
-                r.claimed = false;
-            }
-            todayHighScore = 0;
-            PlayerPrefs.SetInt("DailyHighScore", 0);
+            ResetDailyData();
             PlayerPrefs.SetString(LastResetKey, today);
             PlayerPrefs.Save();
         }

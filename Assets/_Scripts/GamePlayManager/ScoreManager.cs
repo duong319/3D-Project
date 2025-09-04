@@ -77,5 +77,6 @@ public class ScoreManager : MonoBehaviour
     public void ResetHighScore()
     {
         PlayerPrefs.DeleteKey("highScore");
+        PlayerPrefs.Save();
     }
 }

@@ -30,7 +30,7 @@ public class CurrencyManager : MonoBehaviour
         AddscoreMultiplier(0);
         // ResetProgress();
     }
-
+  
     public void AddCoins(int amount)
     {
         Coins += amount;
@@ -65,6 +65,8 @@ public class CurrencyManager : MonoBehaviour
     public void AddTotalExp(int amount)
     {
         totalExp += amount;
+        FindFirstObjectByType<CurrencyUIManager>().LoadLevel();
+        PlayerLevel = FindFirstObjectByType<CurrencyUIManager>().level;
         PlayerPrefs.SetInt("totalExp", totalExp);
     }
 
@@ -101,5 +103,6 @@ public class CurrencyManager : MonoBehaviour
     public void ResetProgress()
     {
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
     }
 }

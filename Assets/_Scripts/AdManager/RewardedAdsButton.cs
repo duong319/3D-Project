@@ -81,9 +81,10 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
             }
         }
         currentReward = Rewardtype.None;
+        AchievementManager.Instance.AddProgress(AchievementType.WatchAd, 1);
     }
 
-    
+
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
     {
         Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");   

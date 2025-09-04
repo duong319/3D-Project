@@ -57,8 +57,7 @@ public class SpecialItemManager : MonoBehaviour
         if (CurrencyManager.Instance.HeadStart <= 0) return;
         CurrencyManager.Instance.SpendHeadStart(1);
         UseItem(SpecialItemType.Headstart);
-        HeadStart.gameObject.SetActive(false);
-        ScoreBooster.gameObject.SetActive(false);
+        HeadStart.gameObject.SetActive(false);   
     }
 
     public void UseScoreBooster()
@@ -74,7 +73,6 @@ public class SpecialItemManager : MonoBehaviour
         }
         PlayerController.Instance.AddMultiplier(((int)duration - 1));
         UIManager.Instance.UpdateScoreMultiplier();
-        HeadStart.gameObject.SetActive(false);
         ScoreBooster.gameObject.SetActive(false);
     }
 

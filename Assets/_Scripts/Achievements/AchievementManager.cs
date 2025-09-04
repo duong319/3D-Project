@@ -9,6 +9,7 @@ public class AchievementManager : MonoBehaviour
     public List<AchievementData> achievements;
     private Dictionary<string, int> progress = new Dictionary<string, int>();
     private HashSet<string> claimed = new HashSet<string>();
+    private HashSet<string> completed = new HashSet<string>();
 
     public event Action<AchievementData> OnAchievementCompleted;
 
@@ -29,9 +30,10 @@ public class AchievementManager : MonoBehaviour
 
                 progress[a.id] += amount;
 
-                if (progress[a.id] >= a.targetValue)
+                if (progress[a.id] >= a.targetValue && !completed.Contains(a.id))
                 {
                     progress[a.id] = a.targetValue;
+                    completed.Add(a.id);
                     OnAchievementCompleted?.Invoke(a);
                 }
             }

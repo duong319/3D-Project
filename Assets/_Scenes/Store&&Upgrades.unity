@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb01e4b2c37fbdf4286c754b3408f73e, type: 2}
+  m_Sprite: {fileID: 21300000, guid: 7f8a3c955157d834487075b178720f47, type: 2}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10570,7 +10570,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Not Enough Money!
+  m_Text: Purchase Failed!
 --- !u!222 &792736374
 CanvasRenderer:
   m_ObjectHideFlags: 0

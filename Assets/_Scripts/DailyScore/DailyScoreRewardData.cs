@@ -21,6 +21,5 @@ public class DailyScoreRewardData : ScriptableObject
         None,
         HeadStart,
         ScoreBooster
-
     }
 }

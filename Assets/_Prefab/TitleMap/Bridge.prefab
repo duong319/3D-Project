@@ -472,6 +472,7 @@ Transform:
   - {fileID: 1668488592129517563}
   - {fileID: 845612180438653711}
   - {fileID: 244160169488458330}
+  - {fileID: 4983891550277867009}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2186038168329754279
@@ -558,10 +559,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefabs:
-  - {fileID: 4586505950681118335, guid: ec5d6915017f2fa4bbf2b718b197e387, type: 3}
   - {fileID: 2681105305869180886, guid: aecf214797977d04ea5fb2b74c04e59d, type: 3}
   coinPrefabs:
-  - {fileID: 4586505950681118335, guid: ec5d6915017f2fa4bbf2b718b197e387, type: 3}
   - {fileID: 9060914883072777377, guid: 3ef6fcd1a816c3c408648465b7b112fe, type: 3}
   powerupPrefabs: []
   spawnPoints:
@@ -822,4 +821,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 880565184374656786, guid: 3ef6fcd1a816c3c408648465b7b112fe,
     type: 3}
   m_PrefabInstance: {fileID: 1106490501924842824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2233080841725495563
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 157458849769312810}
+    m_Modifications:
+    - target: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 603.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792260273470154214, guid: 4c06869f6aac3644dadebf85270d77df,
+        type: 3}
+      propertyPath: m_Name
+      value: MagnetPowerup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4c06869f6aac3644dadebf85270d77df, type: 3}
+--- !u!4 &4983891550277867009 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6617804100184923914, guid: 4c06869f6aac3644dadebf85270d77df,
+    type: 3}
+  m_PrefabInstance: {fileID: 2233080841725495563}
   m_PrefabAsset: {fileID: 0}
