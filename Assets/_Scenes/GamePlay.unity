@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -42,8 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -1796,9 +1793,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295228829}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -1848,8 +1844,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &295228831
 Transform:
   m_ObjectHideFlags: 0
@@ -2640,15 +2640,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -3092,7 +3094,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &597143503
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3106,6 +3108,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -5036,7 +5039,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &1104971481
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5050,6 +5053,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -6973,15 +6977,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -7376,16 +7382,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 4947820640487048848}
   tilePrefabs:
+  - {fileID: 4694829259197464274, guid: 566d338ecd57e614988f12f8a96e8303, type: 3}
   - {fileID: 2442944471335811829, guid: 385e6cd2ae9e99e4c891202205251a5b, type: 3}
   - {fileID: 226930035852846687, guid: 1d2b12e8318b4a3468bdd0774d4ea50f, type: 3}
   - {fileID: 7675370476025951786, guid: fcd551bd8a618354f97ad09c6ba08597, type: 3}
-  - {fileID: 4694829259197464274, guid: 566d338ecd57e614988f12f8a96e8303, type: 3}
   - {fileID: 1268981191135602481, guid: bdcf3e4b59f8b8142b579df8d7a65695, type: 3}
   - {fileID: 3646411348228072838, guid: f24f8d77710733b42ae6907b447927b4, type: 3}
   - {fileID: 4694829259197464274, guid: 566d338ecd57e614988f12f8a96e8303, type: 3}
   - {fileID: 2442944471335811829, guid: 385e6cd2ae9e99e4c891202205251a5b, type: 3}
-  tileLength: 860
-  tilesOnScreen: 6
+  tileLength: 863
+  tilesOnScreen: 8
   spawnZ: 0
   spawnYOffset: -29
 --- !u!114 &1783016609
@@ -9007,6 +9013,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4950676068519576893}
     m_Modifications:
+    - target: {fileID: 2278972641272303293, guid: 4a92d887168cfa64fa84700b9e7ead65,
+        type: 3}
+      propertyPath: maxForwardSpeed
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 8177602702261932761, guid: 4a92d887168cfa64fa84700b9e7ead65,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -286,6 +286,11 @@ public class PlayerController : MonoBehaviour
     {
         CurrencyManager.Instance.scoreMultiplier += value;
     }
+    
+    public void ResetMultiplier(int value)
+    {
+        CurrencyManager.Instance.scoreMultiplier-=value;
+    }
 
     IEnumerator ShowRevivePanel()
     {

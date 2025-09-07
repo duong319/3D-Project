@@ -76,7 +76,17 @@ public class SpecialItemManager : MonoBehaviour
         ScoreBooster.gameObject.SetActive(false);
     }
 
-
+    public void EndScoreBooster()
+    {
+        int level = UpgradeManager.Instance.GetLevel(SpecialItemType.ScoreBooster);
+        float duration = UpgradeManager.Instance.GetDuration(SpecialItemType.ScoreBooster);
+        if (level == 0)
+        {
+            duration = 6f;
+        }
+        PlayerController.Instance.ResetMultiplier(((int)duration - 1));
+        UIManager.Instance.UpdateScoreMultiplier();
+    }
 
     #region Item Effects
 

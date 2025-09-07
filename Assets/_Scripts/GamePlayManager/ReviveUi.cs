@@ -46,6 +46,7 @@ public class ReviveUi : MonoBehaviour
         currentTime = 0f;
         AudioManager.Instance.Stop("SaveMe");
         AudioManager.Instance.Play("GamePlayBG");
+        SpecialItemManager.Instance.EndScoreBooster();
         SceneManager.LoadScene("PlayerDead");
     }
 
@@ -66,7 +67,6 @@ public class ReviveUi : MonoBehaviour
             panel.SetActive(false);
             AudioManager.Instance.Play("GamePlayBG");
         };
-
 
     }
 
