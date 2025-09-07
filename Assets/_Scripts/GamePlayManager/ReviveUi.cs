@@ -46,7 +46,10 @@ public class ReviveUi : MonoBehaviour
         currentTime = 0f;
         AudioManager.Instance.Stop("SaveMe");
         AudioManager.Instance.Play("GamePlayBG");
-        SpecialItemManager.Instance.EndScoreBooster();
+        if (SpecialItemManager.Instance.ScoreBoosterEnabled == true)
+        {
+            SpecialItemManager.Instance.EndScoreBooster();
+        }
         SceneManager.LoadScene("PlayerDead");
     }
 

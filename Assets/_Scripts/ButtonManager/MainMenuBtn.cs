@@ -4,13 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuBtn : MonoBehaviour
 {
-    public void StartBtn()
-    {
-        SceneManager.LoadScene("GamePlay");
-        AudioManager.Instance.Play("Btn");
-        AudioManager.Instance.Stop("MenuBG");
-    }
-
     public void Mission()
     {
         SceneManager.LoadScene("Missions");

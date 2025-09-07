@@ -9,6 +9,7 @@ public class SpecialItemManager : MonoBehaviour
     public SpecialItemUI specialItemUI;
     [SerializeField] private Button HeadStart;
     [SerializeField] private Button ScoreBooster;
+    public bool ScoreBoosterEnabled = false;
 
     private void Awake()
     {
@@ -64,6 +65,7 @@ public class SpecialItemManager : MonoBehaviour
     {
         if (CurrencyManager.Instance.ScoreBooster <= 0) return;
         CurrencyManager.Instance.SpendScoreBooster(1);
+        ScoreBoosterEnabled = true;
         int level = UpgradeManager.Instance.GetLevel(SpecialItemType.ScoreBooster);
         float duration = UpgradeManager.Instance.GetDuration(SpecialItemType.ScoreBooster);
         if (level == 0)
@@ -86,6 +88,7 @@ public class SpecialItemManager : MonoBehaviour
         }
         PlayerController.Instance.ResetMultiplier(((int)duration - 1));
         UIManager.Instance.UpdateScoreMultiplier();
+        ScoreBoosterEnabled = false;
     }
 
     #region Item Effects
