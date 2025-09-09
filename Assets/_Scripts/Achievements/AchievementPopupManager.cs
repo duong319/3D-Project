@@ -1,12 +1,14 @@
 using UnityEngine;
 
 
+
 public class AchievementPopupManager : MonoBehaviour
 {
     public static AchievementPopupManager Instance;
 
     [SerializeField] private GameObject popupPrefab;
     [SerializeField] private Transform popupParent;
+
 
     private void Awake()
     {
@@ -21,9 +23,10 @@ public class AchievementPopupManager : MonoBehaviour
         }
     }
 
-    private void OnEnable()
+    private void Start()
     {
-        AchievementManager.Instance.OnAchievementCompleted += ShowPopup;
+        if (AchievementManager.Instance != null)
+            AchievementManager.Instance.OnAchievementCompleted += ShowPopup;
     }
 
     private void OnDisable()
@@ -34,9 +37,8 @@ public class AchievementPopupManager : MonoBehaviour
 
     private void ShowPopup(AchievementData data)
     {
-        if (popupParent == null)
+        if (popupParent == null || popupPrefab == null || data == null)
         {
-            Debug.LogError("Null");
             return;
         }
         GameObject popup = Instantiate(popupPrefab, popupParent);
