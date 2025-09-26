@@ -77,11 +77,9 @@ public class PlayerController : MonoBehaviour
         {
             if (controller.isGrounded && !isHeadStartAvtivate)
             {
-
                 int rand = Random.Range(0, 2);
                 string dogeState = rand == 0 ? "DodgeRight1" : "DodgeRight2";
                 animator.SetTrigger(dogeState);
-
             }
             isSwipeRight = true;
             isSwipeLeft = false;
@@ -91,7 +89,6 @@ public class PlayerController : MonoBehaviour
 
         if (SwipeManager.swipeLeft)
         {
-
             if (controller.isGrounded && !isHeadStartAvtivate)
             {
                 int rand = Random.Range(0, 2);
@@ -118,7 +115,7 @@ public class PlayerController : MonoBehaviour
             {
                 Vector3 Down = new Vector3(currentLane, downForce, forwardSpeed);
                 controller.Move(Down * Time.deltaTime);
-                direction.y = downForce;             
+                direction.y = downForce;
                 animator.SetTrigger("Landing");
             }
         }
@@ -134,8 +131,6 @@ public class PlayerController : MonoBehaviour
             else
                 direction.y += gravity * Time.deltaTime;
         }
-
-
 
 
         if (isSliding)
@@ -162,14 +157,14 @@ public class PlayerController : MonoBehaviour
     {
         AudioManager.Instance.Play("KnockBack");
         if (isSwipeRight == true)
-        {   
+        {
             animator.SetTrigger("SideObstacleRight");
             currentLane -= 1;
             isSwipeRight = false;
             currentLane = Mathf.Clamp(currentLane, 0, 2);
         }
         else if (isSwipeLeft == true)
-        {      
+        {
             animator.SetTrigger("SideObstacleLeft");
             currentLane += 1;
             isSwipeLeft = false;
@@ -238,7 +233,7 @@ public class PlayerController : MonoBehaviour
         direction.y = jumpForce;
         animator.ResetTrigger("Die");
         animator.Play("Run2", 0, 0f);
-        StartCoroutine(ImmuneTime());    
+        StartCoroutine(ImmuneTime());
     }
 
     public void SetShield(bool active)
@@ -286,10 +281,10 @@ public class PlayerController : MonoBehaviour
     {
         CurrencyManager.Instance.scoreMultiplier += value;
     }
-    
+
     public void ResetMultiplier(int value)
     {
-        CurrencyManager.Instance.scoreMultiplier-=value;
+        CurrencyManager.Instance.scoreMultiplier -= value;
     }
 
     IEnumerator ShowRevivePanel()

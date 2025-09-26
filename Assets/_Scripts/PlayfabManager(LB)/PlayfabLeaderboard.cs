@@ -70,12 +70,14 @@ public class PlayfabLeaderboard : MonoBehaviour
 
         var entries = new LeaderboardRowUI[result.Leaderboard.Count];
 
+
         foreach (var entry in result.Leaderboard)
         {
             GetPlayerCountry(entry.PlayFabId, (countryCode) =>
             {
                 var row = Instantiate(rowPrefab, contentParent);
-                row.SetData(entry.Position + 1, entry.DisplayName, entry.StatValue, countryCode);
+                bool isCurrentPlayer = entry.PlayFabId == PlayFabLogin.Instance.playerId;
+                row.SetData(entry.Position + 1, entry.DisplayName, entry.StatValue, countryCode,isCurrentPlayer);
 
                 entries[entry.Position] = row;
 

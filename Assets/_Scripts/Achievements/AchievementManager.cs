@@ -28,13 +28,21 @@ public class AchievementManager : MonoBehaviour
             {
                 if (!progress.ContainsKey(a.id)) progress[a.id] = 0;
 
-                progress[a.id] += amount;
-
-                if (progress[a.id] >= a.targetValue && !completed.Contains(a.id))
+                if (progress[a.id] < a.targetValue)
                 {
-                    progress[a.id] = a.targetValue;
-                    completed.Add(a.id);
-                    OnAchievementCompleted?.Invoke(a);
+                    progress[a.id] += amount;
+
+                    
+                    if (progress[a.id] >= a.targetValue)
+                    {
+                        progress[a.id] = a.targetValue;
+
+                        if (!completed.Contains(a.id))
+                        {
+                            completed.Add(a.id);
+                            OnAchievementCompleted?.Invoke(a);
+                        }
+                    }
                 }
             }
         }

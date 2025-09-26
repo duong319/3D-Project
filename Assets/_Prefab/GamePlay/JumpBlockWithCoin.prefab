@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 23.2, z: -28.4}
-  m_LocalScale: {x: 6.5014997, y: 0.21049, z: 6.2264204}
+  m_LocalScale: {x: 6.5014997, y: 0.5, z: 6.2264204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750594040365067151}
@@ -60,6 +60,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -189,6 +192,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -265,7 +271,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 28.6, z: -15.9}
-  m_LocalScale: {x: 6.5014997, y: 0.21049, z: 6.2264204}
+  m_LocalScale: {x: 6.5014997, y: 0.5, z: 6.2264204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750594040365067151}
@@ -295,6 +301,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -385,7 +394,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 14.1, z: -41.8}
-  m_LocalScale: {x: 6.5014997, y: 0.21049, z: 6.2264204}
+  m_LocalScale: {x: 6.5014997, y: 0.5, z: 6.2264204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750594040365067151}
@@ -415,6 +424,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -558,7 +570,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 5.7, z: -53.1}
-  m_LocalScale: {x: 6.5014997, y: 0.21049, z: 6.2264204}
+  m_LocalScale: {x: 6.5014997, y: 0.5, z: 6.2264204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750594040365067151}
@@ -588,6 +600,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -678,7 +693,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 6.3, z: 69}
-  m_LocalScale: {x: 6.5014997, y: 0.21049, z: 6.2264204}
+  m_LocalScale: {x: 6.5014997, y: 0.5, z: 6.2264204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750594040365067151}
@@ -708,6 +723,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -798,7 +816,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 31.9, z: -0.4}
-  m_LocalScale: {x: 6.5014997, y: 0.21049, z: 6.2264204}
+  m_LocalScale: {x: 6.5014997, y: 0.5, z: 6.2264204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750594040365067151}
@@ -828,6 +846,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -918,7 +939,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 17.4, z: 45.1}
-  m_LocalScale: {x: 6.5014997, y: 0.21049, z: 6.2264204}
+  m_LocalScale: {x: 6.5014997, y: 0.5, z: 6.2264204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750594040365067151}
@@ -948,6 +969,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1038,7 +1062,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 23.8, z: 28.7}
-  m_LocalScale: {x: 6.5014997, y: 0.21049, z: 6.2264204}
+  m_LocalScale: {x: 6.5014997, y: 0.5, z: 6.2264204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750594040365067151}
@@ -1068,6 +1092,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1158,7 +1185,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 28.7, z: 13.1}
-  m_LocalScale: {x: 6.5014997, y: 0.21049, z: 6.2264204}
+  m_LocalScale: {x: 6.5014997, y: 0.5, z: 6.2264204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750594040365067151}
@@ -1188,6 +1215,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

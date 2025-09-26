@@ -60,8 +60,6 @@ public class PlayFabLogin : MonoBehaviour
         isLoggedIn = true;
         Debug.Log("Login successful! PlayFab ID: " + result.PlayFabId);
         playerId = result.PlayFabId;
-
-
     }
 
     void OnLoginFailure(PlayFabError error)

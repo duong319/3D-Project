@@ -9,10 +9,13 @@ public class LeaderboardRowUI : MonoBehaviour
     public Image countryFlagImage;
     public Image RankIcon;
     public Image rewardIconImage;
+    public Image backgroundImage;
+
     private RewardData rewardData;
     [SerializeField] private RewardInfoPanel rewardInfoPanel;
+    public Color playerRowColor;
 
-    public void SetData(int rank, string name, int score, string countryCode)
+    public void SetData(int rank, string name, int score, string countryCode, bool isCurrentPlayer)
     {
         rankText.text = rank.ToString();
         nameText.text = string.IsNullOrEmpty(name) ? "Guest" : name;
@@ -42,15 +45,25 @@ public class LeaderboardRowUI : MonoBehaviour
         }
 
         rewardData = RewardManager.Instance.GetReward(rank);
+        Button rewardBtn = rewardIconImage.GetComponent<Button>();
+        rewardBtn.onClick.RemoveAllListeners();
         if (rewardData != null)
         {
             rewardIconImage.sprite = rewardData.rewardIcon;
             rewardIconImage.gameObject.SetActive(true);
-
-            rewardIconImage.GetComponent<Button>().onClick.AddListener(() =>
+            rewardBtn.onClick.AddListener(() =>
             {
                 rewardInfoPanel.ShowReward(rewardData);
             });
+        }
+        else
+        {
+            rewardIconImage.gameObject.SetActive(false);
+        }
+
+        if (backgroundImage != null && isCurrentPlayer)
+        {
+            backgroundImage.color = playerRowColor;
         }
     }
 }

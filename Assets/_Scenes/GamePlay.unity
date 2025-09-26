@@ -4084,6 +4084,104 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813547924}
   m_CullTransparentMesh: 1
+--- !u!1 &833537473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 833537474}
+  - component: {fileID: 833537477}
+  - component: {fileID: 833537476}
+  - component: {fileID: 833537475}
+  m_Layer: 5
+  m_Name: EnterPortal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &833537474
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833537473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1124424147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &833537475
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833537473}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6438933decc7a084e936e2da139a9b3c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &833537476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833537473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &833537477
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833537473}
+  m_CullTransparentMesh: 1
 --- !u!1 &843205925
 GameObject:
   m_ObjectHideFlags: 0
@@ -5261,6 +5359,7 @@ RectTransform:
   - {fileID: 2032770556}
   - {fileID: 447345518}
   - {fileID: 1689716533}
+  - {fileID: 833537474}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7390,10 +7489,14 @@ MonoBehaviour:
   - {fileID: 3646411348228072838, guid: f24f8d77710733b42ae6907b447927b4, type: 3}
   - {fileID: 4694829259197464274, guid: 566d338ecd57e614988f12f8a96e8303, type: 3}
   - {fileID: 2442944471335811829, guid: 385e6cd2ae9e99e4c891202205251a5b, type: 3}
-  tileLength: 863
+  specialTilePrefab: {fileID: 2166272863853753458, guid: 030f7438ed4999d4b9e677b3d8088410,
+    type: 3}
+  enterPortal: {fileID: 833537473}
+  tileLength: 865
   tilesOnScreen: 8
   spawnZ: 0
   spawnYOffset: -29
+  specialOffset: 500
 --- !u!114 &1783016609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7461,6 +7564,7 @@ MonoBehaviour:
   specialItemUI: {fileID: 231240629}
   HeadStart: {fileID: 566238952}
   ScoreBooster: {fileID: 2032770557}
+  ScoreBoosterEnabled: 0
 --- !u!114 &1783016613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9017,6 +9121,16 @@ PrefabInstance:
         type: 3}
       propertyPath: maxForwardSpeed
       value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338484162935931831, guid: 4a92d887168cfa64fa84700b9e7ead65,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996349053495798568, guid: 4a92d887168cfa64fa84700b9e7ead65,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8177602702261932761, guid: 4a92d887168cfa64fa84700b9e7ead65,
         type: 3}

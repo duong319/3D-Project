@@ -10,11 +10,10 @@ public class MagnetCollision : MonoBehaviour
     {
         if (other.CompareTag("Coin") && PlayerController.Instance.isMagnetAvtivate == true)
         {
-            
             CoinMovement coin = other.GetComponent<CoinMovement>();
-            if (coin == null) Debug.Log("null"); 
+            if (coin == null) Debug.Log("null");
             if (coin != null)
-            {   
+            {
                 coin.AttractTo(player, attractSpeed);
             }
         }
