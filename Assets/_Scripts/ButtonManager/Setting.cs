@@ -1,14 +1,15 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Setting : MonoBehaviour
 {
     public GameObject SettingPanel;
-    [SerializeField] private Text playerIdText;
+    [SerializeField] private TextMeshProUGUI playerIdText;
     [SerializeField] private Button enableMusic;
     [SerializeField] private Button disableMusic;
-    [SerializeField] private Text StatusText;
+    [SerializeField] private TextMeshProUGUI StatusText;
 
     private void Start()
     {

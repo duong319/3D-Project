@@ -2,12 +2,13 @@ using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.UI;
+using TMPro;
 
 public class ChangeNameUI : MonoBehaviour
 {
     [SerializeField] private InputField nameInput;
     [SerializeField] private GameObject panel;
-    [SerializeField] private Text currentNameText;
+    [SerializeField] private TextMeshProUGUI currentNameText;
 
     private const string PlayerNameKey = "PlayerName";
 

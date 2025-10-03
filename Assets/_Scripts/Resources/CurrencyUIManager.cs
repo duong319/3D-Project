@@ -7,7 +7,7 @@ public class CurrencyUIManager : MonoBehaviour
     public TextMeshProUGUI coinText;
     public TextMeshProUGUI gemText;
     public TextMeshProUGUI levelText;
-    public Text scoreMultiplier;
+    public TextMeshProUGUI scoreMultiplier;
     public TextMeshProUGUI highScore;
 
     public int level = 1;

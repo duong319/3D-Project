@@ -1,9 +1,10 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class RemainScoreUI : MonoBehaviour
 {
-    [SerializeField] private Text remainScoreText;
+    [SerializeField] private TextMeshProUGUI remainScoreText;
 
     private void Update()
     {

@@ -2,11 +2,12 @@ using UnityEngine;
 using PlayFab.ClientModels;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 public class RivalUI : MonoBehaviour
 {
-    [SerializeField] private Text rivalNameText;
-    [SerializeField] private Text remainHighScoreText;
+    [SerializeField] private TextMeshProUGUI rivalNameText;
+    [SerializeField] private TextMeshProUGUI remainHighScoreText;
     [SerializeField] private Text revivePanelText;
     private int rivalScore = -1;
     private void Start()

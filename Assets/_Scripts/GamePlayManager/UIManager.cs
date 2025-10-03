@@ -1,17 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
 
-    public Text scoreText;
-    public Text coinText;
-    public Text ScoreMultiplerText;
-    public Text HeadStart;
-    public Text ScoreBooster;
-    public Text MissionScoreMultipler;
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI coinText;
+    public TextMeshProUGUI ScoreMultiplerText;
+    public TextMeshProUGUI HeadStart;
+    public TextMeshProUGUI ScoreBooster;
+    public TextMeshProUGUI MissionScoreMultipler;
     public GameObject PausePanel;
     public CoundownText countdownText;
 

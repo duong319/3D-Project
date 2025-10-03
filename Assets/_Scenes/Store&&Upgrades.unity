@@ -6293,7 +6293,7 @@ MonoBehaviour:
   coinText: {fileID: 321500985}
   gemText: {fileID: 1504908192}
   levelText: {fileID: 1674356147}
-  scoreMultiplier: {fileID: 1937940435}
+  scoreMultiplier: {fileID: 880693186}
   highScore: {fileID: 2119602945}
   level: 1
 --- !u!114 &459019666
