@@ -121,6 +121,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -226,6 +229,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -393,6 +399,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -464,9 +473,8 @@ MonoBehaviour:
   - {fileID: 2532120309143171852, guid: 76358061c0f38024a9ede5f38ab7a8f5, type: 3}
   powerupPrefabs:
   - {fileID: 3572860103565828225, guid: d18b74e960cad144d8184342ccc96d80, type: 3}
-  - {fileID: 4586505950681118335, guid: ec5d6915017f2fa4bbf2b718b197e387, type: 3}
+  - {fileID: 8286899617820421435, guid: 1c5a53e412e619a41b0775ce923cae13, type: 3}
   - {fileID: 6452646070442532067, guid: 2eb438f026f890740afa1e2a03c7b1e9, type: 3}
-  - {fileID: 4586505950681118335, guid: ec5d6915017f2fa4bbf2b718b197e387, type: 3}
   - {fileID: 8792260273470154214, guid: 4c06869f6aac3644dadebf85270d77df, type: 3}
   spawnPoints:
   - {fileID: 2816916626205048868}
@@ -565,6 +573,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -670,6 +681,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

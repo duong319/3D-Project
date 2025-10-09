@@ -1,16 +1,17 @@
 
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MissionItemUI : MonoBehaviour
 {
-    public Text descriptionText;
-    public Text progressText;
-    public Text ClaimedDescriptionText;
+    public TextMeshProUGUI descriptionText;
+    public TextMeshProUGUI progressText;
+    public TextMeshProUGUI ClaimedDescriptionText;
     public Slider progressSlider;
     public Button skipButton;
     public GameObject MissionClaimed;
-    public Text skipCostText;
+    public TextMeshProUGUI skipCostText;
     public GameObject progressSlide;
     public Button ClaimBtn;
 
@@ -37,7 +38,7 @@ public class MissionItemUI : MonoBehaviour
         if (mission.isCompleted) OnCompleted();
         progressSlider.value = mission.currentAmount;
         progressText.text = $"{mission.currentAmount}/{mission.data.targetAmount}";
-
+        ClaimBtn.onClick.RemoveAllListeners();
         ClaimBtn.onClick.AddListener(OnClaim);
     }
 
@@ -49,7 +50,6 @@ public class MissionItemUI : MonoBehaviour
 
     public void OnClaim()
     {
-        AudioManager.Instance.Play("Claim");
         MissionManager.Instance.ClaimReward(mission);
         Debug.Log("claim");
     }

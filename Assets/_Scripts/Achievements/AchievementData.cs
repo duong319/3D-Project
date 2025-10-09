@@ -21,4 +21,5 @@ public class AchievementData : ScriptableObject
     public AchievementType type;
     public int targetValue;
     public int rewardAmount;
+    public int totalmedal;
 }

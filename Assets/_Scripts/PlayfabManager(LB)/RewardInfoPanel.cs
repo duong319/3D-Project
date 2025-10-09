@@ -1,23 +1,33 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using TMPro;
 
 public class RewardInfoPanel : MonoBehaviour
 {
-    public Text rewardText;
-    public GameObject panel;
+    [SerializeField] private TextMeshProUGUI rewardText;
+    [SerializeField] private GameObject panel;
+    [SerializeField] private Button bgButton;
 
+    private void Awake()
+    {
+        if (bgButton == null)
+            bgButton = FindFirstObjectByType<BackgroundButton>()?.GetComponent<Button>();   
+    }
+
+    private void Start()
+    {
+        bgButton.onClick.AddListener(HideReward);
+    }
     public void ShowReward(RewardData reward)
     {
-        rewardText.text = reward.coin.ToString();
+        rewardText.text = $"+{reward.coin.ToString()}";
         panel.SetActive(true);
-        StopAllCoroutines();
-        StartCoroutine(HideRewardCoroutine());
     }
 
-    private IEnumerator HideRewardCoroutine()
+    private void HideReward()
     {
-        yield return new WaitForSeconds(2f);
-        panel.SetActive(false);
+        panel.SetActive(false);     
     }
+
+
 }

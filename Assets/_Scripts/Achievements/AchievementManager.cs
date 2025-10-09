@@ -32,7 +32,7 @@ public class AchievementManager : MonoBehaviour
                 {
                     progress[a.id] += amount;
 
-                    
+
                     if (progress[a.id] >= a.targetValue)
                     {
                         progress[a.id] = a.targetValue;
@@ -60,8 +60,10 @@ public class AchievementManager : MonoBehaviour
     {
         if (!claimed.Contains(a.id) && GetProgress(a.id) >= a.targetValue)
         {
+            var medal = CurrencyManager.Instance.AchievementMedals;
             claimed.Add(a.id);
             CurrencyManager.Instance.AddGems(a.rewardAmount);
+            if (medal < a.totalmedal) CurrencyManager.Instance.AddMedal(1);
             Debug.Log($"Claimed {a.rewardAmount} coins from {a.title}");
             SaveData();
         }

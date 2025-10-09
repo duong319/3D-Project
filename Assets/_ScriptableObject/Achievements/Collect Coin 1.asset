@@ -19,3 +19,5 @@ MonoBehaviour:
   type: 0
   targetValue: 200
   rewardAmount: 3
+  currentmedal: 0
+  totalmedal: 0

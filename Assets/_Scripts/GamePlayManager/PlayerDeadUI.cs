@@ -29,8 +29,8 @@ public class PlayerDeadUI : MonoBehaviour
 
     IEnumerator CharActivate()
     {
-        yield return new WaitForSeconds(0.5f);
         char1.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
         char2.gameObject.SetActive(true);
     }
 }

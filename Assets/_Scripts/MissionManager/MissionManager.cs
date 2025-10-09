@@ -97,7 +97,7 @@ public class MissionManager : MonoBehaviour
 
     public void ClaimReward(Mission mission)
     {
-        if (!mission.isCompleted) return;
+        if (!currentMissions.All(m => m.isCompleted)) return;
         CurrencyManager.Instance.AddExp(75);
         CurrencyManager.Instance.AddTotalExp(75);
         CheckAllCompleted();
@@ -122,6 +122,7 @@ public class MissionManager : MonoBehaviour
     {
         if (currentMissions.All(m => m.isCompleted))
         {
+            AudioManager.Instance.Play("Claim");
             CurrencyManager.Instance.AddscoreMultiplier(1);
             GenerateNewMissions();
             SaveMissions();
