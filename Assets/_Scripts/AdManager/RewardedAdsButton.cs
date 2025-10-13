@@ -70,6 +70,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
             {
                 case Rewardtype.FreeCoins:
                     Debug.Log("Get Free Coin");
+                    AudioManager.Instance.Play("GetFreeCoin");
                     CurrencyManager.Instance.AddCoins(500);
                     break;
 

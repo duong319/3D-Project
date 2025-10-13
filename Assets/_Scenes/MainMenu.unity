@@ -5433,7 +5433,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.0171, y: -0.1983, z: 50.8}
-  m_LocalScale: {x: 32.943726, y: 58.658787, z: 1}
+  m_LocalScale: {x: 29.388645, y: 58.658787, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1424899277}
@@ -34177,6 +34177,10 @@ MonoBehaviour:
     loop: 0
   - name: KnockBack
     clip: {fileID: 8300000, guid: f3a0667f43deaaf4eba0df9522240b79, type: 3}
+    volume: 1
+    loop: 0
+  - name: GetFreeCoin
+    clip: {fileID: 8300000, guid: ecfbfb20d717d2743b1a7965071f99a7, type: 3}
     volume: 1
     loop: 0
 --- !u!114 &867302084

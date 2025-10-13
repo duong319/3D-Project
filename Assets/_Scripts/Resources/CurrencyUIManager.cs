@@ -26,7 +26,8 @@ public class CurrencyUIManager : MonoBehaviour
             CurrencyManager.Instance.AddExp(-expThreshold);
             level++;
             PlayerPrefs.SetInt("PlayerLevel", level);
-        }     
+        }
+        UpdateUI();
     }
 
     void UpdateUI()

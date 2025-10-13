@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI MissionScoreMultipler;
     public GameObject PausePanel;
     public CoundownText countdownText;
+    public GameObject LeavePanel;
 
     private void Awake()
     {
@@ -52,6 +53,16 @@ public class UIManager : MonoBehaviour
         AudioManager.Instance.Play("Btn");
         PausePanel.gameObject.SetActive(false);
         countdownText.StartCountdown();
+    }
+
+    public void OpenLeavePanel()
+    {
+        LeavePanel.gameObject.SetActive(true);
+    }
+
+    public void CloseLeavePanel()
+    {
+        LeavePanel.gameObject.SetActive(false);
     }
 
     public void MainMenu()

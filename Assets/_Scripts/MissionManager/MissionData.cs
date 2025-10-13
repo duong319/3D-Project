@@ -15,8 +15,7 @@ public class MissionData : ScriptableObject
 public enum MissionType
 {
     Jump,
-    CollectCoin,
-    RunDistance,
+    CollectCoin, 
     Score,
 }
 
