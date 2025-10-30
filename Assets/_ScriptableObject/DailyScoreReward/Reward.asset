@@ -17,19 +17,29 @@ MonoBehaviour:
     coins: 200
     SpecialItems: 0
     specialItemType: 0
-    claimed: 0
+    claimed: 1
   - requiredScore: 21000
     coins: 300
     SpecialItems: 1
     specialItemType: 1
-    claimed: 0
+    claimed: 1
   - requiredScore: 36000
     coins: 400
     SpecialItems: 1
     specialItemType: 2
-    claimed: 0
+    claimed: 1
   - requiredScore: 51000
     coins: 500
     SpecialItems: 0
     specialItemType: 0
+    claimed: 1
+  - requiredScore: 66000
+    coins: 600
+    SpecialItems: 1
+    specialItemType: 2
+    claimed: 0
+  - requiredScore: 80000
+    coins: 1000
+    SpecialItems: 2
+    specialItemType: 2
     claimed: 0

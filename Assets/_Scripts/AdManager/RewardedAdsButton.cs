@@ -46,6 +46,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     // If the ad successfully loads, add a listener to the button and enable it:
     public void OnUnityAdsAdLoaded(string adUnitId)
     {
+        AudioManager.Instance.Play("Btn");
         Debug.Log("Ad Loaded: " + adUnitId);
 
         Advertisement.Show(adUnitId, this);

@@ -111,6 +111,7 @@ public class LevelGenerator : MonoBehaviour
     IEnumerator ActivateEnterPortal()
     {
         enterPortal.gameObject.SetActive(true);
+        PlayerController.Instance.forwardSpeed *= 0.9f;
         yield return new WaitForSeconds(1f);
         enterPortal.gameObject.SetActive(false);
     }

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,10 +6,10 @@ using UnityEngine.UI;
 public class UpgradeUI : MonoBehaviour
 {
     public Image iconImage;
-    public Text nameText;
-    public Text descText;
-    public Text priceText;
-    public Text durationText;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI descText;
+    public TextMeshProUGUI priceText;
+    public TextMeshProUGUI durationText;
     public Button upgradeButton;
     public Sprite activateProgress;
     public Sprite Progress;
@@ -40,7 +41,11 @@ public class UpgradeUI : MonoBehaviour
         }
 
         upgradeButton.onClick.RemoveAllListeners();
-        upgradeButton.onClick.AddListener(() => onUpgradeClick(index));
+        upgradeButton.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.Play("Btn");
+            onUpgradeClick(index);
+        });
     }
 
     private void UpdateLevelBars(int currentLevel, int maxLevel)

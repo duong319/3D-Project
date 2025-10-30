@@ -44,6 +44,7 @@ public class UIManager : MonoBehaviour
     public void Pause()
     {
         AudioManager.Instance.Play("Btn");
+        countdownText.StopCountdown();
         Time.timeScale = 0f;
         PausePanel.gameObject.SetActive(true);
     }

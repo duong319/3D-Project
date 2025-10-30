@@ -1,7 +1,5 @@
 using System.Collections;
-
 using TMPro;
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class ReviveUi : MonoBehaviour
 {
     public GameObject panel;
-    public TextMeshProUGUI countdownText;
-    public float countdownTime = 5f;
+    public GameObject[] countdownImages;
+    public float countdownTime = 6f;
 
     private float currentTime;
     private Coroutine countdownCoroutine;
@@ -19,20 +17,34 @@ public class ReviveUi : MonoBehaviour
     IEnumerator Countdown()
     {
         AudioManager.Instance.Play("SaveMe");
-        while (currentTime >= 0)
+        while (currentTime > 0)
         {
-            countdownText.text = Mathf.Ceil(currentTime).ToString();
+            UpdateCountdownImages(Mathf.CeilToInt(currentTime));
             yield return new WaitForSeconds(1f);
             currentTime--;
-        }   
+        }
         HidePanel();
+    }
+
+    private void UpdateCountdownImages(int timeLeft)
+    {
+        foreach (var img in countdownImages)
+        {
+            img.SetActive(false);
+        }
+
+        int index = Mathf.Clamp(countdownImages.Length - timeLeft, 0, countdownImages.Length - 1);
+        if (timeLeft > 0 && index < countdownImages.Length)
+        {
+            countdownImages[index].SetActive(true);
+        }
     }
 
     public void ShowPanel()
     {
         panel.SetActive(true);
         currentTime = countdownTime;
-        countdownCoroutine = StartCoroutine(Countdown());            
+        countdownCoroutine = StartCoroutine(Countdown());
     }
 
     public void HidePanel()
@@ -41,6 +53,10 @@ public class ReviveUi : MonoBehaviour
         {
             StopCoroutine(countdownCoroutine);
             countdownCoroutine = null;
+        }
+        foreach (var img in countdownImages)
+        {
+            img.SetActive(false);
         }
         panel.SetActive(false);
         currentTime = 0f;

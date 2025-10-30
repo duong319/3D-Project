@@ -1,8 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
     private int playerHealth = 4;
+    public GameObject ShieldCrashEfx;
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
 
@@ -20,11 +22,11 @@ public class PlayerCollision : MonoBehaviour
             }
             else if (player.isShieldAvtivate == true)
             {
-                AudioManager.Instance.Stop("Shield");
-                AudioManager.Instance.Play("ShieldEnd");
-                Destroy(hit.gameObject);
+                StartCoroutine(shieldCrashEfx());           
+                Destroy(hit.transform.parent.gameObject);
                 player.SetShield(false);
                 FindFirstObjectByType<SpecialItemUI>().OnDestroy();
+                player.isShieldAvtivate = false;
             }
             else
             {
@@ -48,7 +50,10 @@ public class PlayerCollision : MonoBehaviour
             }
             else if (player.isShieldAvtivate == true)
             {
-                Destroy(hit.gameObject);
+                StartCoroutine(shieldCrashEfx());       
+                Destroy(hit.transform.parent.gameObject);
+                player.SetShield(false);
+                FindFirstObjectByType<SpecialItemUI>().OnDestroy();
                 player.isShieldAvtivate = false;
             }
         }
@@ -87,5 +92,12 @@ public class PlayerCollision : MonoBehaviour
             SpecialItemManager.Instance.UseItem(SpecialItemType.ScoreMultiplier);
             AchievementManager.Instance.AddProgress(AchievementType.PickupItem, 1);
         }
+    }
+
+    private IEnumerator shieldCrashEfx()
+    {
+        ShieldCrashEfx.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        ShieldCrashEfx.gameObject.SetActive(false);
     }
 }

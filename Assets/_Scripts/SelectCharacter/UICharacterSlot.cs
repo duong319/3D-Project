@@ -25,6 +25,8 @@ public class UICharacterSlot : MonoBehaviour
     public GameObject lockedOutfitPanel;
     public GameObject SelectedMark;
     public GameObject SelectedOutfitMark;
+    public GameObject ShowChar;
+    public GameObject ShowCharOutfit;
     public Text unlockText;
     public Image SelectBtnImage;
     public Sprite selectSprite;
@@ -66,7 +68,8 @@ public class UICharacterSlot : MonoBehaviour
         viewOutfitBtn.gameObject.SetActive(isShowOutfit);
         SelectedMark.gameObject.SetActive(isSelected);
         SelectedOutfitMark.gameObject.SetActive(isSelectedOutfit);
-
+        ShowChar.gameObject.SetActive(!isShowOutfit);
+        ShowCharOutfit.gameObject.SetActive(isShowOutfit);
 
 
         if (!isShowOutfit)
@@ -74,7 +77,7 @@ public class UICharacterSlot : MonoBehaviour
             charName.text = data.characterName;
             ViewProgressBtn.gameObject.SetActive(!unlocked);
             SelectBtn.gameObject.SetActive(isowned);
-            SelectText.text = isSelected ? "Selected" : "Select";
+            SelectText.text = isSelected ? "SELECTED" : "SELECT";
             SelectBtnImage.sprite = isSelected ? selectedSprite : selectSprite;
 
             purchaseOutfitButton.gameObject.SetActive(false);
@@ -112,7 +115,7 @@ public class UICharacterSlot : MonoBehaviour
             ViewProgressBtn.gameObject.SetActive(!unlocked);
 
             SelectOutfitBtn.gameObject.SetActive(isownedoutfit);
-            SelectOutfitText.text = isSelectedOutfit ? "Selected" : "Select";
+            SelectOutfitText.text = isSelectedOutfit ? "SELECTED" : "SELECT";
             SelectOutfitBtnImage.sprite = isSelectedOutfit ? selectedSprite : selectSprite;
 
             purchaseButton.gameObject.SetActive(false);

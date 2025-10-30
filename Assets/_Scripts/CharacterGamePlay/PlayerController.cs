@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
 
         if (SwipeManager.swipeRight)
         {
+            if (currentLane >= 2) return;
             if (controller.isGrounded && !isHeadStartAvtivate)
             {
                 int rand = Random.Range(0, 2);
@@ -89,6 +90,7 @@ public class PlayerController : MonoBehaviour
 
         if (SwipeManager.swipeLeft)
         {
+            if (currentLane <= 0) return;
             if (controller.isGrounded && !isHeadStartAvtivate)
             {
                 int rand = Random.Range(0, 2);
@@ -228,18 +230,25 @@ public class PlayerController : MonoBehaviour
         isDead = false;
         animator.SetTrigger("Revive");
         AudioManager.Instance.Play("GamePlayBG");
-        forwardSpeed = Mathf.Max(forwardSpeed * 0.7f, 20f);
+        forwardSpeed = 20f;
         direction = Vector3.zero;
-        direction.y = jumpForce;
+        direction.y = jumpForce;     
         animator.ResetTrigger("Die");
         animator.Play("Run2", 0, 0f);
-        StartCoroutine(ImmuneTime());
+        SpecialItemManager.Instance.UseItem(SpecialItemType.Shield);
+        StartCoroutine(ReviveTime());
     }
+
 
     public void SetShield(bool active)
     {
         isShieldAvtivate = active;
         shieldVisual.SetActive(active);
+        if (active == false)
+        {
+            AudioManager.Instance.Stop("Shield");
+            AudioManager.Instance.Play("ShieldEnd");
+        }
     }
 
     public void SetMagnet(bool active)
@@ -298,6 +307,13 @@ public class PlayerController : MonoBehaviour
         isImmune = true;
         yield return new WaitForSeconds(immuneDuration);
         isImmune = false;
+    }
+
+    private IEnumerator ReviveTime()
+    {
+        Time.timeScale = 0.5f;
+        yield return new WaitForSecondsRealtime(1.8f);
+        Time.timeScale = 1f;
     }
     private IEnumerator Up()
     {

@@ -9,10 +9,28 @@ public class CoundownText : MonoBehaviour
     public Text countdownText;
 
     private float currentTime;
+    private Coroutine countdownCoroutine;
 
     public void StartCountdown()
     {
-        StartCoroutine(Countdown());
+        if (countdownCoroutine != null)
+        {
+            StopCoroutine(countdownCoroutine);
+            countdownCoroutine = null;
+        }
+
+        countdownCoroutine = StartCoroutine(Countdown());
+    }
+
+    public void StopCountdown()
+    {
+        if (countdownCoroutine != null)
+        {
+            StopCoroutine(countdownCoroutine);
+            countdownCoroutine = null;
+        }
+ 
+        CountdownPanel.SetActive(false);
     }
 
     IEnumerator Countdown()
@@ -29,5 +47,6 @@ public class CoundownText : MonoBehaviour
 
         CountdownPanel.SetActive(false);
         Time.timeScale = 1f;
+        countdownCoroutine = null;
     }
 }

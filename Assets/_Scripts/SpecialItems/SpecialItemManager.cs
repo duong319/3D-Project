@@ -99,9 +99,10 @@ public class SpecialItemManager : MonoBehaviour
         Debug.Log("Shield");
         PlayerController.Instance.SetShield(true);
         yield return new WaitForSeconds(duration);
-        PlayerController.Instance.SetShield(false);
-        AudioManager.Instance.Stop("Shield");
-        AudioManager.Instance.Play("ShieldEnd");
+        if (PlayerController.Instance.isShieldAvtivate == true)
+        {
+            PlayerController.Instance.SetShield(false);
+        }      
     }
 
     IEnumerator ActivateMagnet(float duration)

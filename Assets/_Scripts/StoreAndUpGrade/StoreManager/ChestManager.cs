@@ -112,22 +112,22 @@ public class ChestManager : MonoBehaviour
 
     public void ClaimVideoChestToday()
     {
-        if (!IsVideoChestAvailableToday())
+        if (IsVideoChestAvailableToday())
+        {
+            OpenChest(videoChestData);
+            lastVideoChestDay = DateTime.Today;
+            SaveVideoChestDay();
+
+            FreeBtn.gameObject.SetActive(false);
+            WatchAdBtn.gameObject.SetActive(true);
+        }
+        else
         {
             RewardedAdsButton.Instance.LoadAd(Rewardtype.None);
             RewardedAdsButton.Instance.onAdCompleted = () =>
             {
                 OpenChest(videoChestData);
             };
-        }
-
-        else if (IsVideoChestAvailableToday())
-        {
-            OpenChest(videoChestData);
-            FreeBtn.gameObject.SetActive(false);
-            WatchAdBtn.gameObject.SetActive(true);
-            lastVideoChestDay = DateTime.Today;
-            SaveVideoChestDay();
         }
     }
     void SaveVideoChestDay()
@@ -140,14 +140,22 @@ public class ChestManager : MonoBehaviour
         if (PlayerPrefs.HasKey("LastVideoChestDay"))
         {
             lastVideoChestDay = DateTime.Parse(PlayerPrefs.GetString("LastVideoChestDay"));
-            FreeBtn.gameObject.SetActive(false);
-            WatchAdBtn.gameObject.SetActive(true);
         }
         else
         {
             lastVideoChestDay = DateTime.Today.AddDays(-1);
+        }
+
+
+        if (IsVideoChestAvailableToday())
+        {
             FreeBtn.gameObject.SetActive(true);
             WatchAdBtn.gameObject.SetActive(false);
+        }
+        else
+        {
+            FreeBtn.gameObject.SetActive(false);
+            WatchAdBtn.gameObject.SetActive(true);
         }
     }
     #endregion

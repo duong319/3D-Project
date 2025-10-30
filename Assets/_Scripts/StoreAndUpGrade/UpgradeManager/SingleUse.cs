@@ -20,6 +20,7 @@ public class SingleUse : MonoBehaviour
 
     public void BuyHeadStart()
     {
+        AudioManager.Instance.Play("Btn");
         if (CurrencyManager.Instance.Coins < 2000) return;
         CurrencyManager.Instance.AddHeadStart(1);
         CurrencyManager.Instance.SpendCoins(2000);
@@ -27,6 +28,7 @@ public class SingleUse : MonoBehaviour
 
     public void BuyScoreBooster()
     {
+        AudioManager.Instance.Play("Btn");
         if (CurrencyManager.Instance.Coins < 3000) return;
         CurrencyManager.Instance.AddScoreBooster(1);
         CurrencyManager.Instance.SpendCoins(3000);

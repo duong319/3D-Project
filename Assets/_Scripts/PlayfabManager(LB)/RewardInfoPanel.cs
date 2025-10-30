@@ -20,12 +20,14 @@ public class RewardInfoPanel : MonoBehaviour
     }
     public void ShowReward(RewardData reward)
     {
+        AudioManager.Instance.Play("Btn");
         rewardText.text = $"+{reward.coin.ToString()}";
         panel.SetActive(true);
     }
 
     private void HideReward()
     {
+        AudioManager.Instance.Play("Btn");
         panel.SetActive(false);     
     }
 

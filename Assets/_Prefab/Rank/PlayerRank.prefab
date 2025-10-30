@@ -348,7 +348,7 @@ MonoBehaviour:
   rewardIconImage: {fileID: 6208069656583815426}
   backgroundImage: {fileID: 518076169724577527}
   rewardInfoPanel: {fileID: 8120926578788882389}
-  playerRowColor: {r: 0.31566522, g: 1, b: 0.1273585, a: 1}
+  playerRowColor: {r: 0.60784316, g: 0.9333334, b: 0.12941177, a: 1}
 --- !u!1 &1302056735321975308
 GameObject:
   m_ObjectHideFlags: 0
