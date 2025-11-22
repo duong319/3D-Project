@@ -7,7 +7,7 @@ public class Collision : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("coin");
+           // Debug.Log("coin");
         }
     }
 }

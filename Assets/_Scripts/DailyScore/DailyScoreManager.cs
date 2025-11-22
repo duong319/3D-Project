@@ -60,7 +60,6 @@ public class DailyScoreManager : MonoBehaviour
         tier.claimed = true;
         PlayerPrefs.SetInt(ClaimedKeyPrefix + tierIndex, 1);
         PlayerPrefs.Save();
-        Debug.Log("Claimed " + tierIndex);
     }
 
     public bool IsRewardClaimed(int tierIndex)
@@ -98,7 +97,6 @@ public class DailyScoreManager : MonoBehaviour
         Debug.Log("LastResetKey = " + lastDate + ", Today = " + today);
         if (lastDate != today)
         {
-            Debug.Log("Reset");
             ResetDailyData();
             PlayerPrefs.SetString(LastResetKey, today);
             PlayerPrefs.Save();

@@ -28,10 +28,7 @@ public class PlayerCollision : MonoBehaviour
                 FindFirstObjectByType<SpecialItemUI>().OnDestroy();
                 player.isShieldAvtivate = false;
             }
-            else
-            {
-                Debug.LogWarning("PlayerController!");
-            }
+      
         }
         else if (hit.gameObject.CompareTag("SideObstacle"))
         {
@@ -44,7 +41,7 @@ public class PlayerCollision : MonoBehaviour
                 player.isHurt = true;
                 player.KnockBack();
                 playerHealth -= 1;
-                Debug.Log(playerHealth);
+               
                 if (playerHealth <= 0)
                     player.Die();
             }

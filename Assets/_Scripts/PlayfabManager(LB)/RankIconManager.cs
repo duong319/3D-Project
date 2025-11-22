@@ -21,7 +21,6 @@ public class RankIconManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            Debug.Log("destroy");
         }
 
         rankDict = new Dictionary<int, Sprite>();

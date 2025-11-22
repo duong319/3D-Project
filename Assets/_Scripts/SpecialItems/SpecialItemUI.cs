@@ -13,8 +13,7 @@ public class SpecialItemUI : MonoBehaviour
 
 
     public void Activate(Sprite icon, float itemDuration)
-    {
-        Debug.Log("Active");
+    {    
         iconImage.sprite = icon;
         duration = itemDuration;
         timer = duration;

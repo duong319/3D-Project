@@ -50,8 +50,7 @@ public class MissionItemUI : MonoBehaviour
 
     public void OnClaim()
     {
-        MissionManager.Instance.ClaimReward(mission);
-        Debug.Log("claim");
+        MissionManager.Instance.ClaimReward(mission);      
     }
 
     public void OnSkip()
@@ -61,6 +60,5 @@ public class MissionItemUI : MonoBehaviour
         MissionManager.Instance.SkipMission(mission);
         progressSlide.SetActive(false);
         MissionClaimed.gameObject.SetActive(true);
-        Debug.Log("skip");
     }
 }

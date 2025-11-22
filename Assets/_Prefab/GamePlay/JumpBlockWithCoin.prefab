@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 768009473245133410}
   - component: {fileID: 5632965729328155968}
   - component: {fileID: 672438223572891701}
+  - component: {fileID: 5107511525129973756}
   m_Layer: 3
   m_Name: Coin (7)
   m_TagString: Coin
@@ -123,6 +124,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &5107511525129973756
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931761519084271552}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2532120309143171852
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +282,7 @@ GameObject:
   - component: {fileID: 508374395966859276}
   - component: {fileID: 284839015975858226}
   - component: {fileID: 1364295078396241496}
+  - component: {fileID: 2776354523738732988}
   m_Layer: 3
   m_Name: Coin (11)
   m_TagString: Coin
@@ -364,6 +393,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &2776354523738732988
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2708043063307723513}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4489969009835410567
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +433,7 @@ GameObject:
   - component: {fileID: 5723263906447198988}
   - component: {fileID: 2777992324433411527}
   - component: {fileID: 893500419535147991}
+  - component: {fileID: 5167187553491925984}
   m_Layer: 3
   m_Name: Coin (12)
   m_TagString: Coin
@@ -487,6 +544,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &5167187553491925984
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4489969009835410567}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5758343883026831564
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +637,7 @@ GameObject:
   - component: {fileID: 1673244917412870408}
   - component: {fileID: 4405436213276272683}
   - component: {fileID: 7434454582510982285}
+  - component: {fileID: 4551642941721042229}
   m_Layer: 3
   m_Name: Coin (8)
   m_TagString: Coin
@@ -663,6 +748,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &4551642941721042229
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5883523698799434098}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6953356788919766416
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,6 +788,7 @@ GameObject:
   - component: {fileID: 5398443026686304138}
   - component: {fileID: 3556825626554903382}
   - component: {fileID: 2143733560187275756}
+  - component: {fileID: 8859963491757489170}
   m_Layer: 3
   m_Name: Coin (4)
   m_TagString: Coin
@@ -786,6 +899,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &8859963491757489170
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6953356788919766416}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7773660360843757961
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +939,7 @@ GameObject:
   - component: {fileID: 4612469643976309545}
   - component: {fileID: 3109262189849335677}
   - component: {fileID: 9158453502913194589}
+  - component: {fileID: 3496591370559137285}
   m_Layer: 3
   m_Name: Coin (6)
   m_TagString: Coin
@@ -909,6 +1050,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &3496591370559137285
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773660360843757961}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7803641272724436584
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +1090,7 @@ GameObject:
   - component: {fileID: 2457732272302853302}
   - component: {fileID: 3692315371706301662}
   - component: {fileID: 137031422487895687}
+  - component: {fileID: 6662216193212951227}
   m_Layer: 3
   m_Name: Coin (9)
   m_TagString: Coin
@@ -1032,6 +1201,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &6662216193212951227
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803641272724436584}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8021483517973396514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,6 +1241,7 @@ GameObject:
   - component: {fileID: 956846681394582271}
   - component: {fileID: 3029711756283376363}
   - component: {fileID: 5889256730340368569}
+  - component: {fileID: 3510455796715457562}
   m_Layer: 3
   m_Name: Coin (5)
   m_TagString: Coin
@@ -1155,6 +1352,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &3510455796715457562
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8021483517973396514}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8925726757495891548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1392,7 @@ GameObject:
   - component: {fileID: 6115616549682652280}
   - component: {fileID: 2162724323466725146}
   - component: {fileID: 2053479282048157864}
+  - component: {fileID: 5868803022646919206}
   m_Layer: 3
   m_Name: Coin (10)
   m_TagString: Coin
@@ -1278,3 +1503,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d05d955fe9644b9fd2eaf1a15d969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &5868803022646919206
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925726757495891548}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

@@ -183,7 +183,6 @@ RectTransform:
   m_Children:
   - {fileID: 3266358622248421423}
   - {fileID: 3164772226174204420}
-  - {fileID: 5408654929323972477}
   m_Father: {fileID: 6238636784586530437}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -564,7 +563,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -669,12 +668,12 @@ RectTransform:
   m_LocalScale: {x: 0.9, y: 1.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2251455815389888858}
+  m_Father: {fileID: 3164772226174204420}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -10, y: 77}
-  m_SizeDelta: {x: 160.8, y: 65.1913}
+  m_AnchoredPosition: {x: 105.75049, y: -203.67084}
+  m_SizeDelta: {x: 160.8, y: 39.2876}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7135039048720289459
 CanvasRenderer:
@@ -700,7 +699,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -882,6 +881,7 @@ RectTransform:
   m_Children:
   - {fileID: 6099005212054713708}
   - {fileID: 1271609319741460296}
+  - {fileID: 5408654929323972477}
   m_Father: {fileID: 2251455815389888858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -988,7 +988,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1272,9 +1272,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02da2c132e337f44681188626eb3c71e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewardText: {fileID: 361651797610187014}
+  RewardText: {fileID: 361651797610187014}
   panel: {fileID: 641582437645770754}
   bgButton: {fileID: 0}
+  panelRect: {fileID: 2251455815389888858}
 --- !u!1 &6705686671865015966
 GameObject:
   m_ObjectHideFlags: 0

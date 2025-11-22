@@ -8,9 +8,9 @@ public class TileSpawner : MonoBehaviour
 
     public Transform[] spawnPoints;
 
-    [Range(0f, 1f)] public float obstacleChance = 0.35f;
-    [Range(0f, 1f)] public float coinChance = 0.5f;
-    [Range(0f, 1f)] public float powerupChance = 0.02f;
+    [Range(0f, 1f)] public float obstacleChance;
+    [Range(0f, 1f)] public float coinChance;
+    [Range(0f, 1f)] public float powerupChance;
 
     void Start()
     {
@@ -22,18 +22,18 @@ public class TileSpawner : MonoBehaviour
             if (roll < powerupChance * 100 && powerupPrefabs.Length > 0)
             {
                 Instantiate(powerupPrefabs[Random.Range(0, powerupPrefabs.Length)], point.position, Quaternion.identity, transform);
-                hasSpawn = true;             
+                hasSpawn = true;
             }
             else if (roll < (powerupChance + coinChance) * 100 && coinPrefabs.Length > 0 && !hasSpawn)
             {
                 Instantiate(coinPrefabs[Random.Range(0, coinPrefabs.Length)], point.position, Quaternion.identity, transform);
-                hasSpawn = true;          
+                hasSpawn = true;
             }
             else if (roll < (powerupChance + coinChance + obstacleChance) * 100 && obstaclePrefabs.Length > 0 && !hasSpawn)
             {
                 Instantiate(obstaclePrefabs[Random.Range(0, obstaclePrefabs.Length)], point.position, Quaternion.identity, transform);
-                hasSpawn = true;     
-            }       
+                hasSpawn = true;
+            }
         }
     }
 }

@@ -20,7 +20,6 @@ public class SpecialItemManager : MonoBehaviour
         ScoreBooster.onClick.RemoveAllListeners();
         ScoreBooster.onClick.AddListener(UseScoreBooster);
         StartCoroutine(DisableItem());
-
     }
 
     public void UseItem(SpecialItemType itemType)
@@ -58,7 +57,7 @@ public class SpecialItemManager : MonoBehaviour
         if (CurrencyManager.Instance.HeadStart <= 0) return;
         CurrencyManager.Instance.SpendHeadStart(1);
         UseItem(SpecialItemType.Headstart);
-        HeadStart.gameObject.SetActive(false);   
+        HeadStart.gameObject.SetActive(false);
     }
 
     public void UseScoreBooster()
@@ -96,19 +95,17 @@ public class SpecialItemManager : MonoBehaviour
     IEnumerator ActivateShield(float duration)
     {
         AudioManager.Instance.Play("Shield");
-        Debug.Log("Shield");
         PlayerController.Instance.SetShield(true);
         yield return new WaitForSeconds(duration);
         if (PlayerController.Instance.isShieldAvtivate == true)
         {
             PlayerController.Instance.SetShield(false);
-        }      
+        }
     }
 
     IEnumerator ActivateMagnet(float duration)
     {
         AudioManager.Instance.Play("Magnet");
-        Debug.Log("magnet");
         PlayerController.Instance.SetMagnet(true);
         yield return new WaitForSeconds(duration);
         PlayerController.Instance.SetMagnet(false);
@@ -118,7 +115,6 @@ public class SpecialItemManager : MonoBehaviour
 
     IEnumerator ActivateHeadstart(float duration)
     {
-        Debug.Log("headStart");
         PlayerController.Instance.ActivateHeadstart();
         yield return new WaitForSeconds(duration);
         PlayerController.Instance.EndHeadstart();
@@ -126,12 +122,12 @@ public class SpecialItemManager : MonoBehaviour
 
     IEnumerator ActivateScoreMultiplier(float duration)
     {
-        AudioManager.Instance.Play("X2");    
+        AudioManager.Instance.Play("X2");
         PlayerController.Instance.SetMultiplier(2);
         UIManager.Instance.UpdateScoreMultiplier();
         yield return new WaitForSeconds(duration);
         PlayerController.Instance.EndMultiplier(2);
-        UIManager.Instance.UpdateScoreMultiplier();      
+        UIManager.Instance.UpdateScoreMultiplier();
         AudioManager.Instance.Stop("X2");
         AudioManager.Instance.Play("X2End");
     }

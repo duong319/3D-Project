@@ -71,8 +71,7 @@ public class ReviveUi : MonoBehaviour
 
     public void OnWatchAdClicked()
     {
-        AudioManager.Instance.Stop("SaveMe");
-        Debug.Log("Watch Ad Clicked");
+        AudioManager.Instance.Stop("SaveMe");      
         RewardedAdsButton.Instance.LoadAd(Rewardtype.None);
 
         RewardedAdsButton.Instance.onAdCompleted = () =>

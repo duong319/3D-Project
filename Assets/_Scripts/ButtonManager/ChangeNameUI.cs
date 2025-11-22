@@ -33,8 +33,8 @@ public class ChangeNameUI : MonoBehaviour
             };
 
             PlayFabClientAPI.UpdateUserTitleDisplayName(request,
-                result => { Debug.Log(result.DisplayName); },
-                error => { Debug.LogWarning(error.GenerateErrorReport()); }
+                result => {  },
+                error => {  }
             );
         }
     }
@@ -77,7 +77,7 @@ public class ChangeNameUI : MonoBehaviour
             },
             error =>
             {
-                Debug.LogError(error.GenerateErrorReport());
+               
             });
     }
 }

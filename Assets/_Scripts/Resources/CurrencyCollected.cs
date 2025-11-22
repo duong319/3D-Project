@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class CurrencyCollected : MonoBehaviour
 {
@@ -6,23 +7,50 @@ public class CurrencyCollected : MonoBehaviour
     public float StartSpeed ;
     public float MaxSpeed ;
     public float Acceleration ;
-    public float ScaleShrinkSpeed ;
+    public float ScaleShrinkSpeed;
 
     private float currentSpeed;
 
-    void Start()
+    private Vector3 defaultScale;
+    private Vector3 defaultPosition;
+
+    void Awake()
     {
-        currentSpeed = StartSpeed;
+        defaultScale = transform.localScale;
+        defaultPosition = transform.position;
     }
 
-    void Update()
+    void OnEnable()
     {
-        currentSpeed = Mathf.MoveTowards(currentSpeed, MaxSpeed, Acceleration * Time.deltaTime);
+        currentSpeed = StartSpeed;
+        transform.position = defaultPosition;
+        transform.localScale = defaultScale;
 
+        StartCoroutine(MoveToBagRoutine());
+    }
 
-        transform.position = Vector3.MoveTowards(transform.position,Bag.position,currentSpeed * Time.deltaTime);
+    IEnumerator MoveToBagRoutine()
+    {
+        float timer = 0f;
 
+        while (timer < 2f)
+        {
+            timer += Time.deltaTime;
 
-        transform.localScale = Vector3.MoveTowards(transform.localScale, Vector3.zero,ScaleShrinkSpeed * Time.deltaTime);
+            currentSpeed = Mathf.MoveTowards(currentSpeed, MaxSpeed, Acceleration * Time.deltaTime);
+
+            transform.position = Vector3.MoveTowards(transform.position, Bag.position, currentSpeed * Time.deltaTime);
+
+            transform.localScale = Vector3.MoveTowards(transform.localScale, Vector3.zero, ScaleShrinkSpeed * Time.deltaTime);
+
+            yield return null;
+        }
+     
+    
+    }
+
+    void OnDisable()
+    {
+        StopAllCoroutines();
     }
 }

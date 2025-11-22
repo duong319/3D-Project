@@ -64,7 +64,6 @@ public class AchievementManager : MonoBehaviour
             claimed.Add(a.id);
             CurrencyManager.Instance.AddGems(a.rewardAmount);
             if (medal < a.totalmedal) CurrencyManager.Instance.AddMedal(1);
-            Debug.Log($"Claimed {a.rewardAmount} coins from {a.title}");
             SaveData();
         }
     }

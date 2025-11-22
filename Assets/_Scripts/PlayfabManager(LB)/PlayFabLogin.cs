@@ -57,15 +57,13 @@ public class PlayFabLogin : MonoBehaviour
 
     void OnLoginSuccess(LoginResult result)
     {
-        isLoggedIn = true;
-        Debug.Log("Login successful! PlayFab ID: " + result.PlayFabId);
+        isLoggedIn = true;    
         playerId = result.PlayFabId;
     }
 
     void OnLoginFailure(PlayFabError error)
     {
-        Debug.LogError("Login failed: " + error.GenerateErrorReport());
-
+       // Debug.LogError("Login failed: " + error.GenerateErrorReport());
     }
 
     public void SendLeaderboard(int score)
@@ -83,7 +81,7 @@ public class PlayFabLogin : MonoBehaviour
 
     void OnLeaderboardUpdate(UpdatePlayerStatisticsResult result)
     {
-        Debug.Log("Send LB Success");
+        //Debug.Log("Send LB Success");
     }
 
     public void GetLeaderboard()
@@ -101,7 +99,7 @@ public class PlayFabLogin : MonoBehaviour
     {
         foreach (var item in result.Leaderboard)
         {
-            Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue);
+            //Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue);
         }
     }
 
@@ -115,6 +113,6 @@ public class PlayFabLogin : MonoBehaviour
 
         PlayFabClientAPI.GetLeaderboardAroundPlayer(request,
             result => { onResult?.Invoke(result.Leaderboard); },
-            error => { Debug.LogError(error.GenerateErrorReport()); });
+            error => {  });
     }
 }

@@ -23,7 +23,6 @@ public class PlayfabLeaderboard : MonoBehaviour
 
     public void SendScore(int score)
     {
-        Debug.Log("Send LB");
         if (!PlayFabLogin.Instance.isLoggedIn)
         {
             return;
@@ -42,13 +41,12 @@ public class PlayfabLeaderboard : MonoBehaviour
             {
                 GetLeaderboard();
             },
-            error => Debug.LogError("Update fail " + error.GenerateErrorReport())
+            error => { }
         );
     }
 
     public void GetLeaderboard()
     {
-        Debug.Log("get lb");
         var request = new GetLeaderboardRequest
         {
             StatisticName = leaderboardName,
@@ -77,7 +75,7 @@ public class PlayfabLeaderboard : MonoBehaviour
             {
                 var row = Instantiate(rowPrefab, contentParent);
                 bool isCurrentPlayer = entry.PlayFabId == PlayFabLogin.Instance.playerId;
-                row.SetData(entry.Position + 1, entry.DisplayName, entry.StatValue, countryCode,isCurrentPlayer);
+                row.SetData(entry.Position + 1, entry.DisplayName, entry.StatValue, countryCode, isCurrentPlayer);
 
                 entries[entry.Position] = row;
 
@@ -117,7 +115,7 @@ public class PlayfabLeaderboard : MonoBehaviour
 
     private void OnLeaderboardError(PlayFabError error)
     {
-        Debug.LogError("Cant Get LeaderBoard " + error.GenerateErrorReport());
+        //Debug.LogError("Cant Get LeaderBoard " + error.GenerateErrorReport());
     }
     public void GetPlayerRank(Action<int> onRankReceived)
     {

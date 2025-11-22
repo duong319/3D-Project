@@ -21,7 +21,6 @@ public class CountryFlagManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            Debug.Log("Destroy");
         }
 
         flagDict = new Dictionary<string, Sprite>();

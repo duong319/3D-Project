@@ -22,7 +22,6 @@ public class LevelRewardTierUI : MonoBehaviour
         progressSliderClaimed.SetActive(isClaimed);
         claimedMark.SetActive(isClaimed);
         claimButton.gameObject.SetActive(!isClaimed && currentLevel >= tierData.requiredLevel);
-        Debug.Log(isClaimed);
     }
 
     void ClaimReward()
@@ -36,6 +35,5 @@ public class LevelRewardTierUI : MonoBehaviour
         }
         UpdateTier(CurrencyManager.Instance.PlayerLevel);
         LevelRewardManager.Instance.RefreshAllUI();
-        Debug.Log("Claim");
     }
 }

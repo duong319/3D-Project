@@ -20,7 +20,6 @@ public class CurrencyManager : MonoBehaviour
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
         LoadCurrencies();
-        // ResetProgress();
     }
 
     public void LoadCurrencies()

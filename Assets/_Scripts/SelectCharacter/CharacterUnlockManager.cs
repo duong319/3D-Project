@@ -34,7 +34,7 @@ public class CharacterUnlockManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Locked!");
+            //Debug.LogWarning("Locked!");
         }
     }
 
@@ -100,12 +100,12 @@ public class CharacterUnlockManager : MonoBehaviour
     }
 
 
-    public void ResetAll()
-    {
-        foreach (var character in FindObjectOfType<CharacterDatabase>().characters)
-        {
-            PlayerPrefs.DeleteKey(GetOwnKey(character));
-        }
-        PlayerPrefs.Save();
-    }
+    //public void ResetAll()
+    //{
+    //    foreach (var character in FindObjectOfType<CharacterDatabase>().characters)
+    //    {
+    //        PlayerPrefs.DeleteKey(GetOwnKey(character));
+    //    }
+    //    PlayerPrefs.Save();
+    //}
 }

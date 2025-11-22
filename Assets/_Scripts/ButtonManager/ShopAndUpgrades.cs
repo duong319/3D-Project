@@ -44,7 +44,6 @@ public class ShopAndUpgrades : MonoBehaviour
     public void Store()
     {
         AudioManager.Instance.Play("Btn");
-        Debug.Log("Store");
         StorePanel.gameObject.SetActive(true);
         UpgradePanel.gameObject.SetActive(false);
         StoreBtnEnable.gameObject.SetActive(true);
@@ -57,7 +56,6 @@ public class ShopAndUpgrades : MonoBehaviour
     public void Upgrade()
     {
         AudioManager.Instance.Play("Btn");
-        Debug.Log("Upgrade");
         StorePanel.gameObject.SetActive(false);
         UpgradePanel.gameObject.SetActive(true);
         UpgradeBtnEnable.gameObject.SetActive(true);

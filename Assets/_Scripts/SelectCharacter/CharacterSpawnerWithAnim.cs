@@ -24,8 +24,6 @@ public class CharacterSpawnerWithAnim : MonoBehaviour
 
                 if (!string.IsNullOrEmpty(outfitKey))
                 {
-                    Debug.Log(charKey);
-                    Debug.Log(outfitKey);
                     foreach (Transform child in characters[i].transform)
                     {
                         if (child.name == outfitKey)

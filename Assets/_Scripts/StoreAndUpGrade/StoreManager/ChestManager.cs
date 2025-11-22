@@ -100,7 +100,6 @@ public class ChestManager : MonoBehaviour
                 break;
         }
         AudioManager.Instance.Play("Claim");
-        Debug.Log($"Granted: {reward.name} x{amount}");
     }
     #endregion
 
@@ -163,14 +162,12 @@ public class ChestManager : MonoBehaviour
     public void OnClick_OpenVideoChest()
     {
         AudioManager.Instance.Play("Btn");
-        Debug.Log("Normal");
         ClaimVideoChestToday();
     }
 
     public void OnClick_OpenNormalChest()
     {
         AudioManager.Instance.Play("Btn");
-        Debug.Log("Normal");
         if (CurrencyManager.Instance.Coins >= 100)
         {
             CurrencyManager.Instance.SpendCoins(100);
@@ -181,7 +178,6 @@ public class ChestManager : MonoBehaviour
     public void OnClick_OpenRareChest()
     {
         AudioManager.Instance.Play("Btn");
-        Debug.Log("rare");
         if (CurrencyManager.Instance.Gems >= 1)
         {
             CurrencyManager.Instance.SpendGems(1);

@@ -149,7 +149,6 @@ public class UICharacterSlot : MonoBehaviour
         {
             isShowOutfit = true;
             previewManager.ShowOutfit(characterData);
-            Debug.Log($"Show outfit: {characterData.characterName}");
             Init(characterData, unlockManager, previewManager);
         }
     }
@@ -161,11 +160,10 @@ public class UICharacterSlot : MonoBehaviour
             CurrencyManager.Instance.SpendCoins(characterData.price);
             unlockManager.BuyCharacter(characterData);
             Init(characterData, unlockManager, previewManager);
-            Debug.Log($"buy: {characterData.characterName}");
         }
         else
         {
-            Debug.LogWarning("locked");
+            //Debug.LogWarning("locked");
         }
     }
     void BuyCharacterOutfit()
@@ -175,11 +173,10 @@ public class UICharacterSlot : MonoBehaviour
             CurrencyManager.Instance.SpendGems(characterData.outfitPrice);
             unlockManager.BuyCharacterOutfit(characterData);
             Init(characterData, unlockManager, previewManager);
-            Debug.Log($"buy: {characterData.characterName}");
         }
         else
         {
-            Debug.LogWarning("locked");
+            // Debug.LogWarning("locked");
         }
     }
 
@@ -188,7 +185,6 @@ public class UICharacterSlot : MonoBehaviour
         if (unlockManager.IsOwned(characterData) && !unlockManager.IsSelected(characterData))
         {
             unlockManager.SelectCharacter(characterData);
-            Debug.Log($"Selected: {characterData.characterName}");
             Init(characterData, unlockManager, previewManager);
         }
     }
@@ -198,7 +194,6 @@ public class UICharacterSlot : MonoBehaviour
         if (unlockManager.IsOwnedOutfit(characterData) && !unlockManager.IsOutfitSelected(characterData))
         {
             unlockManager.SelectCharacterOutfit(characterData);
-            Debug.Log($"Selected: {characterData.characterName} Outfit");
             Init(characterData, unlockManager, previewManager);
         }
     }

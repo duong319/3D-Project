@@ -9736,6 +9736,7 @@ GameObject:
   - component: {fileID: 1912684311655113535}
   - component: {fileID: 2152838754483941852}
   - component: {fileID: 2322774754122992630}
+  - component: {fileID: 5218165528353089827}
   m_Layer: 3
   m_Name: Portal
   m_TagString: Untagged
@@ -9831,7 +9832,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 16, y: 31.828186, z: 2}
+  m_Size: {x: 16, y: 31.828186, z: 3.7}
   m_Center: {x: 0, y: 15.414093, z: 0}
 --- !u!114 &2322774754122992630
 MonoBehaviour:
@@ -9846,6 +9847,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExitPortal: 0
+--- !u!54 &5218165528353089827
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8286899617820421435}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8835564154390411071
 GameObject:
   m_ObjectHideFlags: 0

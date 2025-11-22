@@ -41,7 +41,6 @@ public class RewardManager : MonoBehaviour
         RewardData r = GetReward(rank);
         if (r != null)
         {
-            Debug.Log($"Reward given! Rank {rank}: {r.coin} coin");
             CurrencyManager.Instance.AddCoins(r.coin);
         }
     }

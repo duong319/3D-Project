@@ -67,8 +67,7 @@ public class LevelRewardManager : MonoBehaviour
     }
 
     public void ResetAllClaims()
-    {
-        Debug.Log("Reset");
+    {   
         foreach (var tier in rewardData.LevelrewardTiers)
         {
             PlayerPrefs.DeleteKey(ClaimedKey + tier.requiredLevel);

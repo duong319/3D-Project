@@ -106,8 +106,7 @@ public class MissionManager : MonoBehaviour
     public void SkipMission(Mission mission)
     {
         if (CurrencyManager.Instance.Coins < mission.data.skipCost)
-        {
-            Debug.Log("not enough coin");
+        {      
             return;
         }
         CurrencyManager.Instance.SpendCoins(mission.data.skipCost);

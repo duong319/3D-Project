@@ -13,12 +13,10 @@ public class PortalTrigger : MonoBehaviour
             {
                 if (isExitPortal)
                 {
-                    Debug.Log("portal exit");
                     generator.ExitPortal();
                 }
                 else
                 {
-                    Debug.Log("portal enter");
                     generator.EnterPortal();
                 }
             }

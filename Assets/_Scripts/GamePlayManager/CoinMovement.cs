@@ -10,8 +10,7 @@ public class CoinMovement : MonoBehaviour
     private float rotationSpeed = 200f;
 
     public void AttractTo(Transform target, float speed)
-    {
-        Debug.Log("attract");
+    {    
         player = target;
         magnetSpeed = speed;
 

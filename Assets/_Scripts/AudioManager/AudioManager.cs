@@ -52,10 +52,6 @@ public class AudioManager : MonoBehaviour
         {
             soundDictionary[name].Play();
         }
-        else
-        {
-            Debug.LogWarning("Audio: " + name + " not found!");
-        }
     }
 
     public void Stop(string name)

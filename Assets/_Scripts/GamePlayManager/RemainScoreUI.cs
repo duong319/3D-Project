@@ -5,10 +5,18 @@ using UnityEngine.UI;
 public class RemainScoreUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI remainScoreText;
+    private float refreshRate = 0.1f;
+    private float timer;
 
     private void Update()
     {
-        UpdateRemainScore();
+        timer += Time.deltaTime;
+        if (timer >= refreshRate)
+        {
+            UpdateRemainScore();
+            timer = 0;
+        }
+        
     }
 
     private void UpdateRemainScore()

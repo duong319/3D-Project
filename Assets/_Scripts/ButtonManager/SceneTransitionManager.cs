@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class SceneTransitionManager : MonoBehaviour
 {
     public GameObject MenuUI;
+    public GameObject menuUI;
     public GameObject MenuBg;
     public GameObject GamePlayBG;
     public GameObject TransitionFX;
@@ -19,6 +20,7 @@ public class SceneTransitionManager : MonoBehaviour
         AudioManager.Instance.Play("Btn");
         AudioManager.Instance.Stop("MenuBG");
         MenuUI.gameObject.SetActive(false);
+        menuUI.gameObject.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         TransitionFX.gameObject.SetActive(true);
         yield return new WaitForSeconds(1.6f);

@@ -10,7 +10,7 @@ public class PlayfabManager : MonoBehaviour
     public Transform rowParents;
     void OnLoginFailure(PlayFabError error)
     {
-        Debug.LogError("Login failed: " + error.GenerateErrorReport());
+        //Debug.LogError("Login failed: " + error.GenerateErrorReport());
     }
 
     public void SendLeaderboard(int score)
@@ -28,7 +28,7 @@ public class PlayfabManager : MonoBehaviour
 
     void OnLeaderboardUpdate(UpdatePlayerStatisticsResult result)
     {
-        Debug.Log("Send LB Success");
+        //Debug.Log("Send LB Success");
     }
 
     public void GetLeaderboard()
@@ -47,8 +47,6 @@ public class PlayfabManager : MonoBehaviour
         foreach (var item in result.Leaderboard)
         {
             GameObject newgo = Instantiate(rowPrefab, rowParents);
-
-            Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue);
         }
     }
 }

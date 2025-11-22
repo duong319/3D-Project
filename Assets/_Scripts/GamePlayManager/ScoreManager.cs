@@ -11,6 +11,8 @@ public class ScoreManager : MonoBehaviour
     public int highScore;
     public int totalScore;
     private int baseScore = 0;
+    private float refreshRate = 0.1f;
+    private float timer;
 
     private void Awake()
     {
@@ -25,7 +27,13 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
-        UpdateScoreByDistance();
+        timer += Time.deltaTime;
+        if (timer >= refreshRate)
+        {
+            UpdateScoreByDistance();
+            timer = 0;
+        }
+
         highScore = PlayerPrefs.GetInt("highScore", highScore);
         totalScore = PlayerPrefs.GetInt("totalScore", 0);
     }
